@@ -1,0 +1,76 @@
+.app__ecommerse{
+    .develop p {
+        color: #616161;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .develop h1 {
+        // background-color: red;
+    }
+    
+    .develop-img img {
+        transition: all 0.5s;
+    }
+    
+    .develop-img img:hover {
+        transform: scale(1.15, 1.15);
+    }   
+
+
+    /* benefits */
+
+.benefits .row{
+    min-height: 40vh;
+}
+
+.benefit{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+.benefit span{
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits .vector{
+    width: 40%;
+}
+
+/* Responsive benefits */
+
+@media screen and (max-width: 992px) {
+    .reasons, .img img{
+        width: 85%;
+        margin: auto;
+    }
+    .benefit{
+        width: 75%;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .benefit p{
+
+        margin-top: 15px ;
+        text-align: center;
+    }
+    .benefit span{
+        width: fit-content;
+        margin: auto;
+    }
+
+}
+
+}
