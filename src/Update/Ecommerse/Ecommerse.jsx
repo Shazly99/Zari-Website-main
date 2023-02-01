@@ -12,7 +12,7 @@ const Ecommerse = () => {
                 <div className="total-header layer-img d-flex justify-content-center align-items-center">
                     <div className="container">
                         <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">
-                            <h2 className="fs-1 text-white fw-bold">{isEng ? 'E-commerse' : 'التجارة الالكترونية '}</h2>
+                            <h2 className="fs-1 text-white fw-bold " >{isEng ? 'E-commerse' : 'التجارة الالكترونية '}</h2>
                         </div>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ const Ecommerse = () => {
                             {
                                 isEng ?
                                     <>
-                                        <h2 className="mb-4"  >Design and Development of Your Online Store</h2>
+                                        <h2 className="mb-4 main-color "  >Design and Development of Your Online Store</h2>
                                         <p>
                                             Creating a store or website has become an opportunity for stores and projects to reach many new customers and increase users' interaction.
                                             <br />
@@ -35,7 +35,7 @@ const Ecommerse = () => {
                                         </p>
                                     </> :
                                     <>
-                                        <h1 className="mb-4"  >
+                                        <h1 className="mb-4 main-color "  >
                                             تصميم و برمجة متجرك الالكترونى </h1>
                                         <p>إنشاء متجر أو موقع إلكتروني أصبح فرصة للمتاجر و المشاريع للوصول إلى العديد من العملاء الجدد وزيادة تفاعل المستخدمين.
 
@@ -59,7 +59,7 @@ const Ecommerse = () => {
                             {
                                 isEng ?
                                     <>
-                                        <h4 className="mb-4 fw-bold"  >Why should you create a website or e-store for your project or store?</h4>
+                                        <h4 className="mb-4 fw-bold main-color "  >Why should you create a website or e-store for your project or store?</h4>
 
                                         <p>
                                             because it's an excellent way to offer your e-commerce business. where you can sell food, tools, design items, digital products, and malls. Zari E-commerce is extremely advanced to provide customers with the best purchasing experience and to assist you in creating a great website for shopping for your valued customers.This gives you a plethora of ready-to-use e-commerce web templates that you can easily incorporate into your website.It has all those modern features that allow you to design a network that truly represents your vision The product you offer, has dozens of different locations, appendices, slider patterns, great banner layouts, login screen and blog variety, and multiple language options. However, the best part is the ease of SEO because it means more work and more sales. We are always eager to add new features and will continue to update them as needed.You can choose and use certain components you find handy on your website, or you can also use the entire package on your e-commerce site.
@@ -67,7 +67,7 @@ const Ecommerse = () => {
                                         </p>
                                     </> :
                                     <>
-                                        <h3 className="mb-4 fw-bolder"  >
+                                        <h3 className="mb-4 fw-bolder main-color "  >
                                             لماذا  يجب إنشاء موقع أو متجر إلكتروني خاص بمشروعك أو متجرك؟
                                         </h3>
 
@@ -89,7 +89,7 @@ const Ecommerse = () => {
                 </div>
 
                 <div className="row d-flex justify-content-between  align-items-center">
-                    <h2 className="text-center fs-1 mb-4 fw-bold">
+                    <h2 className="text-center fs-1 mb-4 fw-bold main-color ">
                         {
                             isEng ?
                                 'Benefits of Creating Your Online Store ' :
@@ -156,10 +156,15 @@ const Ecommerse = () => {
                 </div>
 
 
-                <section className="pt-4 pb-5 benefits">
+                <section className="pt-4 mt-5 pb-5 benefits">
                     <div className="container">
                         <div className="main-title">
-                            <h2 className="fs-1 heading text-center fw-bold mb-5">لماذا  تختار حلول زارى؟</h2>
+                            <h2 className="fs-1 heading text-center fw-bold mb-5 main-color ">
+                                {
+                                    isEng?` Why should you work with Zari Solutions?`:`لماذا  تختار حلول زارى؟`
+                                }
+                                
+                            </h2>
                         </div>
                         <div className="row gx-0">
                             <div className="col-lg-4 position-relative">
