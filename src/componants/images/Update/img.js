@@ -26,6 +26,10 @@ import Vector14 from "../Update/Vector 14.png";
 import Vector3 from "../Update/Vector 3.png";
 import Vector4 from "../Update/Vector 4.png";
 import Vector5 from "../Update/Vector 5.png";
+import express from "../Update/express.png";
+import falcon from "../Update/falcon.png";
+
+
 
 
 export default {
@@ -52,5 +56,7 @@ export default {
     Vector14,
     Vector3,
     Vector4,
-    Vector5
+    Vector5,
+    express,
+    falcon
 } 

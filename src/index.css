@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400 !important;500 !important;600 !important;700;800&display=swap');
 
 :root {
@@ -8,7 +7,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #fff;  
+  background-color: #fff;
 }
 
 #ready {
@@ -45,7 +44,7 @@ a:focus {
 i,
 img,
 video {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .main-color {
@@ -145,11 +144,11 @@ video {
   font-weight: 600 !important;
 }
 
-.text-en{
+.text-en {
   text-align: left !important;
 }
 
-.text-ar{
+.text-ar {
   text-align: right !important;
 }
 
@@ -195,7 +194,7 @@ video {
   transition: all 0.25s;
 }
 
-.language button{
+.language button {
   font-size: 16px;
   font-weight: 500;
   color: var(--mainColor);
@@ -240,10 +239,10 @@ video {
 @media screen and (min-width: 992px) {
 
   .dropdown {
-      position: relative;
+    position: relative;
   }
 
-  .dropdown-menu{
+  .dropdown-menu {
     background-color: rgba(0, 0, 0, 0.900);
     /* background-color: #000; */
   }
@@ -253,10 +252,10 @@ video {
   }
 
   .dropdown:hover .dropdown-menu {
-      display: block;
-      position: absolute;
-      top: 100%;
-      /* left: 0; */
+    display: block;
+    position: absolute;
+    top: 100%;
+    /* left: 0; */
   }
 }
 
@@ -269,18 +268,18 @@ video {
   }
 
   .special-w {
-      width: 90% !important;
+    width: 90% !important;
   }
 
   .active::before,
   .navbar-nav a:focus::before,
   .navbar-nav a:hover::before {
-      display: none !important;
+    display: none !important;
   }
 
   .dropdown:hover .dropdown-menu {
-      display: block;
-      /* width: 100% !important;
+    display: block;
+    /* width: 100% !important;
       margin: auto !important; */
   }
 
@@ -288,8 +287,9 @@ video {
       margin: auto;
   } */
 
-  .navbar .navbar-nav li a , .navbar .navbar-nav li span {
-      margin-bottom: 0.5rem;
+  .navbar .navbar-nav li a,
+  .navbar .navbar-nav li span {
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -298,6 +298,7 @@ video {
 
 .total-header {
   padding-top: 6rem;
+  
 }
 
 .min-vh-70 {
@@ -373,41 +374,41 @@ video {
 
 @media screen and (min-width: 992px) {
   .caption {
-      margin-left: 6rem;
+    margin-left: 6rem;
   }
 }
 
 @media screen and (max-width: 992px) {
   .total-header .row {
-      flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .total-header {
-      padding-bottom: 2rem;
+    padding-bottom: 2rem;
   }
 
   .caption {
-      width: 85%;
-      margin-right: auto;
-      margin-left: auto;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   .caption h1 {
-      font-size: 3rem;
+    font-size: 3rem;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .caption h1 {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .caption h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 }
 
@@ -424,9 +425,9 @@ video {
 
   .imgs-about,
   .caption-about {
-      width: 85%;
-      margin-right: auto;
-      margin-left: auto;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -486,153 +487,153 @@ video {
 
 @keyframes changeColorBorder {
   0% {
-      border-left-color: var(--mainColor)
+    border-left-color: var(--mainColor)
   }
 
   50% {
-      border-left-color: var(--mainColor)
+    border-left-color: var(--mainColor)
   }
 
   51% {
-      border-left-color: var(--secondColor)
+    border-left-color: var(--secondColor)
   }
 
   100% {
-      border-left-color: var(--secondColor)
+    border-left-color: var(--secondColor)
   }
 }
 
 @keyframes changeColorBorder2 {
   0% {
-      border-left-color: var(--secondColor)
+    border-left-color: var(--secondColor)
   }
 
   50% {
-      border-left-color: var(--secondColor)
+    border-left-color: var(--secondColor)
   }
 
   51% {
-      border-left-color: var(--mainColor)
+    border-left-color: var(--mainColor)
   }
 
   100% {
-      border-left-color: var(--mainColor)
+    border-left-color: var(--mainColor)
   }
 }
 
 @keyframes changeColorBorderRight {
   0% {
-      border-right-color: var(--mainColor)
+    border-right-color: var(--mainColor)
   }
 
   50% {
-      border-right-color: var(--mainColor)
+    border-right-color: var(--mainColor)
   }
 
   51% {
-      border-right-color: var(--secondColor)
+    border-right-color: var(--secondColor)
   }
 
   100% {
-      border-right-color: var(--secondColor)
+    border-right-color: var(--secondColor)
   }
 }
 
 @keyframes changeColorBorderRight2 {
   0% {
-      border-right-color: var(--secondColor)
+    border-right-color: var(--secondColor)
   }
 
   50% {
-      border-right-color: var(--secondColor)
+    border-right-color: var(--secondColor)
   }
 
   51% {
-      border-right-color: var(--mainColor)
+    border-right-color: var(--mainColor)
   }
 
   100% {
-      border-right-color: var(--mainColor)
+    border-right-color: var(--mainColor)
   }
 }
 
 @keyframes changeColor {
   0% {
-      color: var(--mainColor);
+    color: var(--mainColor);
   }
 
   50% {
-      color: var(--mainColor);
+    color: var(--mainColor);
   }
 
   51% {
-      color: var(--secondColor);
+    color: var(--secondColor);
   }
 
   100% {
-      color: var(--secondColor);
+    color: var(--secondColor);
   }
 }
 
 @keyframes changeColor2 {
   0% {
-      color: var(--secondColor);
+    color: var(--secondColor);
   }
 
   50% {
-      color: var(--secondColor);
+    color: var(--secondColor);
   }
 
   51% {
-      color: var(--mainColor);
+    color: var(--mainColor);
   }
 
   100% {
-      color: var(--mainColor);
+    color: var(--mainColor);
   }
 }
 
 @keyframes changeColorRight {
   0% {
-      color: var(--mainColor);
+    color: var(--mainColor);
   }
 
   50% {
-      color: var(--mainColor);
+    color: var(--mainColor);
   }
 
   51% {
-      color: var(--secondColor);
+    color: var(--secondColor);
   }
 
   100% {
-      color: var(--secondColor);
+    color: var(--secondColor);
   }
 }
 
 @keyframes changeColorRight2 {
   0% {
-      color: var(--secondColor);
+    color: var(--secondColor);
   }
 
   50% {
-      color: var(--secondColor);
+    color: var(--secondColor);
   }
 
   51% {
-      color: var(--mainColor);
+    color: var(--mainColor);
   }
 
   100% {
-      color: var(--mainColor);
+    color: var(--mainColor);
   }
 }
 
 @media screen and (max-width: 992px) {
   .service {
-      width: 85%;
-      margin-right: auto;
-      margin-left: auto;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -678,30 +679,30 @@ video {
 
 @media screen and (min-width: 992px) {
   .img-details img {
-      width: 50%;
+    width: 50%;
   }
 
   .show-details .caption-details p {
-      font-size: 20px;
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
   .cont-imgs .imgs img {
-      width: 80% !important;
+    width: 80% !important;
   }
 
   .cont-imgs .imgs h4 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .img-details img {
-      width: 75%;
+    width: 75%;
   }
 
   .show-details .caption-details p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .bg-black .row {
@@ -716,15 +717,15 @@ video {
 @media screen and (max-width: 768px) {
 
   .cont-imgs .imgs img {
-      width: 80% !important;
+    width: 80% !important;
   }
 
   .cont-imgs .imgs h4 {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .img-details img {
-      width: 100%;
+    width: 100%;
   }
 
   .caption-details-products {
@@ -741,53 +742,53 @@ video {
     width: 90%;
   }
 
-  .caption-details-products .buttons a{
+  .caption-details-products .buttons a {
     width: 50% !important;
     font-size: 16px;
     padding: 0.75rem 1.5rem !important;
   }
 
   .caption-details h2 {
-      font-size: 24px;
-      margin-bottom: 0.75rem !important;
+    font-size: 24px;
+    margin-bottom: 0.75rem !important;
   }
 
   .show-details .caption-details p {
-      font-size: 15px;
-      margin-bottom: 0.5rem !important;
+    font-size: 15px;
+    margin-bottom: 0.5rem !important;
   }
 
   .show-details .buttons a {
-      font-size: 14px;
-      padding: 0.5rem 1.75rem !important;
+    font-size: 14px;
+    padding: 0.5rem 1.75rem !important;
   }
 }
 
 @media screen and (min-width: 500px) and (max-width: 540px) {
 
   .show-details {
-      padding-bottom: 8px;
+    padding-bottom: 8px;
   }
 
   .caption-details h2 {
-      font-size: 20px;
-      margin-bottom: 0.5rem !important;
+    font-size: 20px;
+    margin-bottom: 0.5rem !important;
   }
 
   .show-details .caption-details p {
-      font-size: 12px !important;
-      margin-bottom: 0.5rem !important;
+    font-size: 12px !important;
+    margin-bottom: 0.5rem !important;
   }
 }
 
 @media screen and (max-width: 500px) {
 
   .caption-details h2 {
-      margin-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
   }
 
   .show-details .caption-details p {
-      display: none;
+    display: none;
   }
 }
 
@@ -796,8 +797,8 @@ video {
 
 .home-clients,
 .clients {
-    background-color: #f3f3f3;
-    box-shadow: #8d8d8d;
+  background-color: #f3f3f3;
+  box-shadow: #8d8d8d;
 }
 
 /* home-previous section */
@@ -832,9 +833,9 @@ video {
 
 @media screen and (max-width: 992px) {
   .previo {
-      width: 85%;
-      margin-right: auto;
-      margin-left: auto;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -988,88 +989,88 @@ video {
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
 
   .indicator-side-first {
-      transform: translateX(-20%) translateY(0%);
+    transform: translateX(-20%) translateY(0%);
   }
 
   .indicator-side-second {
-      transform: translateX(20%) translateY(0%);
+    transform: translateX(20%) translateY(0%);
   }
 
   .indicator-deep-first {
-      transform: translateX(-60%) translateY(-30%);
+    transform: translateX(-60%) translateY(-30%);
   }
 
   .indicator-deep-second {
-      transform: translateX(60%) translateY(-30%);
+    transform: translateX(60%) translateY(-30%);
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
   .indicator-side-first {
-      transform: translateX(-30%) translateY(-20%);
+    transform: translateX(-30%) translateY(-20%);
   }
 
   .indicator-side-second {
-      transform: translateX(30%) translateY(-20%);
+    transform: translateX(30%) translateY(-20%);
   }
 
   .indicator-deep-first {
-      transform: translateX(-60%) translateY(-30%);
+    transform: translateX(-60%) translateY(-30%);
   }
 
   .indicator-deep-second {
-      transform: translateX(60%) translateY(-30%);
+    transform: translateX(60%) translateY(-30%);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
   .carousel-indicators {
-      height: 20vh !important;
+    height: 20vh !important;
   }
 
   .indicator-item.indicator-side {
-      width: 45px !important;
-      height: 45px !important;
+    width: 45px !important;
+    height: 45px !important;
   }
 
   .indicator-item.indicator-deep {
-      width: 70px !important;
-      height: 70px !important;
+    width: 70px !important;
+    height: 70px !important;
   }
 
   .indicator-side-first {
-      transform: translateX(-15%) translateY(50%);
+    transform: translateX(-15%) translateY(50%);
   }
 
   .indicator-side-second {
-      transform: translateX(15%) translateY(50%);
+    transform: translateX(15%) translateY(50%);
   }
 
   .indicator-deep-first {
-      transform: translateX(-40%) translateY(-10%);
+    transform: translateX(-40%) translateY(-10%);
   }
 
   .indicator-deep-second {
-      transform: translateX(40%) translateY(-10%);
+    transform: translateX(40%) translateY(-10%);
   }
 
   .indicator-item.indicator-center {
-      width: 100px !important;
-      height: 100px !important;
+    width: 100px !important;
+    height: 100px !important;
   }
 
   .indicator-item img.life {
-      width: 80% !important;
+    width: 80% !important;
   }
 
   .indicator-item img.attraction {
-      width: 80% !important;
+    width: 80% !important;
   }
 
   .indicator-item img.spa {
-      width: 80% !important;
+    width: 80% !important;
   }
 
   .carousel-item blockquote {
@@ -1080,61 +1081,61 @@ video {
 @media screen and (max-width: 768px) {
 
   .carousel-indicators {
-      height: 15vh !important;
+    height: 15vh !important;
   }
 
   .indicator-item.indicator-side {
-      width: 40px !important;
-      height: 40px !important;
+    width: 40px !important;
+    height: 40px !important;
   }
 
   .indicator-item.indicator-deep {
-      width: 55px !important;
-      height: 55px !important;
+    width: 55px !important;
+    height: 55px !important;
 
   }
 
   .indicator-side-first {
-      transform: translateX(-15%) translateY(-10%);
+    transform: translateX(-15%) translateY(-10%);
   }
 
   .indicator-side-second {
-      transform: translateX(15%) translateY(-10%);
+    transform: translateX(15%) translateY(-10%);
   }
 
   .indicator-deep-first {
-      transform: translateX(-30%) translateY(-40%);
+    transform: translateX(-30%) translateY(-40%);
   }
 
   .indicator-deep-second {
-      transform: translateX(30%) translateY(-40%);
+    transform: translateX(30%) translateY(-40%);
   }
 
   .indicator-item.indicator-center {
-      width: 75px !important;
-      height: 75px !important;
+    width: 75px !important;
+    height: 75px !important;
   }
 
   .indicator-item img.life {
-      width: 80% !important;
+    width: 80% !important;
   }
 
   .indicator-item img.attraction {
-      width: 80% !important;
+    width: 80% !important;
   }
 
   .indicator-item img.spa {
-      width: 80% !important;
+    width: 80% !important;
   }
 
   .carousel-control-prev {
-      /* left: 0 !important; */
-      padding: 25px !important;
+    /* left: 0 !important; */
+    padding: 25px !important;
   }
 
   .carousel-control-next {
-      /* right: 0 !important; */
-      padding: 25px !important;
+    /* right: 0 !important; */
+    padding: 25px !important;
   }
 
   .carousel-item blockquote {
@@ -1179,7 +1180,8 @@ video {
   max-height: 100px;
 }
 
-.caption-part p, .caption-part .buttons {
+.caption-part p,
+.caption-part .buttons {
   margin-left: 12px
 }
 
@@ -1193,43 +1195,44 @@ video {
 
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
+
   /* .part{
       height: 380px;
   } */
   .first-card {
-      margin-top: 3rem !important;
+    margin-top: 3rem !important;
   }
 
   .second-card {
-      margin-top: 2.5rem;
+    margin-top: 2.5rem;
   }
 
   .last-card {
-      margin-top: 4rem;
+    margin-top: 4rem;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .part {
-      height: 360px;
+    height: 360px;
   }
 
   .second-card {
-      margin-top: 2rem;
+    margin-top: 2rem;
   }
 
   .last-card {
-      margin-top: 4rem;
+    margin-top: 4rem;
   }
 }
 
 @media screen and (max-width: 992px) {
   .part {
-      height: auto;
-      padding-bottom: 1rem;
-      width: 85%;
-      margin-right: auto;
-      margin-left: auto;
+    height: auto;
+    padding-bottom: 1rem;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .caption-part p {
@@ -1238,7 +1241,7 @@ video {
   }
 
   .last-card {
-      margin-top: 1rem;
+    margin-top: 1rem;
   }
 }
 
@@ -1252,9 +1255,9 @@ video {
 
 @media screen and (max-width: 992px) {
   .join-caption {
-      width: 85%;
+    width: 85%;
   }
-} 
+}
 
 
 /* footer */
@@ -1274,7 +1277,7 @@ video {
   font-weight: 600;
 }
 
-.logo-footer p{
+.logo-footer p {
   width: 90%;
 }
 
@@ -1343,7 +1346,7 @@ video {
 
 .navigate a {
   color: var(--secondColor);
-  font-weight:600;
+  font-weight: 600;
   transition: all 0.3s;
 }
 
@@ -1387,7 +1390,7 @@ video {
 @media screen and (max-width: 992px) {
 
   .icons-footer {
-      justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -1395,9 +1398,9 @@ video {
 
   .logo-footer,
   .navigate {
-      width: 75%;
-      margin-left: auto;
-      margin-right: auto;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1412,7 +1415,7 @@ video {
   background-repeat: no-repeat;
 }
 
-.main-title-page h2{
+.main-title-page h2 {
   transition: all 0.5s;
 }
 
@@ -1434,37 +1437,37 @@ video {
 
 @keyframes header {
   0% {
-      color: #000
+    color: #000
   }
 
   50% {
-      color: #000
+    color: #000
   }
 
   51% {
-      color: var(--mainColor)
+    color: var(--mainColor)
   }
 
   100% {
-      color: var(--mainColor)
+    color: var(--mainColor)
   }
 }
 
 @keyframes headerArabic {
   0% {
-      color: #000
+    color: #000
   }
 
   50% {
-      color: #000
+    color: #000
   }
 
   51% {
-      color: var(--mainColor)
+    color: var(--mainColor)
   }
 
   100% {
-      color: var(--mainColor)
+    color: var(--mainColor)
   }
 }
 
@@ -1495,11 +1498,11 @@ video {
   animation-iteration-count: infinite;
 }
 
-.w-sp110{
+.w-sp110 {
   width: 110px !important;
 }
 
-.w-sp75{
+.w-sp75 {
   width: 75px !important;
 }
 
@@ -1525,155 +1528,155 @@ video {
 
 @keyframes mission {
   0% {
-      border-left-color: var(--mainColor);
-      color: var(--mainColor)
+    border-left-color: var(--mainColor);
+    color: var(--mainColor)
   }
 
   50% {
-      border-left-color: var(--mainColor);
-      color: var(--mainColor)
+    border-left-color: var(--mainColor);
+    color: var(--mainColor)
   }
 
   51% {
-      border-left-color: var(--secondColor);
-      color: var(--secondColor)
+    border-left-color: var(--secondColor);
+    color: var(--secondColor)
   }
 
   100% {
-      border-left-color: var(--secondColor);
-      color: var(--secondColor)
+    border-left-color: var(--secondColor);
+    color: var(--secondColor)
   }
 }
 
 @keyframes missionArabic {
   0% {
-      border-right-color: var(--mainColor);
-      color: var(--mainColor)
+    border-right-color: var(--mainColor);
+    color: var(--mainColor)
   }
 
   50% {
-      border-right-color: var(--mainColor);
-      color: var(--mainColor)
+    border-right-color: var(--mainColor);
+    color: var(--mainColor)
   }
 
   51% {
-      border-right-color: var(--secondColor);
-      color: var(--secondColor)
+    border-right-color: var(--secondColor);
+    color: var(--secondColor)
   }
 
   100% {
-      border-right-color: var(--secondColor);
-      color: var(--secondColor)
+    border-right-color: var(--secondColor);
+    color: var(--secondColor)
   }
 }
 
 @keyframes goals {
   0% {
-      border-left-color: var(--secondColor);
-      color: var(--secondColor)
+    border-left-color: var(--secondColor);
+    color: var(--secondColor)
   }
 
   50% {
-      border-left-color: var(--secondColor);
-      color: var(--secondColor)
+    border-left-color: var(--secondColor);
+    color: var(--secondColor)
   }
 
   51% {
-      border-left-color: var(--mainColor);
-      color: var(--mainColor)
+    border-left-color: var(--mainColor);
+    color: var(--mainColor)
   }
 
   100% {
-      border-left-color: var(--mainColor);
-      color: var(--mainColor)
+    border-left-color: var(--mainColor);
+    color: var(--mainColor)
   }
 }
 
 @keyframes goalsArabic {
   0% {
-      border-right-color: var(--secondColor);
-      color: var(--secondColor)
+    border-right-color: var(--secondColor);
+    color: var(--secondColor)
   }
 
   50% {
-      border-right-color: var(--secondColor);
-      color: var(--secondColor)
+    border-right-color: var(--secondColor);
+    color: var(--secondColor)
   }
 
   51% {
-      border-right-color: var(--mainColor);
-      color: var(--mainColor)
+    border-right-color: var(--mainColor);
+    color: var(--mainColor)
   }
 
   100% {
-      border-right-color: var(--mainColor);
-      color: var(--mainColor)
+    border-right-color: var(--mainColor);
+    color: var(--mainColor)
   }
 }
 
 @keyframes paragraph1 {
   0% {
-      border-left-color: var(--secondColor);
-      color: var(--secondColor)
+    border-left-color: var(--secondColor);
+    color: var(--secondColor)
   }
 
   50% {
-      border-left-color: var(--secondColor);
-      color: var(--secondColor)
+    border-left-color: var(--secondColor);
+    color: var(--secondColor)
   }
 
   51% {
-      border-left-color: var(--mainColor);
-      color: var(--mainColor)
+    border-left-color: var(--mainColor);
+    color: var(--mainColor)
   }
 
   100% {
-      border-left-color: var(--mainColor);
-      color: var(--mainColor)
+    border-left-color: var(--mainColor);
+    color: var(--mainColor)
   }
 }
 
 @keyframes paragraphArabic1 {
   0% {
-      border-right-color: var(--secondColor);
-      color: var(--secondColor)
+    border-right-color: var(--secondColor);
+    color: var(--secondColor)
   }
 
   50% {
-      border-right-color: var(--secondColor);
-      color: var(--secondColor)
+    border-right-color: var(--secondColor);
+    color: var(--secondColor)
   }
 
   51% {
-      border-right-color: var(--mainColor);
-      color: var(--mainColor)
+    border-right-color: var(--mainColor);
+    color: var(--mainColor)
   }
 
   100% {
-      border-right-color: var(--mainColor);
-      color: var(--mainColor)
+    border-right-color: var(--mainColor);
+    color: var(--mainColor)
   }
 }
 
 @keyframes paragraph2 {
   0% {
-      border-left-color: var(--mainColor);
-      color: var(--mainColor)
+    border-left-color: var(--mainColor);
+    color: var(--mainColor)
   }
 
   50% {
-      border-left-color: var(--mainColor);
-      color: var(--mainColor)
+    border-left-color: var(--mainColor);
+    color: var(--mainColor)
   }
 
   51% {
-      border-left-color: var(--secondColor);
-      color: var(--secondColor)
+    border-left-color: var(--secondColor);
+    color: var(--secondColor)
   }
 
   100% {
-      border-left-color: var(--secondColor);
-      color: var(--secondColor)
+    border-left-color: var(--secondColor);
+    color: var(--secondColor)
   }
 }
 
@@ -1694,8 +1697,8 @@ video {
   }
 
   100% {
-      border-right-color: var(--secondColor);
-      color: var(--secondColor)
+    border-right-color: var(--secondColor);
+    color: var(--secondColor)
   }
 }
 
@@ -1713,7 +1716,7 @@ video {
 
 @media screen and (max-width: 992px) {
   .about .row {
-      flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 }
 
@@ -1801,37 +1804,37 @@ video {
 @media screen and (max-width: 991px) {
 
   .timeline-section {
-      width: 85%;
-      margin-right: auto;
-      margin-left: auto;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .our-story .main-title {
-      width: 50% !important;
-      margin-right: auto !important;
-      margin-left: 4% !important;
+    width: 50% !important;
+    margin-right: auto !important;
+    margin-left: 4% !important;
   }
 
   .timeline-section::before {
-      left: 5px;
+    left: 5px;
   }
 
   .item {
-      margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .item:nth-child(odd) {
-      padding-right: 0;
-      text-align: left;
+    padding-right: 0;
+    text-align: left;
   }
 
   .item:nth-child(odd),
   .item:nth-child(even) {
-      padding-left: 35px;
+    padding-left: 35px;
   }
 
   .item .item-dot {
-      left: 0;
+    left: 0;
   }
 }
 
@@ -1840,75 +1843,75 @@ video {
 
 .services .row,
 .products .row {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .services .service:nth-child(1),
 .products .product:nth-child(1) {
-    border-left: 3px solid;
-    position: relative;
-    animation-name: serviceOneBorder;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
+  border-left: 3px solid;
+  position: relative;
+  animation-name: serviceOneBorder;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
 }
 
 .services .service:nth-child(1) h3,
 .products .product:nth-child(1) h3 {
-    position: relative;
-    animation-name: colorOne;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
+  position: relative;
+  animation-name: colorOne;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
 }
 
 .services .service:nth-child(2),
 .products .product:nth-child(2) {
-    border-left: 3px solid;
-    position: relative;
-    animation-name: serviceTwoBorder;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
+  border-left: 3px solid;
+  position: relative;
+  animation-name: serviceTwoBorder;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
 }
 
 .services .service:nth-child(2) h3,
 .products .product:nth-child(2) h3 {
-    position: relative;
-    animation-name: colorTwo;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
+  position: relative;
+  animation-name: colorTwo;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
 }
 
 .services .service:nth-child(3),
 .products .product:nth-child(3) {
-    border-left: 3px solid;
-    position: relative;
-    animation-name: serviceThreeBorder;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
+  border-left: 3px solid;
+  position: relative;
+  animation-name: serviceThreeBorder;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
 }
 
 .services .service:nth-child(3) h3,
 .products .product:nth-child(3) h3 {
-    position: relative;
-    animation-name: colorThree;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
+  position: relative;
+  animation-name: colorThree;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
 }
 
 .services .service:nth-child(4),
 .products .product:nth-child(4) {
-    border-left: 3px solid;
-    position: relative;
-    animation-name: serviceOneBorder;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
+  border-left: 3px solid;
+  position: relative;
+  animation-name: serviceOneBorder;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
 }
 
 .services .service:nth-child(4) h3,
 .products .product:nth-child(4) h3 {
-    position: relative;
-    animation-name: colorOne;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
+  position: relative;
+  animation-name: colorOne;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
 }
 
 .services .service:nth-child(2) p,
@@ -1917,261 +1920,261 @@ video {
 .products .product:nth-child(2) p,
 .products .product:nth-child(3) p,
 .products .product:nth-child(4) p {
-    color: var(--secondColor);
+  color: var(--secondColor);
 }
 
 
 .services .service p,
 .products .product p {
-    font-size: 18px;
-    line-height: 28px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 @keyframes serviceOneBorder {
-    0% {
-        border-left-color: var(--mainColor)
-    }
+  0% {
+    border-left-color: var(--mainColor)
+  }
 
-    33.33% {
-        border-left-color: var(--mainColor)
-    }
+  33.33% {
+    border-left-color: var(--mainColor)
+  }
 
-    33.34% {
-        border-left-color: var(--secondColor)
-    }
+  33.34% {
+    border-left-color: var(--secondColor)
+  }
 
-    100% {
-        border-left-color: var(--secondColor)
-    }
+  100% {
+    border-left-color: var(--secondColor)
+  }
 }
 
 @keyframes serviceOneBorderArabic {
   0% {
-      border-right-color: var(--mainColor)
+    border-right-color: var(--mainColor)
   }
 
   33.33% {
-      border-right-color: var(--mainColor)
+    border-right-color: var(--mainColor)
   }
 
   33.34% {
-      border-right-color: var(--secondColor)
+    border-right-color: var(--secondColor)
   }
 
   100% {
-      border-right-color: var(--secondColor)
+    border-right-color: var(--secondColor)
   }
 }
 
 @keyframes serviceTwoBorder {
-    0% {
-        border-left-color: var(--secondColor)
-    }
+  0% {
+    border-left-color: var(--secondColor)
+  }
 
-    33.33% {
-        border-left-color: var(--secondColor)
-    }
+  33.33% {
+    border-left-color: var(--secondColor)
+  }
 
-    33.34% {
-        border-left-color: var(--mainColor)
-    }
+  33.34% {
+    border-left-color: var(--mainColor)
+  }
 
-    66.67% {
-        border-left-color: var(--mainColor)
-    }
+  66.67% {
+    border-left-color: var(--mainColor)
+  }
 
-    66.68% {
-        border-left-color: var(--secondColor)
-    }
+  66.68% {
+    border-left-color: var(--secondColor)
+  }
 
-    100% {
-        border-left-color: var(--secondColor)
-    }
+  100% {
+    border-left-color: var(--secondColor)
+  }
 }
 
 @keyframes serviceTwoBorderArabic {
   0% {
-      border-right-color: var(--secondColor)
+    border-right-color: var(--secondColor)
   }
 
   33.33% {
-      border-right-color: var(--secondColor)
+    border-right-color: var(--secondColor)
   }
 
   33.34% {
-      border-right-color: var(--mainColor)
+    border-right-color: var(--mainColor)
   }
 
   66.67% {
-      border-right-color: var(--mainColor)
+    border-right-color: var(--mainColor)
   }
 
   66.68% {
-      border-right-color: var(--secondColor)
+    border-right-color: var(--secondColor)
   }
 
   100% {
-      border-right-color: var(--secondColor)
+    border-right-color: var(--secondColor)
   }
 }
 
 @keyframes serviceThreeBorder {
-    0% {
-        border-left-color: var(--secondColor)
-    }
+  0% {
+    border-left-color: var(--secondColor)
+  }
 
-    66.67% {
-        border-left-color: var(--secondColor)
-    }
+  66.67% {
+    border-left-color: var(--secondColor)
+  }
 
-    66.68% {
-        border-left-color: var(--mainColor)
-    }
+  66.68% {
+    border-left-color: var(--mainColor)
+  }
 
-    100% {
-        border-left-color: var(--mainColor)
-    }
+  100% {
+    border-left-color: var(--mainColor)
+  }
 }
 
 @keyframes serviceThreeBorderArabic {
   0% {
-      border-right-color: var(--secondColor)
+    border-right-color: var(--secondColor)
   }
 
   66.67% {
-      border-right-color: var(--secondColor)
+    border-right-color: var(--secondColor)
   }
 
   66.68% {
-      border-right-color: var(--mainColor)
+    border-right-color: var(--mainColor)
   }
 
   100% {
-      border-right-color: var(--mainColor)
+    border-right-color: var(--mainColor)
   }
 }
 
 @keyframes colorOne {
-    0% {
-        color: var(--mainColor)
-    }
+  0% {
+    color: var(--mainColor)
+  }
 
-    33.33% {
-        color: var(--mainColor)
-    }
+  33.33% {
+    color: var(--mainColor)
+  }
 
-    33.34% {
-        color: var(--secondColor)
-    }
+  33.34% {
+    color: var(--secondColor)
+  }
 
-    100% {
-        color: var(--secondColor)
-    }
+  100% {
+    color: var(--secondColor)
+  }
 }
 
 @keyframes colorOneArabic {
   0% {
-      color: var(--mainColor)
+    color: var(--mainColor)
   }
 
   33.33% {
-      color: var(--mainColor)
+    color: var(--mainColor)
   }
 
   33.34% {
-      color: var(--secondColor)
+    color: var(--secondColor)
   }
 
   100% {
-      color: var(--secondColor)
+    color: var(--secondColor)
   }
 }
 
 @keyframes colorTwo {
-    0% {
-        color: var(--secondColor)
-    }
+  0% {
+    color: var(--secondColor)
+  }
 
-    33.33% {
-        color: var(--secondColor)
-    }
+  33.33% {
+    color: var(--secondColor)
+  }
 
-    33.34% {
-        color: var(--mainColor)
-    }
+  33.34% {
+    color: var(--mainColor)
+  }
 
-    66.67% {
-        color: var(--mainColor)
-    }
+  66.67% {
+    color: var(--mainColor)
+  }
 
-    66.68% {
-        color: var(--secondColor)
-    }
+  66.68% {
+    color: var(--secondColor)
+  }
 
-    100% {
-        color: var(--secondColor)
-    }
+  100% {
+    color: var(--secondColor)
+  }
 }
 
 @keyframes colorTwoArabic {
   0% {
-      color: var(--secondColor)
+    color: var(--secondColor)
   }
 
   33.33% {
-      color: var(--secondColor)
+    color: var(--secondColor)
   }
 
   33.34% {
-      color: var(--mainColor)
+    color: var(--mainColor)
   }
 
   66.67% {
-      color: var(--mainColor)
+    color: var(--mainColor)
   }
 
   66.68% {
-      color: var(--secondColor)
+    color: var(--secondColor)
   }
 
   100% {
-      color: var(--secondColor)
+    color: var(--secondColor)
   }
 }
 
 @keyframes colorThree {
-    0% {
-        color: var(--secondColor)
-    }
+  0% {
+    color: var(--secondColor)
+  }
 
-    66.67% {
-        color: var(--secondColor)
-    }
+  66.67% {
+    color: var(--secondColor)
+  }
 
-    66.68% {
-        color: var(--mainColor)
-    }
+  66.68% {
+    color: var(--mainColor)
+  }
 
-    100% {
-        color: var(--mainColor)
-    }
+  100% {
+    color: var(--mainColor)
+  }
 }
 
 @keyframes colorThreeArabic {
   0% {
-      color: var(--secondColor)
+    color: var(--secondColor)
   }
 
   66.67% {
-      color: var(--secondColor)
+    color: var(--secondColor)
   }
 
   66.68% {
-      color: var(--mainColor)
+    color: var(--mainColor)
   }
 
   100% {
-      color: var(--mainColor)
+    color: var(--mainColor)
   }
 }
 
@@ -2180,16 +2183,16 @@ video {
 
 @media screen and (max-width: 992px) {
 
-    .services .row:nth-child(odd),
-    .products .row:nth-child(odd) {
-        flex-direction: column-reverse;
-    }
+  .services .row:nth-child(odd),
+  .products .row:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
 }
 
 
 /* faq page */
 
-.container>hr:last-child{
+.container>hr:last-child {
   display: none;
 }
 
@@ -2277,25 +2280,25 @@ video {
   .group-quiz,
   .question-title,
   .img-question {
-      width: 85%;
-      margin-left: auto;
-      margin-right: auto;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .quiz h4 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .group-quiz .answer p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .question .row {
-      flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .question-title h4 {
-      font-size: 35px !important;
+    font-size: 35px !important;
   }
 }
 
@@ -2303,10 +2306,10 @@ video {
 
   .question-title h4 {
     font-size: 28px !important;
-}
+  }
 
   .quiz h4 {
-      font-size: 22px;
+    font-size: 22px;
   }
 }
 
@@ -2349,7 +2352,8 @@ video {
   color: #fff;
 }
 
-.caption-wd-page p , .question-title p {
+.caption-wd-page p,
+.question-title p {
   font-size: 18px;
   font-weight: 500;
 }
@@ -2364,45 +2368,46 @@ video {
 @media screen and (max-width: 992px) {
 
   .main-title-page h2 {
-      font-size: 32px !important;
+    font-size: 32px !important;
   }
 
   .caption-wd-page,
   .img-page {
-      width: 85%;
-      margin-left: auto;
-      margin-right: auto;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .caption-wd-page h3 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .caption-wd-page h5 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
-  .caption-wd-page p , .question-title p {
+  .caption-wd-page p,
+  .question-title p {
     font-size: 16px;
   }
 
   .serviceSingle .row {
-      flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 }
 
 @media screen and (max-width: 768px) {
 
   .main-title-page h2 {
-      font-size: 28px !important;
+    font-size: 28px !important;
   }
 
   .caption-wd-page h3 {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   .caption-wd-page h5 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
 }
@@ -2410,7 +2415,7 @@ video {
 @media screen and (max-width: 540px) {
 
   .main-title-page h2 {
-      font-size: 22px !important;
+    font-size: 22px !important;
   }
 }
 
@@ -2439,38 +2444,39 @@ video {
 @media screen and (max-width: 992px) {
 
   .caption-product-page h3 {
-      font-size: 34px !important;
+    font-size: 34px !important;
   }
 
   .caption-product-page {
-      width: 85%;
-      margin-left: auto;
-      margin-right: auto;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .single-product .row {
-      flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .description {
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
 
-  .caption-product-page p, .description p {
+  .caption-product-page p,
+  .description p {
     font-size: 16px;
   }
 
   .caption-wd-page h3 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .caption-wd-page h5 {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
 
@@ -2491,30 +2497,82 @@ video {
 
 @media screen and (min-width: 992px) {
   .project-single img {
-      width: 85%;
+    width: 85%;
   }
 }
 
 @media screen and (max-width: 992px) {
   .project-single {
-      width: 85%;
-      margin-left: auto;
-      margin-right: auto;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .project-single p {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
 
 
 /* get app section */
 
+.main-btn-p1 {
+  background-color: #BF1E30;
+  /* color: #fff; */
+  border: 1px solid #BF1E30;
+}
+
+
+
+.main-btn-p1:hover {
+  background-color: transparent;
+  color: #BF1E30;
+}
+
+.second-btn-p1 {
+  background-color: transparent;
+  color: #BF1E30;
+  border: 1px solid #BF1E30;
+}
+
+.second-btn-p1:hover {
+  background-color: #BF1E30;
+  color: #fff;
+}
+
+/************************************ */
+.main-btn-p2 {
+  background-color: #012C57;
+  color: #fff;
+  border: 1px solid #012C57;
+}
+
+
+
+.main-btn-p2:hover {
+  background-color: transparent;
+  color: #012C57;
+}
+
+.second-btn-p2 {
+  background-color: transparent;
+  color: #012c57;
+  border: 1px solid #012c57;
+}
+
+.second-btn-p2:hover {
+  background-color: #012c57;
+  color: #fff;
+}
+
+/* ********************************** */
 .main-btn-p {
   background-color: #FFCF00;
   /* color: #fff; */
   border: 1px solid #FFCF00;
 }
+
+
 
 .main-btn-p:hover {
   background-color: transparent;
@@ -2562,7 +2620,7 @@ video {
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .img-apps img {
-      width: 100%;
+    width: 100%;
   }
 }
 
@@ -2570,7 +2628,7 @@ video {
 
   .client a,
   .manager a {
-      width: 28% !important;
+    width: 28% !important;
   }
 }
 
@@ -2579,13 +2637,13 @@ video {
 
   .get .main-title,
   .img-apps {
-      width: 75%;
-      margin-left: auto;
-      margin-right: auto;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .img-apps img {
-      width: 75%;
+    width: 75%;
   }
 }
 
@@ -2593,59 +2651,61 @@ video {
 
   .client a,
   .manager a {
-      width: 50% !important;
+    width: 50% !important;
   }
 }
 
 
 /* join page */
 
-form, .form{
+form,
+.form {
   background: #FFFFFF;
   box-shadow: 0px 0px 50px rgba(204, 204, 204, 1);
   border-radius: 24px;
 }
 
-label{
+label {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
 }
 
-input, textarea{
+input,
+textarea {
   border-radius: 8px !important;
   background-color: #f3f3f3 !important;
 }
 
-textarea{
+textarea {
   resize: none;
 }
 
-.form-join .buttons button{
+.form-join .buttons button {
   width: 20%;
   font-size: 18px;
   font-weight: 500;
 }
 
-.form-contact .buttons button{
+.form-contact .buttons button {
   width: 40%;
   font-size: 18px;
   font-weight: 500;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
 
-  .second-input{
+  .second-input {
     margin-top: 1rem;
   }
 
-  .form-join .buttons button{
+  .form-join .buttons button {
     width: 40%;
   }
 }
 
-@media screen and (max-width: 768px){
-  
+@media screen and (max-width: 768px) {
+
   .form {
     padding-right: 30px !important;
     padding-left: 30px !important;
@@ -2654,14 +2714,17 @@ textarea{
     margin-left: auto;
   }
 
-  .form-join .buttons button, .form-contact .buttons button{
+  .form-join .buttons button,
+  .form-contact .buttons button {
     margin-top: 1rem;
     width: 60%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .form-join .buttons button, .form-contact .buttons button{
+
+  .form-join .buttons button,
+  .form-contact .buttons button {
     font-size: 15px;
   }
 }
@@ -2673,14 +2736,14 @@ textarea{
   margin-top: 80px !important;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
 
   .img-notfound img {
     width: 75% !important;
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
   .img-notfound img {
     width: 100% !important;

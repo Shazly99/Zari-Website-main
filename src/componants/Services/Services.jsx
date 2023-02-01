@@ -21,14 +21,13 @@ import $ from 'jquery';
 export default function Services({ fetchServices }) {
 
     useEffect(() => {
+        console.log(fetchServices );
         $('html , body').animate({ scrollTop: 0 }, 200);
 
-    }, []);
+    }, [fetchServices]);
 
-    useEffect(() => {
-
-        new WOW.WOW().init();
-
+    useEffect(() => { 
+        new WOW.WOW().init(); 
     }, [])
 
     const options = {

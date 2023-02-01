@@ -8,12 +8,35 @@ import { langContext } from '../context/store';
 // import zariJumla from '../images/home/iPhone 12 Pro (2).png';
 // import zariGifts from '../images/home/iPhone 12 Pro (3).png';
 // import zariExpress from '../images/home/Group 32.png';
+import { useState } from 'react';
 
 
-export default function Projects({fetchProjects}) {
+export default function Projects({ fetchProjects }) {
 
+    const [onTime, setonTime] = useState(true)
+    const [express, setExpress] = useState(false)
+    const [falcon, setFalcon] = useState(false)
+
+    const handelOntime = () => {
+        setonTime(true)
+        setExpress(false)
+        setFalcon(false)
+    }
+
+    const handelExpress = () => {
+        setonTime(false)
+        setExpress(true)
+        setFalcon(false)
+    }
+
+    const handelFalcon = () => {
+        setonTime(false)
+        setExpress(false)
+        setFalcon(true)
+    }
 
     useEffect(() => {
+        console.log(fetchProjects);
         $('html , body').animate({ scrollTop: 0 }, 200);
 
     }, []);
@@ -23,10 +46,10 @@ export default function Projects({fetchProjects}) {
 
     useEffect(() => {
         if ($('.caption-details h2').text() === fetchProjects[0].title || $('.caption-details h2').text() === fetchProjects[0].titleAr) {
-            if(isEng === true) {
+            if (isEng === true) {
                 $('.caption-details p').text(fetchProjects[0].text);
             }
-            else{
+            else {
                 $('.caption-details p').text(fetchProjects[0].textAr);
             }
             $('.show-details .buttons a').attr('href', '#/projects/1');
@@ -49,20 +72,21 @@ export default function Projects({fetchProjects}) {
             $('.show-details .caption-details .buttons a').html('اقـرأ المزيــد');
 
         }
-    
+
         else {
-    
+
             $('.home-projects .imgs').attr('dir', 'ltr');
             $('.show-details .caption-details').attr('dir', 'ltr');
             $('.show-details .caption-details .buttons a').html('Read More');
-    
+
         }
     }
 
 
     useEffect(() => {
+        console.log(fetchProjects);
         changeDir();
-    
+
         return () => {
             changeDir();
         }
@@ -77,7 +101,7 @@ export default function Projects({fetchProjects}) {
     //         $('.caption-details h2').text(clickTitle);
     //         changeDetails();
     //     })
-        
+
     //     const changeDetails = () => {
     //         if ($('.caption-details h2').text() === fetchProjects[0].title || $('.caption-details h2').text() === fetchProjects[0].titleAr) {
     //             if(isEng === true) {
@@ -88,7 +112,7 @@ export default function Projects({fetchProjects}) {
     //             }
     //             $('.show-details .buttons a').attr('href', `#/projects/${fetchProjects[0].id}`);
     //         }
-        
+
     //         else if ($('.caption-details h2').text() === fetchProjects[1].title || $('.caption-details h2').text() === fetchProjects[1].titleAr) {
     //             if(isEng === true) {
     //                 $('.caption-details p').text(fetchProjects[1].text);
@@ -98,7 +122,7 @@ export default function Projects({fetchProjects}) {
     //             }
     //             $('.show-details .buttons a').attr('href', `#/projects/${fetchProjects[1].id}`);
     //         }
-        
+
     //         else if ($('.caption-details h2').text() === fetchProjects[2].title || $('.caption-details h2').text() === fetchProjects[2].titleAr) {
     //             if(isEng === true) {
     //                 $('.caption-details p').text(fetchProjects[2].text);
@@ -108,7 +132,7 @@ export default function Projects({fetchProjects}) {
     //             }
     //             $('.show-details .buttons a').attr('href', `#/projects/${fetchProjects[2].id}`);
     //         }
-        
+
     //         else if ($('.caption-details h2').text() === fetchProjects[3].title || $('.caption-details h2').text() === fetchProjects[3].titleAr) {
     //             if(isEng === true) {
     //                 $('.caption-details p').text(fetchProjects[3].text);
@@ -119,65 +143,93 @@ export default function Projects({fetchProjects}) {
     //             $('.show-details .buttons a').attr('href', `#/projects/${fetchProjects[3].id}`);
     //         }
     //     }
-        
+
     // }, [isEng]);
-    
+
 
     return (
-            <>
+        <>
 
-                {/* header */}
-                <header id="projects" className="projects-page main-img-bg">
-                    <div className="total-header layer-img d-flex justify-content-center align-items-center">
-                        <div className="container">
-                            <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">
-                                <h2 className="fs-1 text-white fw-bold">{isEng ? 'Our Projects' : 'مشـاريعنـــا'}</h2>
+            {/* header */}
+            <header id="projects" className="projects-page main-img-bg">
+                <div className="total-header layer-img d-flex justify-content-center align-items-center">
+                    <div className="container">
+                        <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">
+                            <h2 className="fs-1 text-white fw-bold">{isEng ? 'Our Projects' : 'مشـاريعنـــا'}</h2>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            {/* projects */}
+            <section className="home-projects py-5">
+                <div className="row gx-0 gy-4">
+                    <div className="col-12">
+                        <div className="main-title text-center pt-3 w-75 mx-auto wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <h2 className="fw-bold fs-1 mb-2">{isEng ? 'Our Projects' : 'مشـاريعنـــا'}</h2>
+                            <p className="mx-auto pb-0 mb-0">{isEng ? 'Let’s see our Projects' : 'دعنــا نريك مشـاريعنـــا'}</p>
+                        </div>
+                    </div>
+                    <div className="w-85 mx-auto pb-3">
+                        <div className="cont-imgs">
+                            <div className="imgs d-flex justify-content-center align-items-start">
+                                <div className="img-group d-flex flex-column text-center jomla wow fadeInDown" data-wow-duration="1.5s" onClick={() => handelExpress()} >
+                                    <img src={fetchProjects[1].image} className="w-75 mx-auto mb-3"
+                                        alt="zari jomla" />
+                                    <h4 className="fw-bold">{isEng ? fetchProjects[1].title : fetchProjects[1].titleAr}</h4>
+                                </div>
+                                <div className="img-group d-flex flex-column text-center wow fadeInRight" data-wow-duration="1.5s" onClick={() => handelOntime()}>
+                                    <img src={fetchProjects[0].image} className="w-75 mx-auto mb-3"
+                                        alt="zari on time" />
+                                    <h4 className="fw-bold">{isEng ? fetchProjects[0].title : fetchProjects[0].titleAr}</h4>
+                                </div>
+                                <div className="img-group d-flex flex-column text-center gift wow fadeInUp" data-wow-duration="1.5s" onClick={() => handelFalcon()}>
+                                    <img src={fetchProjects[2].image} className="w-75 mx-auto mb-3"
+                                        alt="zari gifts" />
+                                    <h4 className="fw-bold">{isEng ? fetchProjects[2].title : fetchProjects[2].titleAr}</h4>
+                                </div>
+                                {/*         <div className="img-group d-flex flex-column text-center wow fadeInLeft" data-wow-duration="1.5s">
+                                        <img src={fetchProjects[3].image} className="w-75 mx-auto mb-3" alt="zari Express"/>
+                                        <h4 className="fw-bold">{isEng ? fetchProjects[3].title : fetchProjects[3].titleAr}</h4>
+                                    </div>  */}
                             </div>
                         </div>
                     </div>
-                </header>
-                
-                {/* projects */}
-                <section className="home-projects py-5">
-                    <div className="row gx-0 gy-4">
-                        <div className="col-12">
-                            <div className="main-title text-center pt-3 w-75 mx-auto wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                                <h2 className="fw-bold fs-1 mb-2">{isEng ? 'Our Projects' : 'مشـاريعنـــا'}</h2>
-                                <p className="mx-auto pb-0 mb-0">{isEng ? 'Let’s see our Projects' : 'دعنــا نريك مشـاريعنـــا'}</p>
-                            </div>
-                        </div>
-                        {/* <div className="w-85 mx-auto pb-3">
-                            <div className="cont-imgs">
-                                <div className="imgs d-flex justify-content-center align-items-start">
-                                    <div className="img-group d-flex flex-column text-center wow fadeInRight" data-wow-duration="1.5s">
-                                        <img src={fetchProjects[0].image} className="w-75 mx-auto mb-3"
-                                            alt="zari on time"/>
-                                        <h4 className="fw-bold">{isEng ? fetchProjects[0].title : fetchProjects[0].titleAr}</h4>
-                                    </div>
-                                    <div className="img-group d-flex flex-column text-center jomla wow fadeInDown" data-wow-duration="1.5s">
-                                        <img src={fetchProjects[1].image} className="w-75 mx-auto mb-3"
-                                            alt="zari jomla"/>
-                                        <h4 className="fw-bold">{isEng ? fetchProjects[1].title : fetchProjects[1].titleAr}</h4>
-                                    </div>
-                                    <div className="img-group d-flex flex-column text-center gift wow fadeInUp" data-wow-duration="1.5s">
-                                        <img src={fetchProjects[2].image} className="w-75 mx-auto mb-3"
-                                            alt="zari gifts"/>
-                                        <h4 className="fw-bold">{isEng ? fetchProjects[2].title : fetchProjects[2].titleAr}</h4>
-                                    </div>
-                                    <div className="img-group d-flex flex-column text-center wow fadeInLeft" data-wow-duration="1.5s">
-                                        <img src={fetchProjects[3].image} className="w-75 mx-auto mb-3" alt="zari Express"/>
-                                        <h4 className="fw-bold">{isEng ? fetchProjects[3].title : fetchProjects[3].titleAr}</h4>
-                                    </div>
+                    {/* {Object.keys(fetchProjects).length > 0 ? fetchProjects.map((project, i) => (
+                        <div className="show-details mt-5" key={i}>
+                            <div className="w-85 mx-auto">
+                                <div className="row d-flex justify-content-center align-items-center ">
+                                    <>
+                                        <div className="col-8 mt-5">
+                                            <div className="caption-details wow fadeInLeft" data-wow-duration="1.5s">
+                                                <h2 className="fw-bold mb-3 text-white wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? project.title : project.titleAr}</h2>
+                                                <p className="mb-3 py-1 lh-base text-white wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? project.text : project.textAr}</p>
+                                                <div className="buttons wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                                                    <a href={`#/projects/${project.id}`} className="btn btn-light py-3 px-5 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Read More' : 'اقـرأ المزيــد'}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-4">
+                                            <div className="img-details text-center wow fadeInRight" data-wow-duration="1.5s">
+                                                <img src={project.image} className="mx-auto" alt="zari Express" />
+                                            </div>
+                                        </div>
+                                    </>
                                 </div>
                             </div>
-                        </div> */}
-                        <div className="show-details mt-5">
+                        </div>
+                    )) : ''}
+ */}
+
+                    {
+                        onTime &&
+                        <div className="show-details mt-5" >
                             <div className="w-85 mx-auto">
                                 <div className="row d-flex justify-content-center align-items-center">
                                     <div className="col-8">
                                         <div className="caption-details wow fadeInLeft" data-wow-duration="1.5s">
                                             <h2 className="fw-bold mb-3 text-white wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchProjects[0].title : fetchProjects[0].titleAr}</h2>
-                                            <p className="mb-3 py-1 lh-base text-white wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"></p>
+                                            <p className="mb-3 py-1 lh-base text-white wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? fetchProjects[0].text : fetchProjects[0].textAr}</p>
                                             <div className="buttons wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
                                                 <a href={`#/projects/${fetchProjects[0].id}`} className="btn btn-light py-3 px-5 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Read More' : 'اقـرأ المزيــد'}</a>
                                             </div>
@@ -185,16 +237,65 @@ export default function Projects({fetchProjects}) {
                                     </div>
                                     <div className="col-4">
                                         <div className="img-details text-center wow fadeInRight" data-wow-duration="1.5s">
-                                            <img src={fetchProjects[0].image} className="mx-auto" alt="zari Express"/>
+                                            <img src={fetchProjects[0].image} className="mx-auto" alt="zari Express" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    }
 
-                        
-                    </div>
-                </section>
-            </>
+                    {
+                        express &&
+                        <div className="show-details mt-5" >
+                            <div className="w-85 mx-auto">
+                                <div className="row d-flex justify-content-center align-items-center">
+                                    <div className="col-8">
+                                        <div className="caption-details wow fadeInLeft" data-wow-duration="1.5s">
+                                            <h2 className="fw-bold mb-3 text-white wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchProjects[1].title : fetchProjects[1].titleAr}</h2>
+                                            <p className="mb-3 py-1 lh-base text-white wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? fetchProjects[1].text : fetchProjects[1].textAr}</p>
+                                            <div className="buttons wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                                                <a href={`#/projects/${fetchProjects[1].id}`} className="btn btn-light py-3 px-5 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Read More' : 'اقـرأ المزيــد'}</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-4">
+                                        <div className="img-details text-center wow fadeInRight" data-wow-duration="1.5s">
+                                            <img src={fetchProjects[1].image} className="mx-auto" alt="zari Express" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    {
+                        falcon &&
+                        <div className="show-details mt-5" >
+                            <div className="w-85 mx-auto">
+                                <div className="row d-flex justify-content-center align-items-center">
+                                    <div className="col-8">
+                                        <div className="caption-details wow fadeInLeft" data-wow-duration="1.5s">
+                                            <h2 className="fw-bold mb-3 text-white wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchProjects[2].title : fetchProjects[2].titleAr}</h2>
+                                            <p className="mb-3 py-1 lh-base text-white wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? fetchProjects[2].text : fetchProjects[2].textAr}</p>
+                                            <div className="buttons wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                                                <a href={`#/projects/${fetchProjects[2].id}`} className="btn btn-light py-3 px-5 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Read More' : 'اقـرأ المزيــد'}</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-4">
+                                        <div className="img-details text-center wow fadeInRight" data-wow-duration="1.5s">
+                                            <img src={fetchProjects[2].image} className="mx-auto" alt="zari Express" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                {/* </div> */}
+            </section>
+        </>
     )
 }

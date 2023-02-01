@@ -36,6 +36,7 @@ export default function Service({baseURL, showNameEn, showNameAr, showTypeEn, sh
     const [fetchServiceData, setFetchServiceData] = useState(null);
 
     useEffect(() => {
+        console.log(id);
         axios.get(`${baseURL}service/${id}`)
         .then($('.dropdown.services-toggle .dropdown-menu').addClass('d-none'))
         .then((res) => {
