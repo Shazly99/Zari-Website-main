@@ -28,8 +28,11 @@ import Vector4 from "../Update/Vector 4.png";
 import Vector5 from "../Update/Vector 5.png";
 import express from "../Update/express.png";
 import falcon from "../Update/falcon.png";
+import falconLogo from "../Update/falcon splash.png";
+import falconBanner from "../Update/falcon banner.png";
 
 import mobile from "../Update/mobileApp.png";
+import test from "../Update/1 COLOR BLUE/Artboard 14 copy 11.png";
 
 
 
@@ -61,5 +64,8 @@ export default {
     Vector5,
     express,
     falcon,
-    mobile
+    mobile,
+    test,
+    falconBanner,
+    falconLogo
 } 

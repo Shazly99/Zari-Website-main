@@ -286,7 +286,7 @@ export default function Projects({ fetchProjects }) {
                                     </div>
                                     <div className="col-4">
                                         <div className="img-details text-center wow fadeInRight" data-wow-duration="1.5s">
-                                            <img src={fetchProjects[2].image} className="mx-auto" alt="zari Express" />
+                                            <img src={img.falconLogo} className="mx-auto" alt="zari Express" />
                                         </div>
                                     </div>
                                 </div>

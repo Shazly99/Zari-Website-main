@@ -142,7 +142,7 @@ export default function Service({ baseURL, showNameEn, showNameAr, showTypeEn, s
                                                 <div key={index} className='mt-5 col-md-6'>
                                                     <div className="text-bg        wow fadeInRight"data-wow-duration="1.5s"  >
                                                         <div className="icon " >
-                                                            <img src={img.icon4} alt="" srcset="" />
+                                                            <img src={img.test} alt="" srcset="" />
                                                         </div>
                                                         <div className="content">
                                                             <h4 style={{ fontSize: '24px' }} className='text-dark h2'>{isEng ? item.headerEn : item.headerAr}</h4>
