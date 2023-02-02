@@ -7,6 +7,7 @@ import { langContext } from '../context/store';
 import $ from 'jquery';
 import vector from '../images/home/Vector 5 (1).png';
 import imgAbout from '../images/home/Group 174.png';
+import img from '../images/Update/img';
 // import { Link } from 'react-router-dom';
 // import AlfaRomeo2 from '../images/home/Alfa Romeo 2.png';
 // import Texmar2 from '../images/home/Texmar 2.png';
@@ -16,7 +17,6 @@ import imgAbout from '../images/home/Group 174.png';
 // import imgAboutLarge from '../images/home/Ellipse 31.png';
 // import imgAboutSmall1 from '../images/home/Ellipse 32.png';
 // import imgAboutSmall2 from '../images/home/Ellipse 33.png';
-
 
 export default function About({fetchAbout}) {
 
@@ -112,9 +112,9 @@ export default function About({fetchAbout}) {
 
     return (
         <>
-
+{/* style={{backgroundImage:`url(${img.img4})`}} */}
             {/* header */}
-            <header id="about" className="about-page main-img-bg">
+            <header id="about" className="about-page main-img-bg" >
                 <div className="total-header layer-img d-flex justify-content-center align-items-center">
                     <div className="container">
                         <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">

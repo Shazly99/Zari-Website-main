@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { langContext } from '../context/store';
 import $ from 'jquery';
+import img from '../images/Update/img';
 // import websiteDesign from '../images/home/website design.png';
 // import mobileApp from '../images/home/mobile app.png';
 // import Marketing from '../images/services/Marketing-pana.png';
@@ -93,8 +94,8 @@ export default function Services({ fetchServices }) {
     return (
         <>
 
-            {/* header */}
-            <header id="services" className="services-page main-img-bg">
+            {/* header */}{/* style={{backgroundImage:`url(${img.img4})`}} */}
+            <header id="services" className="services-page main-img-bg" >
                 <div className="total-header layer-img d-flex justify-content-center align-items-center">
                     <div className="container">
                         <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">

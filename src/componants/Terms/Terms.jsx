@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { langContext } from '../context/store';
 import $ from 'jquery';
 import { Fragment } from 'react';
+import img from '../images/Update/img';
 
 
 export default function Terms({fetchTerms}) {
@@ -79,8 +80,8 @@ export default function Terms({fetchTerms}) {
     return (
         <>
 
-            {/* header */}
-            <header id="terms-of-service" className="terms-of-service-page main-img-bg">
+            {/* header */}{/* style={{backgroundImage:`url(${img.img4})`}} */}
+            <header id="terms-of-service" className="terms-of-service-page main-img-bg" >
                 <div className="total-header layer-img d-flex justify-content-center align-items-center">
                     <div className="container">
                         <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">

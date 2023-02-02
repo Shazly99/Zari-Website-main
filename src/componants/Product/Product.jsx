@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 import Ecommerse from '../../Update/Ecommerse/Ecommerse';
+import img from '../images/Update/img';
 // import productImg from '../images/products/Group 170.png';
 
 
@@ -76,8 +77,8 @@ export default function Product({ baseURL, showNameEn, showNameAr, showTypeEn, s
                 </>
                 :
                 Object.keys(fetchProductData).length > 0 ? <>
-                    {/* header */}
-                    <header id="productSingle" className="productSingle-page main-img-bg" dir={isEng ? 'ltr' : 'rtl'}>
+                    {/* header */}{/* style={{backgroundImage:`url(${img.img4})`}} */}
+                    <header id="productSingle" className="productSingle-page main-img-bg" dir={isEng ? 'ltr' : 'rtl'} >
                         <div className="total-header layer-img d-flex justify-content-center align-items-center">
                             <div className="container">
                                 <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">

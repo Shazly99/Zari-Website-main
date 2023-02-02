@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { langContext } from '../context/store';
 import $ from 'jquery';
 import { Fragment } from 'react';
+import img from '../images/Update/img';
 
 
 export default function Privacy({fetchPolicy}) {
@@ -78,8 +79,8 @@ export default function Privacy({fetchPolicy}) {
     return (
         <>
 
-            {/* header */}
-            <header id="privacy-policy" className="privacy-policy-page main-img-bg">
+            {/* header */}{/* style={{backgroundImage:`url(${img.img4})`}} */}
+            <header id="privacy-policy" className="privacy-policy-page main-img-bg" style={{backgroundImage:`url(${img.img4})`}}>
                 <div className="total-header layer-img d-flex justify-content-center align-items-center">
                     <div className="container">
                         <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">

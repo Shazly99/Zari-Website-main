@@ -5,6 +5,7 @@ import { langContext } from '../context/store';
 import $ from 'jquery';
 import { Link } from 'react-router-dom';
 import { Fragment } from 'react';
+import img from '../images/Update/img';
 // import Questions from '../images/faq/Questions-bro 1.png';
 
 
@@ -82,8 +83,8 @@ export default function Faq({fetchFaqs}) {
     return (
         <>
 
-            {/* header */}
-            <header id="faq" className="faq-page main-img-bg">
+            {/* header */}{/* style={{backgroundImage:`url(${img.img4})`}} */}
+            <header id="faq" className="faq-page main-img-bg" >
                 <div className="total-header layer-img d-flex justify-content-center align-items-center">
                     <div className="container">
                         <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">

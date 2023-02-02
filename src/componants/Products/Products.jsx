@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { langContext } from '../context/store';
 import $ from 'jquery';
+import img from '../images/Update/img';
 // import eCommerce from '../images/products/Group 170.png';
 // import loyaltySystem from '../images/products/Group 163.png';
 // import posSystem from '../images/products/Group 162.png';
@@ -92,8 +93,8 @@ export default function Products({fetchProducts}) {
     return (
         <>
 
-            {/* header */}
-            <header id="products" className="products-page main-img-bg">
+            {/* header */}{/* style={{backgroundImage:`url(${img.img4})`}} */}
+            <header id="products" className="products-page main-img-bg" >
                 <div className="total-header layer-img d-flex justify-content-center align-items-center">
                     <div className="container">
                         <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">

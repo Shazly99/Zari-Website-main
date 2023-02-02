@@ -51,6 +51,7 @@ import imgAbout from '../images/home/Group 174.png';
 export default function Home({ fetchHome, fetchProducts }) {
 
   useEffect(() => {
+    console.log(fetchHome);
     $('html , body').animate({ scrollTop: 0 }, 200);
   }, []);
 

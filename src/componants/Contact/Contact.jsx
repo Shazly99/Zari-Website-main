@@ -5,6 +5,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { langContext } from '../context/store';
 import $ from 'jquery';
+import img from '../images/Update/img';
 
 
 export default function Contact({baseURL}) {
@@ -77,8 +78,8 @@ export default function Contact({baseURL}) {
 
     return (
             <>
-                {/* header */}
-                <header id="contact" className="contact-page main-img-bg">
+                {/* header */}{/* style={{backgroundImage:`url(${img.img4})`}} */}
+                <header id="contact" className="contact-page main-img-bg" >
                     <div className="total-header layer-img d-flex justify-content-center align-items-center">
                         <div className="container">
                             <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">
@@ -98,7 +99,7 @@ export default function Contact({baseURL}) {
                                     <p className="mx-auto pb-0 mb-0 text-black">{isEng ? 'Your email address will not be published.' : 'لن يتم نشر عنوان بريدك الإلكتروني.'}</p>
                                 </div>
                             </div>
-                            <div className="col-lg-7">
+                            {/* <div className="col-lg-7">
                                 <form encType="multipart/form-data" onSubmit={registerContactForm} className="p-5 form">
 
                                     <label className="mb-1 wow fadeInLeft" data-wow-duration="1.5s" htmlFor="Name">{isEng ? 'Full Name' : 'الإســــم كامــل'}</label>
@@ -123,7 +124,7 @@ export default function Contact({baseURL}) {
                                     </div>
                                     
                                 </form>
-                            </div>
+                            </div> */}
                             <div className="col-lg-5">
                                 <div className="p-4 form text-center mb-5 wow fadeInDown" data-wow-duration="1.5s">
                                     <h4 className="main-color fw-bold mb-4">{isEng ? 'Our Addresses' : 'عناوينـــا'}</h4>

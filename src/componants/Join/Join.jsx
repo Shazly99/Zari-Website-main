@@ -5,6 +5,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { langContext } from '../context/store';
 import $ from 'jquery';
+import img from '../images/Update/img';
 
 
 export default function Project({baseURL}) {
@@ -93,8 +94,8 @@ export default function Project({baseURL}) {
     return (
             <>
 
-                {/* header */}
-                <header id="join" className="join-page main-img-bg">
+                {/* header */}{/* style={{backgroundImage:`url(${img.img4})`}} */}
+                <header id="join" className="join-page main-img-bg" >
                     <div className="total-header layer-img d-flex justify-content-center align-items-center">
                         <div className="container">
                             <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">

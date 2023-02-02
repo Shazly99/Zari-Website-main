@@ -7,8 +7,8 @@ const Ecommerse = () => {
 
     return (
         <div className='app__ecommerse'>
-            {/* header */}
-            <header id="productSingle" className="productSingle-page main-img-bg" dir={isEng ? 'ltr' : 'rtl'}>
+            {/* header */}{/* style={{backgroundImage:`url(${img.img4})`}} */}
+            <header id="productSingle" className="productSingle-page main-img-bg" dir={isEng ? 'ltr' : 'rtl'} >
                 <div className="total-header layer-img d-flex justify-content-center align-items-center">
                     <div className="container">
                         <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">

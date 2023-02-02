@@ -9,6 +9,7 @@ import { langContext } from '../context/store';
 // import zariGifts from '../images/home/iPhone 12 Pro (3).png';
 // import zariExpress from '../images/home/Group 32.png';
 import { useState } from 'react';
+import img from '../images/Update/img';
 
 
 export default function Projects({ fetchProjects }) {
@@ -150,8 +151,8 @@ export default function Projects({ fetchProjects }) {
     return (
         <>
 
-            {/* header */}
-            <header id="projects" className="projects-page main-img-bg">
+            {/* header */}{/* style={{backgroundImage:`url(${img.img4})`}} */}
+            <header id="projects" className="projects-page main-img-bg" >
                 <div className="total-header layer-img d-flex justify-content-center align-items-center">
                     <div className="container">
                         <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">

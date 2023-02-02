@@ -29,6 +29,8 @@ import Vector5 from "../Update/Vector 5.png";
 import express from "../Update/express.png";
 import falcon from "../Update/falcon.png";
 
+import mobile from "../Update/mobileApp.png";
+
 
 
 
@@ -58,5 +60,6 @@ export default {
     Vector4,
     Vector5,
     express,
-    falcon
+    falcon,
+    mobile
 } 

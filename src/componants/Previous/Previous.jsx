@@ -3,6 +3,7 @@ import WOW from 'wowjs';
 import { useEffect } from 'react';
 import { langContext } from '../context/store';
 import $ from 'jquery';
+import img from '../images/Update/img';
 // import previousImg from '../images/previous/Vector 8.png';
 // import tweesel2 from '../images/home/Tawseel 2.png';
 // import tweesel3 from '../images/home/Tawseel 3.png';
@@ -110,8 +111,8 @@ export default function Previous({fetchWorks}) {
     return (
         <>
 
-            {/* header */}
-            <header id="previous" className="previous-page main-img-bg">
+            {/* header */}{/* style={{backgroundImage:`url(${img.img4})`}} */}
+            <header id="previous" className="previous-page main-img-bg" >
                 <div className="total-header layer-img d-flex justify-content-center align-items-center">
                     <div className="container">
                         <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">
