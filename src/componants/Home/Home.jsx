@@ -60,35 +60,35 @@ export default function Home({ fetchHome, fetchProducts }) {
 
   const productsArray = [];
 
-      if(fetchProducts[0]){
-        fetchProducts[0].map((productItem) => {
-            productsArray.push(productItem);
-        });
-      }
-  
-      if(fetchProducts[1]){
-          fetchProducts[1].map((productItem) => {
-              productsArray.push(productItem);
-        });
-      }
-  
-      if(fetchProducts[2]){
-          fetchProducts[2].map((productItem) => {
-              productsArray.push(productItem);
-          });
-      }
-  
-      if(fetchProducts[3]){
-          fetchProducts[3].map((productItem) => {
-              productsArray.push(productItem);
-          });
-      }
-  
-      if(fetchProducts[4]){
-        fetchProducts[4].map((productItem) => {
-            productsArray.push(productItem);
-        });
-      }
+  if (fetchProducts[0]) {
+    fetchProducts[0].map((productItem) => {
+      productsArray.push(productItem);
+    });
+  }
+
+  if (fetchProducts[1]) {
+    fetchProducts[1].map((productItem) => {
+      productsArray.push(productItem);
+    });
+  }
+
+  if (fetchProducts[2]) {
+    fetchProducts[2].map((productItem) => {
+      productsArray.push(productItem);
+    });
+  }
+
+  if (fetchProducts[3]) {
+    fetchProducts[3].map((productItem) => {
+      productsArray.push(productItem);
+    });
+  }
+
+  if (fetchProducts[4]) {
+    fetchProducts[4].map((productItem) => {
+      productsArray.push(productItem);
+    });
+  }
 
 
   // const clients = {
@@ -229,17 +229,17 @@ export default function Home({ fetchHome, fetchProducts }) {
     // }
 
     if ($('.caption-details h2').text() === fetchHome.projects.date[0].title || $('.caption-details h2').text() === fetchHome.projects.date[0].titleAr) {
-      if(isEng === true) {
-          $('.caption-details p').text(fetchHome.projects.date[0].text);
+      if (isEng === true) {
+        $('.caption-details p').text(fetchHome.projects.date[0].text);
       }
-      else{
-          $('.caption-details p').text(fetchHome.projects.date[0].textAr);
+      else {
+        $('.caption-details p').text(fetchHome.projects.date[0].textAr);
       }
       $('.show-details .buttons a').attr('href', '#/projects/1');
     }
-  
+
   }, [])
-  
+
 
   function changeDir() {
     let width = $('body').width();
@@ -263,58 +263,58 @@ export default function Home({ fetchHome, fetchProducts }) {
       $('.service-1 h3').css('animationName', 'changeColorRight');
       $('.service-2 h3').css('animationName', 'changeColorRight2');
 
-        $('.bg-black .row').attr('dir', 'rtl');
-        $('.bg-black .row .caption-details-products').addClass('text-end');
-        $('.bg-black .row .caption-details-products').removeClass('text-start');
-        if(productsArray[0]) {
-          $('.bg-black .row .caption-details-products h2.one').text(productsArray[0].titleAr);
-          $('.bg-black .row .caption-details-products p.one').text(productsArray[0].textAr);
-        }
-        if(productsArray[1]) {
-          $('.bg-black .row .caption-details-products h2.two').text(productsArray[1].titleAr);
-          $('.bg-black .row .caption-details-products p.two').text(productsArray[1].textAr);
-        }
-        if(productsArray[2]) {
-          $('.bg-black .row .caption-details-products h2.three').text(productsArray[2].titleAr);
-          $('.bg-black .row .caption-details-products p.three').text(productsArray[2].textAr);
-        }
-        if(productsArray[3]) {
-          $('.bg-black .row .caption-details-products h2.four').text(productsArray[3].titleAr);
-          $('.bg-black .row .caption-details-products p.four').text(productsArray[3].textAr);
-        }
-        if(productsArray[4]) {
-          $('.bg-black .row .caption-details-products h2.five').text(productsArray[4].titleAr);
-          $('.bg-black .row .caption-details-products p.five').text(productsArray[4].textAr);
-        }
-        if(productsArray[5]) {
-          $('.bg-black .row .caption-details-products h2.six').text(productsArray[5].titleAr);
-          $('.bg-black .row .caption-details-products p.six').text(productsArray[5].textAr);
-        }
-        if(productsArray[6]) {
-          $('.bg-black .row .caption-details-products h2.seven').text(productsArray[6].titleAr);
-          $('.bg-black .row .caption-details-products p.seven').text(productsArray[6].textAr);
-        }
-        if(productsArray[7]) {
-          $('.bg-black .row .caption-details-products h2.eight').text(productsArray[7].titleAr);
-          $('.bg-black .row .caption-details-products p.eight').text(productsArray[7].textAr);
-        }
-        if(productsArray[8]) {
-          $('.bg-black .row .caption-details-products h2.nine').text(productsArray[8].titleAr);
-          $('.bg-black .row .caption-details-products p.nine').text(productsArray[8].textAr);
-        }
-        if(productsArray[9]) {
-          $('.bg-black .row .caption-details-products h2.ten').text(productsArray[9].titleAr);
-          $('.bg-black .row .caption-details-products p.ten').text(productsArray[9].textAr);
-        }
-        if(productsArray[10]) {
-          $('.bg-black .row .caption-details-products h2.eleven').text(productsArray[10].titleAr);
-          $('.bg-black .row .caption-details-products p.eleven').text(productsArray[10].textAr);
-        }
-        if(productsArray[11]) {
-          $('.bg-black .row .caption-details-products h2.twelve').text(productsArray[11].titleAr);
-          $('.bg-black .row .caption-details-products p.twelve').text(productsArray[11].textAr);
-        }
-        $('.bg-black .row .caption-details-products a').text('اقـرأ المزيــد');
+      $('.bg-black .row').attr('dir', 'rtl');
+      $('.bg-black .row .caption-details-products').addClass('text-end');
+      $('.bg-black .row .caption-details-products').removeClass('text-start');
+      if (productsArray[0]) {
+        $('.bg-black .row .caption-details-products h2.one').text(productsArray[0].titleAr);
+        $('.bg-black .row .caption-details-products p.one').text(productsArray[0].textAr);
+      }
+      if (productsArray[1]) {
+        $('.bg-black .row .caption-details-products h2.two').text(productsArray[1].titleAr);
+        $('.bg-black .row .caption-details-products p.two').text(productsArray[1].textAr);
+      }
+      if (productsArray[2]) {
+        $('.bg-black .row .caption-details-products h2.three').text(productsArray[2].titleAr);
+        $('.bg-black .row .caption-details-products p.three').text(productsArray[2].textAr);
+      }
+      if (productsArray[3]) {
+        $('.bg-black .row .caption-details-products h2.four').text(productsArray[3].titleAr);
+        $('.bg-black .row .caption-details-products p.four').text(productsArray[3].textAr);
+      }
+      if (productsArray[4]) {
+        $('.bg-black .row .caption-details-products h2.five').text(productsArray[4].titleAr);
+        $('.bg-black .row .caption-details-products p.five').text(productsArray[4].textAr);
+      }
+      if (productsArray[5]) {
+        $('.bg-black .row .caption-details-products h2.six').text(productsArray[5].titleAr);
+        $('.bg-black .row .caption-details-products p.six').text(productsArray[5].textAr);
+      }
+      if (productsArray[6]) {
+        $('.bg-black .row .caption-details-products h2.seven').text(productsArray[6].titleAr);
+        $('.bg-black .row .caption-details-products p.seven').text(productsArray[6].textAr);
+      }
+      if (productsArray[7]) {
+        $('.bg-black .row .caption-details-products h2.eight').text(productsArray[7].titleAr);
+        $('.bg-black .row .caption-details-products p.eight').text(productsArray[7].textAr);
+      }
+      if (productsArray[8]) {
+        $('.bg-black .row .caption-details-products h2.nine').text(productsArray[8].titleAr);
+        $('.bg-black .row .caption-details-products p.nine').text(productsArray[8].textAr);
+      }
+      if (productsArray[9]) {
+        $('.bg-black .row .caption-details-products h2.ten').text(productsArray[9].titleAr);
+        $('.bg-black .row .caption-details-products p.ten').text(productsArray[9].textAr);
+      }
+      if (productsArray[10]) {
+        $('.bg-black .row .caption-details-products h2.eleven').text(productsArray[10].titleAr);
+        $('.bg-black .row .caption-details-products p.eleven').text(productsArray[10].textAr);
+      }
+      if (productsArray[11]) {
+        $('.bg-black .row .caption-details-products h2.twelve').text(productsArray[11].titleAr);
+        $('.bg-black .row .caption-details-products p.twelve').text(productsArray[11].textAr);
+      }
+      $('.bg-black .row .caption-details-products a').text('اقـرأ المزيــد');
 
       $('.home-projects .imgs').attr('dir', 'rtl');
       $('.show-details .caption-details').attr('dir', 'rtl');
@@ -324,7 +324,7 @@ export default function Home({ fetchHome, fetchProducts }) {
       $('.carousel-item .one').addClass('fa-quote-right');
       $('.carousel-item .two').removeClass('fa-quote-right');
       $('.carousel-item .two').addClass('fa-quote-left');
-      
+
       $('.home-share').attr('dir', 'rtl');
       $('.part .caption-part').css({ 'marginLeft': 'auto', 'marginRight': '8px' });
       $('.caption-part p').css({ 'marginLeft': 'auto', 'marginRight': '12px' });
@@ -368,58 +368,58 @@ export default function Home({ fetchHome, fetchProducts }) {
       $('.service-1 h3').css('animationName', 'changeColor');
       $('.service-2 h3').css('animationName', 'changeColor2');
 
-        $('.bg-black .row').attr('dir', 'ltr');
-        $('.bg-black .row .caption-details-products').addClass('text-start');
-        $('.bg-black .row .caption-details-products').removeClass('text-end');
-        if(productsArray[0]) {
-          $('.bg-black .row .caption-details-products h2.one').text(productsArray[0].title);
-          $('.bg-black .row .caption-details-products p.one').text(productsArray[0].text);
-        }
-        if(productsArray[1]) {
-          $('.bg-black .row .caption-details-products h2.two').text(productsArray[1].title);
-          $('.bg-black .row .caption-details-products p.two').text(productsArray[1].text);
-        }
-        if(productsArray[2]) {
-          $('.bg-black .row .caption-details-products h2.three').text(productsArray[2].title);
-          $('.bg-black .row .caption-details-products p.three').text(productsArray[2].text);
-        }
-        if(productsArray[3]) {
-          $('.bg-black .row .caption-details-products h2.four').text(productsArray[3].title);
-          $('.bg-black .row .caption-details-products p.four').text(productsArray[3].text);
-        }
-        if(productsArray[4]) {
-          $('.bg-black .row .caption-details-products h2.five').text(productsArray[4].title);
-          $('.bg-black .row .caption-details-products p.five').text(productsArray[4].text);
-        }
-        if(productsArray[5]) {
-          $('.bg-black .row .caption-details-products h2.six').text(productsArray[5].title);
-          $('.bg-black .row .caption-details-products p.six').text(productsArray[5].text);
-        }
-        if(productsArray[6]) {
-          $('.bg-black .row .caption-details-products h2.seven').text(productsArray[6].title);
-          $('.bg-black .row .caption-details-products p.seven').text(productsArray[6].text);
-        }
-        if(productsArray[7]) {
-          $('.bg-black .row .caption-details-products h2.eight').text(productsArray[7].title);
-          $('.bg-black .row .caption-details-products p.eight').text(productsArray[7].text);
-        }
-        if(productsArray[8]) {
-          $('.bg-black .row .caption-details-products h2.nine').text(productsArray[8].title);
-          $('.bg-black .row .caption-details-products p.nine').text(productsArray[8].text);
-        }
-        if(productsArray[9]) {
-          $('.bg-black .row .caption-details-products h2.ten').text(productsArray[9].title);
-          $('.bg-black .row .caption-details-products p.ten').text(productsArray[9].text);
-        }
-        if(productsArray[10]) {
-          $('.bg-black .row .caption-details-products h2.eleven').text(productsArray[10].title);
-          $('.bg-black .row .caption-details-products p.eleven').text(productsArray[10].text);
-        }
-        if(productsArray[11]) {
-          $('.bg-black .row .caption-details-products h2.twelve').text(productsArray[11].title);
-          $('.bg-black .row .caption-details-products p.twelve').text(productsArray[11].text);
-        }
-        $('.bg-black .row .caption-details-products a').text('Read More');
+      $('.bg-black .row').attr('dir', 'ltr');
+      $('.bg-black .row .caption-details-products').addClass('text-start');
+      $('.bg-black .row .caption-details-products').removeClass('text-end');
+      if (productsArray[0]) {
+        $('.bg-black .row .caption-details-products h2.one').text(productsArray[0].title);
+        $('.bg-black .row .caption-details-products p.one').text(productsArray[0].text);
+      }
+      if (productsArray[1]) {
+        $('.bg-black .row .caption-details-products h2.two').text(productsArray[1].title);
+        $('.bg-black .row .caption-details-products p.two').text(productsArray[1].text);
+      }
+      if (productsArray[2]) {
+        $('.bg-black .row .caption-details-products h2.three').text(productsArray[2].title);
+        $('.bg-black .row .caption-details-products p.three').text(productsArray[2].text);
+      }
+      if (productsArray[3]) {
+        $('.bg-black .row .caption-details-products h2.four').text(productsArray[3].title);
+        $('.bg-black .row .caption-details-products p.four').text(productsArray[3].text);
+      }
+      if (productsArray[4]) {
+        $('.bg-black .row .caption-details-products h2.five').text(productsArray[4].title);
+        $('.bg-black .row .caption-details-products p.five').text(productsArray[4].text);
+      }
+      if (productsArray[5]) {
+        $('.bg-black .row .caption-details-products h2.six').text(productsArray[5].title);
+        $('.bg-black .row .caption-details-products p.six').text(productsArray[5].text);
+      }
+      if (productsArray[6]) {
+        $('.bg-black .row .caption-details-products h2.seven').text(productsArray[6].title);
+        $('.bg-black .row .caption-details-products p.seven').text(productsArray[6].text);
+      }
+      if (productsArray[7]) {
+        $('.bg-black .row .caption-details-products h2.eight').text(productsArray[7].title);
+        $('.bg-black .row .caption-details-products p.eight').text(productsArray[7].text);
+      }
+      if (productsArray[8]) {
+        $('.bg-black .row .caption-details-products h2.nine').text(productsArray[8].title);
+        $('.bg-black .row .caption-details-products p.nine').text(productsArray[8].text);
+      }
+      if (productsArray[9]) {
+        $('.bg-black .row .caption-details-products h2.ten').text(productsArray[9].title);
+        $('.bg-black .row .caption-details-products p.ten').text(productsArray[9].text);
+      }
+      if (productsArray[10]) {
+        $('.bg-black .row .caption-details-products h2.eleven').text(productsArray[10].title);
+        $('.bg-black .row .caption-details-products p.eleven').text(productsArray[10].text);
+      }
+      if (productsArray[11]) {
+        $('.bg-black .row .caption-details-products h2.twelve').text(productsArray[11].title);
+        $('.bg-black .row .caption-details-products p.twelve').text(productsArray[11].text);
+      }
+      $('.bg-black .row .caption-details-products a').text('Read More');
 
       $('.home-projects .imgs').attr('dir', 'ltr');
       $('.show-details .caption-details').attr('dir', 'ltr');
@@ -472,9 +472,9 @@ export default function Home({ fetchHome, fetchProducts }) {
     }
   }
 
-  $(window).on('resize', function() {
-      widthBody();
-      changeDir();
+  $(window).on('resize', function () {
+    widthBody();
+    changeDir();
   });
 
 
@@ -487,59 +487,59 @@ export default function Home({ fetchHome, fetchProducts }) {
   }, [isEng]);
 
 
-//   useEffect(() => {
-//     $('.imgs .img-group').click(function () {
-//         let clickSrc = $(this).children('img').attr('src');
-//         let clickTitle = $(this).children('h4').text();
-//         $('.img-details img').attr('src', clickSrc);
-//         $('.caption-details h2').text(clickTitle);
-//         changeDetails();
-//     })
+  //   useEffect(() => {
+  //     $('.imgs .img-group').click(function () {
+  //         let clickSrc = $(this).children('img').attr('src');
+  //         let clickTitle = $(this).children('h4').text();
+  //         $('.img-details img').attr('src', clickSrc);
+  //         $('.caption-details h2').text(clickTitle);
+  //         changeDetails();
+  //     })
 
-//     const changeDetails = () => {
-//         if ($('.caption-details h2').text() === fetchHome.projects.date[0].title || $('.caption-details h2').text() === fetchHome.projects.date[0].titleAr) {
-//             if(isEng === true) {
-//                 $('.caption-details p').text(fetchHome.projects.date[0].text);
-//             }
-//             else{
-//               $('.caption-details p').text(fetchHome.projects.date[0].textAr);
-//             }
-//             $('.show-details .buttons a').attr('href', '#/projects/1');
-//         }
-    
-//         else if ($('.caption-details h2').text() === fetchHome.projects.date[1].title || $('.caption-details h2').text() === fetchHome.projects.date[1].titleAr) {
-//           if(isEng === true) {
-//             $('.caption-details p').text(fetchHome.projects.date[1].text);
-//           }
-//           else{
-//             $('.caption-details p').text(fetchHome.projects.date[1].textAr);
-//           }
-//           $('.show-details .buttons a').attr('href', '#/projects/2');
-//         }
-    
-//         else if ($('.caption-details h2').text() === fetchHome.projects.date[2].title || $('.caption-details h2').text() === fetchHome.projects.date[2].titleAr) {
-//           if(isEng === true) {
-//             $('.caption-details p').text(fetchHome.projects.date[2].text);
-//           }
-//           else{
-//             $('.caption-details p').text(fetchHome.projects.date[2].textAr);
-//           }
-//           $('.show-details .buttons a').attr('href', '#/projects/3');
-//         }
-    
-//         else if ($('.caption-details h2').text() === fetchHome.projects.date[3].title || $('.caption-details h2').text() === fetchHome.projects.date[3].titleAr) {
-//           if(isEng === true) {
-//             $('.caption-details p').text(fetchHome.projects.date[3].text);
-//           }
-//           else{
-//             $('.caption-details p').text(fetchHome.projects.date[3].textAr);
-//           }
-//           $('.show-details .buttons a').attr('href', '#/projects/4');
-//         }
-//     }
-    
-// }, [isEng]);
-  
+  //     const changeDetails = () => {
+  //         if ($('.caption-details h2').text() === fetchHome.projects.date[0].title || $('.caption-details h2').text() === fetchHome.projects.date[0].titleAr) {
+  //             if(isEng === true) {
+  //                 $('.caption-details p').text(fetchHome.projects.date[0].text);
+  //             }
+  //             else{
+  //               $('.caption-details p').text(fetchHome.projects.date[0].textAr);
+  //             }
+  //             $('.show-details .buttons a').attr('href', '#/projects/1');
+  //         }
+
+  //         else if ($('.caption-details h2').text() === fetchHome.projects.date[1].title || $('.caption-details h2').text() === fetchHome.projects.date[1].titleAr) {
+  //           if(isEng === true) {
+  //             $('.caption-details p').text(fetchHome.projects.date[1].text);
+  //           }
+  //           else{
+  //             $('.caption-details p').text(fetchHome.projects.date[1].textAr);
+  //           }
+  //           $('.show-details .buttons a').attr('href', '#/projects/2');
+  //         }
+
+  //         else if ($('.caption-details h2').text() === fetchHome.projects.date[2].title || $('.caption-details h2').text() === fetchHome.projects.date[2].titleAr) {
+  //           if(isEng === true) {
+  //             $('.caption-details p').text(fetchHome.projects.date[2].text);
+  //           }
+  //           else{
+  //             $('.caption-details p').text(fetchHome.projects.date[2].textAr);
+  //           }
+  //           $('.show-details .buttons a').attr('href', '#/projects/3');
+  //         }
+
+  //         else if ($('.caption-details h2').text() === fetchHome.projects.date[3].title || $('.caption-details h2').text() === fetchHome.projects.date[3].titleAr) {
+  //           if(isEng === true) {
+  //             $('.caption-details p').text(fetchHome.projects.date[3].text);
+  //           }
+  //           else{
+  //             $('.caption-details p').text(fetchHome.projects.date[3].textAr);
+  //           }
+  //           $('.show-details .buttons a').attr('href', '#/projects/4');
+  //         }
+  //     }
+
+  // }, [isEng]);
+
 
 
   return (
@@ -614,11 +614,11 @@ export default function Home({ fetchHome, fetchProducts }) {
             <div className="col-lg-7 wow fadeInLeft" data-wow-duration="1.5s">
               <div className="service service-1 ps-4 mb-5">
                 <h3 className="fw-bold mb-4 second-color">{isEng ? fetchHome.services.date[0].title : fetchHome.services.date[0].titleAr}</h3>
-                <p>{isEng ? fetchHome.services.date[0].text.split(" ").splice(0,30).join(" ")+'...'  : fetchHome.services.date[0].textAr.split(" ").splice(0,30).join(" ")+'...'}</p>
+                <p>{isEng ? fetchHome.services.date[0].text.split(" ").splice(0, 30).join(" ") + '...' : fetchHome.services.date[0].textAr.split(" ").splice(0, 30).join(" ") + '...'}</p>
               </div>
               <div className="service service-2 ps-4">
                 <h3 className="fw-bold mb-4 second-color">{isEng ? fetchHome.services.date[1].title : fetchHome.services.date[1].titleAr}</h3>
-                <p>{isEng ? fetchHome.services.date[1].text.split(" ").splice(0,30).join(" ")+'...' : fetchHome.services.date[1].textAr.split(" ").splice(0,30).join(" ")+'...'}</p>
+                <p>{isEng ? fetchHome.services.date[1].text.split(" ").splice(0, 30).join(" ") + '...' : fetchHome.services.date[1].textAr.split(" ").splice(0, 30).join(" ") + '...'}</p>
               </div>
             </div>
             <div className="col-lg-5">
@@ -641,200 +641,200 @@ export default function Home({ fetchHome, fetchProducts }) {
       </div>
       <section className="bg-black py-4">
         <div className="container">
-            <OwlCarousel className="slider-items owl-carousel wow fadeInRight" data-wow-duration="1.5s" {...products}>
-                {productsArray[0] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
-                  <div className="col-lg-6">
-                    <div className="caption-details-products">
-                      <h2 className="fw-bold mb-4 text-white one"></h2>
-                      <p className="mb-4 py-1 lh-base text-white one"></p>
-                      <div className="buttons">
-                        <Link to={`products/${productsArray[0].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
-                      </div>
-                    </div>
+          <OwlCarousel className="slider-items owl-carousel wow fadeInRight" data-wow-duration="1.5s" {...products}>
+            {productsArray[0] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
+              <div className="col-lg-6">
+                <div className="caption-details-products">
+                  <h2 className="fw-bold mb-4 text-white one"></h2>
+                  <p className="mb-4 py-1 lh-base text-white one"></p>
+                  <div className="buttons">
+                    <Link to={`products/${productsArray[0].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
-                  <div className="col-lg-6">
-                    <div className="text-center">
-                      <img src={productsArray[0].image} className="w-75 mx-auto" alt={productsArray[0].title} />
-                    </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="text-center">
+                  <img src={productsArray[0].image} className="w-75 mx-auto" alt={productsArray[0].title} />
+                </div>
+              </div>
+            </div> : ''}
+            {productsArray[1] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
+              <div className="col-lg-6">
+                <div className="caption-details-products">
+                  <h2 className="fw-bold mb-4 text-white two"></h2>
+                  <p className="mb-4 py-1 lh-base text-white two"></p>
+                  <div className="buttons">
+                    <Link to={`products/${productsArray[1].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
-                </div> : ''}
-                {productsArray[1] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
-                  <div className="col-lg-6">
-                    <div className="caption-details-products">
-                      <h2 className="fw-bold mb-4 text-white two"></h2>
-                      <p className="mb-4 py-1 lh-base text-white two"></p>
-                      <div className="buttons">
-                        <Link to={`products/${productsArray[1].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="text-center">
+                  <img src={productsArray[1].image} className="w-75 mx-auto" alt={productsArray[1].title} />
+                </div>
+              </div>
+            </div> : ''}
+            {productsArray[2] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
+              <div className="col-lg-6">
+                <div className="caption-details-products">
+                  <h2 className="fw-bold mb-4 text-white three"></h2>
+                  <p className="mb-4 py-1 lh-base text-white three"></p>
+                  <div className="buttons">
+                    <Link to={`products/${productsArray[2].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
-                  <div className="col-lg-6">
-                    <div className="text-center">
-                      <img src={productsArray[1].image} className="w-75 mx-auto" alt={productsArray[1].title} />
-                    </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="text-center">
+                  <img src={productsArray[2].image} className="w-75 mx-auto" alt={productsArray[2].title} />
+                </div>
+              </div>
+            </div> : ''}
+            {productsArray[3] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
+              <div className="col-lg-6">
+                <div className="caption-details-products">
+                  <h2 className="fw-bold mb-4 text-white four"></h2>
+                  <p className="mb-4 py-1 lh-base text-white four"></p>
+                  <div className="buttons">
+                    <Link to={`products/${productsArray[3].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
-                </div> : ''}
-                {productsArray[2] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
-                  <div className="col-lg-6">
-                    <div className="caption-details-products">
-                      <h2 className="fw-bold mb-4 text-white three"></h2>
-                      <p className="mb-4 py-1 lh-base text-white three"></p>
-                      <div className="buttons">
-                        <Link to={`products/${productsArray[2].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="text-center">
+                  <img src={productsArray[3].image} className="w-75 mx-auto" alt={productsArray[3].title} />
+                </div>
+              </div>
+            </div> : ''}
+            {productsArray[4] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
+              <div className="col-lg-6">
+                <div className="caption-details-products">
+                  <h2 className="fw-bold mb-4 text-white five"></h2>
+                  <p className="mb-4 py-1 lh-base text-white five"></p>
+                  <div className="buttons">
+                    <Link to={`products/${productsArray[4].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
-                  <div className="col-lg-6">
-                    <div className="text-center">
-                      <img src={productsArray[2].image} className="w-75 mx-auto" alt={productsArray[2].title} />
-                    </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="text-center">
+                  <img src={productsArray[4].image} className="w-75 mx-auto" alt={productsArray[4].title} />
+                </div>
+              </div>
+            </div> : ''}
+            {productsArray[5] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
+              <div className="col-lg-6">
+                <div className="caption-details-products">
+                  <h2 className="fw-bold mb-4 text-white six"></h2>
+                  <p className="mb-4 py-1 lh-base text-white six"></p>
+                  <div className="buttons">
+                    <Link to={`products/${productsArray[5].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
-                </div> : ''}
-                {productsArray[3] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
-                  <div className="col-lg-6">
-                    <div className="caption-details-products">
-                      <h2 className="fw-bold mb-4 text-white four"></h2>
-                      <p className="mb-4 py-1 lh-base text-white four"></p>
-                      <div className="buttons">
-                        <Link to={`products/${productsArray[3].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="text-center">
+                  <img src={productsArray[5].image} className="w-75 mx-auto" alt={productsArray[5].title} />
+                </div>
+              </div>
+            </div> : ''}
+            {productsArray[6] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
+              <div className="col-lg-6">
+                <div className="caption-details-products">
+                  <h2 className="fw-bold mb-4 text-white seven"></h2>
+                  <p className="mb-4 py-1 lh-base text-white seven"></p>
+                  <div className="buttons">
+                    <Link to={`products/${productsArray[6].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
-                  <div className="col-lg-6">
-                    <div className="text-center">
-                      <img src={productsArray[3].image} className="w-75 mx-auto" alt={productsArray[3].title} />
-                    </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="text-center">
+                  <img src={productsArray[6].image} className="w-75 mx-auto" alt={productsArray[6].title} />
+                </div>
+              </div>
+            </div> : ''}
+            {productsArray[7] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
+              <div className="col-lg-6">
+                <div className="caption-details-products">
+                  <h2 className="fw-bold mb-4 text-white eight"></h2>
+                  <p className="mb-4 py-1 lh-base text-white eight"></p>
+                  <div className="buttons">
+                    <Link to={`products/${productsArray[7].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
-                </div> : ''}
-                {productsArray[4] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
-                  <div className="col-lg-6">
-                    <div className="caption-details-products">
-                      <h2 className="fw-bold mb-4 text-white five"></h2>
-                      <p className="mb-4 py-1 lh-base text-white five"></p>
-                      <div className="buttons">
-                        <Link to={`products/${productsArray[4].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="text-center">
+                  <img src={productsArray[7].image} className="w-75 mx-auto" alt={productsArray[7].title} />
+                </div>
+              </div>
+            </div> : ''}
+            {productsArray[8] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
+              <div className="col-lg-6">
+                <div className="caption-details-products">
+                  <h2 className="fw-bold mb-4 text-white nine"></h2>
+                  <p className="mb-4 py-1 lh-base text-white nine"></p>
+                  <div className="buttons">
+                    <Link to={`products/${productsArray[8].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
-                  <div className="col-lg-6">
-                    <div className="text-center">
-                      <img src={productsArray[4].image} className="w-75 mx-auto" alt={productsArray[4].title} />
-                    </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="text-center">
+                  <img src={productsArray[8].image} className="w-75 mx-auto" alt={productsArray[8].title} />
+                </div>
+              </div>
+            </div> : ''}
+            {productsArray[9] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
+              <div className="col-lg-6">
+                <div className="caption-details-products">
+                  <h2 className="fw-bold mb-4 text-white ten"></h2>
+                  <p className="mb-4 py-1 lh-base text-white ten"></p>
+                  <div className="buttons">
+                    <Link to={`products/${productsArray[9].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
-                </div> : ''}
-                {productsArray[5] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
-                  <div className="col-lg-6">
-                    <div className="caption-details-products">
-                      <h2 className="fw-bold mb-4 text-white six"></h2>
-                      <p className="mb-4 py-1 lh-base text-white six"></p>
-                      <div className="buttons">
-                        <Link to={`products/${productsArray[5].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="text-center">
+                  <img src={productsArray[9].image} className="w-75 mx-auto" alt={productsArray[9].title} />
+                </div>
+              </div>
+            </div> : ''}
+            {productsArray[10] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
+              <div className="col-lg-6">
+                <div className="caption-details-products">
+                  <h2 className="fw-bold mb-4 text-white eleven"></h2>
+                  <p className="mb-4 py-1 lh-base text-white eleven"></p>
+                  <div className="buttons">
+                    <Link to={`products/${productsArray[10].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
-                  <div className="col-lg-6">
-                    <div className="text-center">
-                      <img src={productsArray[5].image} className="w-75 mx-auto" alt={productsArray[5].title} />
-                    </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="text-center">
+                  <img src={productsArray[10].image} className="w-75 mx-auto" alt={productsArray[10].title} />
+                </div>
+              </div>
+            </div> : ''}
+            {productsArray[11] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
+              <div className="col-lg-6">
+                <div className="caption-details-products">
+                  <h2 className="fw-bold mb-4 text-white twelve"></h2>
+                  <p className="mb-4 py-1 lh-base text-white twelve"></p>
+                  <div className="buttons">
+                    <Link to={`products/${productsArray[11].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
-                </div> : ''}
-                {productsArray[6] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
-                  <div className="col-lg-6">
-                    <div className="caption-details-products">
-                      <h2 className="fw-bold mb-4 text-white seven"></h2>
-                      <p className="mb-4 py-1 lh-base text-white seven"></p>
-                      <div className="buttons">
-                        <Link to={`products/${productsArray[6].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="text-center">
-                      <img src={productsArray[6].image} className="w-75 mx-auto" alt={productsArray[6].title} />
-                    </div>
-                  </div>
-                </div> : ''}
-                {productsArray[7] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
-                  <div className="col-lg-6">
-                    <div className="caption-details-products">
-                      <h2 className="fw-bold mb-4 text-white eight"></h2>
-                      <p className="mb-4 py-1 lh-base text-white eight"></p>
-                      <div className="buttons">
-                        <Link to={`products/${productsArray[7].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="text-center">
-                      <img src={productsArray[7].image} className="w-75 mx-auto" alt={productsArray[7].title} />
-                    </div>
-                  </div>
-                </div> : ''}
-                {productsArray[8] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
-                  <div className="col-lg-6">
-                    <div className="caption-details-products">
-                      <h2 className="fw-bold mb-4 text-white nine"></h2>
-                      <p className="mb-4 py-1 lh-base text-white nine"></p>
-                      <div className="buttons">
-                        <Link to={`products/${productsArray[8].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="text-center">
-                      <img src={productsArray[8].image} className="w-75 mx-auto" alt={productsArray[8].title} />
-                    </div>
-                  </div>
-                </div> : ''}
-                {productsArray[9] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
-                  <div className="col-lg-6">
-                    <div className="caption-details-products">
-                      <h2 className="fw-bold mb-4 text-white ten"></h2>
-                      <p className="mb-4 py-1 lh-base text-white ten"></p>
-                      <div className="buttons">
-                        <Link to={`products/${productsArray[9].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="text-center">
-                      <img src={productsArray[9].image} className="w-75 mx-auto" alt={productsArray[9].title} />
-                    </div>
-                  </div>
-                </div> : ''}
-                {productsArray[10] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
-                  <div className="col-lg-6">
-                    <div className="caption-details-products">
-                      <h2 className="fw-bold mb-4 text-white eleven"></h2>
-                      <p className="mb-4 py-1 lh-base text-white eleven"></p>
-                      <div className="buttons">
-                        <Link to={`products/${productsArray[10].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="text-center">
-                      <img src={productsArray[10].image} className="w-75 mx-auto" alt={productsArray[10].title} />
-                    </div>
-                  </div>
-                </div> : ''}
-                {productsArray[11] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
-                  <div className="col-lg-6">
-                    <div className="caption-details-products">
-                      <h2 className="fw-bold mb-4 text-white twelve"></h2>
-                      <p className="mb-4 py-1 lh-base text-white twelve"></p>
-                      <div className="buttons">
-                        <Link to={`products/${productsArray[11].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="text-center">
-                      <img src={productsArray[11].image} className="w-75 mx-auto" alt={productsArray[11].title} />
-                    </div>
-                  </div>
-                </div> : ''}
-            </OwlCarousel>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="text-center">
+                  <img src={productsArray[11].image} className="w-75 mx-auto" alt={productsArray[11].title} />
+                </div>
+              </div>
+            </div> : ''}
+          </OwlCarousel>
         </div>
       </section>
 
@@ -848,48 +848,48 @@ export default function Home({ fetchHome, fetchProducts }) {
               <p className="mx-auto pb-0 mb-0">{isEng ? fetchHome.projects.title : fetchHome.projects.titleAr}</p>
             </div>
           </div>
-          {/* <div className="w-85 mx-auto pb-3">
+          <div className="w-85 mx-auto pb-3">
             <div className="cont-imgs">
               <div className="imgs d-flex justify-content-center align-items-start">
-                <div className="img-group d-flex flex-column text-center wow fadeInRight" data-wow-duration="1.5s">
-                  <img src={fetchHome.projects.date[0].image ? fetchHome.projects.date[0].image : zariOnTime} className="w-75 mx-auto mb-3"
+                {/*             <div className="img-group d-flex flex-column text-center wow fadeInRight" data-wow-duration="1.5s">
+                  <img src={fetchHome.projects.date[0].image &&fetchHome.projects.date[0].image} className="w-75 mx-auto mb-3"
                     alt="zari on time" />
                   <h4 className="fw-bold">{isEng ? fetchHome.projects.date[0].title : fetchHome.projects.date[0].titleAr}</h4>
                 </div>
                 <div className="img-group d-flex flex-column text-center jomla wow fadeInDown" data-wow-duration="1.5s">
-                  <img src={fetchHome.projects.date[1].image ? fetchHome.projects.date[1].image : zariJumla} className="w-75 mx-auto mb-3"
+                  <img src={fetchHome.projects.date[1].image&&fetchHome.projects.date[1].image } className="w-75 mx-auto mb-3"
                     alt="zari jomla" />
                   <h4 className="fw-bold">{isEng ? fetchHome.projects.date[1].title : fetchHome.projects.date[1].titleAr}</h4>
-                </div>
-                <div className="img-group d-flex flex-column text-center gift wow fadeInUp" data-wow-duration="1.5s">
+                </div> */}
+                {/*        <div className="img-group d-flex flex-column text-center gift wow fadeInUp" data-wow-duration="1.5s">
                   <img src={fetchHome.projects.date[2].image ? fetchHome.projects.date[2].image : zariGifts} className="w-75 mx-auto mb-3"
                     alt="zari gifts" />
                   <h4 className="fw-bold">{isEng ? fetchHome.projects.date[2].title : fetchHome.projects.date[2].titleAr}</h4>
-                </div>
-                <div className="img-group d-flex flex-column text-center wow fadeInLeft" data-wow-duration="1.5s">
-                  <img src={fetchHome.projects.date[3].image ? fetchHome.projects.date[3].image : zariExpress} className="w-75 mx-auto mb-3" alt="zari Express" />
+                </div>  */}
+                {/*       <div className="img-group d-flex flex-column text-center wow fadeInLeft" data-wow-duration="1.5s">
+                  <img src={fetchHome.projects.date[2].image &&fetchHome.projects.date[3].image } className="w-75 mx-auto mb-3" alt="zari Express" />
                   <h4 className="fw-bold">{isEng ? fetchHome.projects.date[3].title : fetchHome.projects.date[3].titleAr}</h4>
-                </div>
+                </div>  */}
               </div>
             </div>
-          </div> */}
+          </div>
           <div className="show-details mt-5">
             <div className="w-85 mx-auto">
               <div className="row d-flex justify-content-center align-items-center">
-                <div className="col-8">
-                  <div className="caption-details wow fadeInLeft" data-wow-duration="1.5s">
-                    <h2 className="fw-bold mb-3 text-white wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.projects.date[0].title : fetchHome.projects.date[0].titleAr}</h2>
-                    <p className="mb-3 py-1 lh-base text-white wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? fetchHome.projects.date[0].text : fetchHome.projects.date[0].textAr}</p>
-                    <div className="buttons wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                      <a href={`#/projects/1`} className="btn btn-light py-3 px-5 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Read More' : 'اقـرأ المزيــد'}</a>
+                  <div className="col-8">
+                    <div className="caption-details wow fadeInLeft" data-wow-duration="1.5s">
+                      <h2 className="fw-bold mb-3 text-white wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.projects.date[0].title : fetchHome.projects.date[0].titleAr}</h2>
+                      <p className="mb-3 py-1 lh-base text-white wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? fetchHome.projects.date[0].text : fetchHome.projects.date[0].textAr}</p>
+                      <div className="buttons wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <a href={`#/projects/1`} className="btn btn-light py-3 px-5 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Read More' : 'اقـرأ المزيــد'}</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="col-4">
-                  <div className="img-details text-center wow fadeInRight" data-wow-duration="1.5s">
-                    <img src={fetchHome.projects.date[0].image ? fetchHome.projects.date[0].image : zariExpress} className="mx-auto" alt="zari Express" />
+                  <div className="col-4">
+                    <div className="img-details text-center wow fadeInRight" data-wow-duration="1.5s">
+                      <img src={fetchHome.projects.date[0].image ? fetchHome.projects.date[0].image : zariExpress} className="mx-auto" alt="zari Express" />
+                    </div>
                   </div>
-                </div>
               </div>
             </div>
           </div>
@@ -1038,19 +1038,19 @@ export default function Home({ fetchHome, fetchProducts }) {
                 <h2 className="fw-bold fs-1">{isEng ? fetchHome.share.header : fetchHome.share.headerAr}</h2>
               </div>
             </div>
-            {fetchHome.share.data.map((share , i) => (
-                <div key={i} className="col-lg-4">
-                  <div className={`part wow ${state2[i]}`} data-wow-duration="1.5s">
-                    <img src={share.image} className="w-100 mb-3" alt="Rectangle" />
-                    <div className="caption-part">
-                      <p className="text-black fs-5 lh-sm">{isEng ? share.text : share.textAr}</p>
-                      <div className={`buttons`}>
+            {fetchHome.share.data.map((share, i) => (
+              <div key={i} className="col-lg-4">
+                <div className={`part wow ${state2[i]}`} data-wow-duration="1.5s">
+                  <img src={share.image} className="w-100 mb-3" alt="Rectangle" />
+                  <div className="caption-part">
+                    <p className="text-black fs-5 lh-sm">{isEng ? share.text : share.textAr}</p>
+                    <div className={`buttons`}>
                       {/* ${card[i]} ${ marg[i]} */}
-                        <Link to="../Contact" className="btn second-btn py-3 px-5">{isEng ? 'Contact Us' : 'تواصـــل معنـــــا'}</Link>
-                      </div>
+                      <Link to="../Contact" className="btn second-btn py-3 px-5">{isEng ? 'Contact Us' : 'تواصـــل معنـــــا'}</Link>
                     </div>
                   </div>
                 </div>
+              </div>
             ))}
           </div>
         </div>

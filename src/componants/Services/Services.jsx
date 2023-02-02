@@ -12,7 +12,7 @@ import img from '../images/Update/img';
 // import mobileApp from '../images/home/mobile app.png';
 // import Marketing from '../images/services/Marketing-pana.png';
 // import Technology from '../images/services/Group 80.png';
-// import Graphic from '../images/services/Group 150.png';
+// import Graphic from '../images/services/Group 120.png';
 // import Testing from '../images/services/Group 149.png';
 // import clouding from '../images/services/Group 167.png';
 // import domainHosting from '../images/services/Group 147.png';
@@ -113,7 +113,7 @@ export default function Services({ fetchServices }) {
                             {fetchServices[0].map((item, i) => (
                                 <div key={i} className="service ps-4 mb-5">
                                     <h3 className="fw-bold mb-2 second-color">{isEng ? item.title : item.titleAr}</h3>
-                                    <p>{isEng ? item.text.split(" ").splice(0,50).join(" ")+'...'  : item.textAr.split(" ").splice(0,10).join(" ")+'...'}</p>
+                                    <p>{isEng ? item.text.split(" ").splice(0,20).join(" ")+'...'  : item.textAr.split(" ").splice(0,10).join(" ")+'...'}</p>
                                     <div className="buttons">
                                         <Link to={`${item.id}`} className="btn black-btn py-3 px-5">{isEng ? 'More Details' : 'تفاصيــل أكثـــر'}</Link>
                                     </div>
@@ -142,7 +142,7 @@ export default function Services({ fetchServices }) {
                             {fetchServices[1].map((item, i) => (
                                 <div key={i} className="service ps-4 mb-5">
                                     <h3 className="fw-bold mb-2 second-color">{isEng ? item.title : item.titleAr}</h3>
-                                    <p>{isEng ? item.text.split(" ").splice(0,50).join(" ")+'...' : item.textAr.split(" ").splice(0,50).join(" ")+'...'}
+                                    <p>{isEng ? item.text.split(" ").splice(0,20).join(" ")+'...' : item.textAr.split(" ").splice(0,20).join(" ")+'...'}
                                     </p>
                                     <div className="buttons">
                                         <Link to={`${item.id}`} className="btn black-btn py-3 px-5">{isEng ? 'More Details' : 'تفاصيــل أكثـــر'}</Link>
@@ -157,7 +157,7 @@ export default function Services({ fetchServices }) {
                             {fetchServices[2].map((item, i) => (
                                 <div key={i} className="service ps-4 mb-5">
                                     <h3 className="fw-bold mb-2 second-color">{isEng ? item.title : item.titleAr}</h3>
-                                    <p>{isEng ? item.text.split(" ").splice(0,50).join(" ")+'...' : item.textAr.split(" ").splice(0,50).join(" ")+'...'}
+                                    <p>{isEng ? item.text.split(" ").splice(0,20).join(" ")+'...' : item.textAr.split(" ").splice(0,20).join(" ")+'...'}
                                     </p>
                                     <div className="buttons">
                                         <Link to={`${item.id}`} className="btn black-btn py-3 px-5">{isEng ? 'More Details' : 'تفاصيــل أكثـــر'}</Link>

@@ -185,7 +185,7 @@ export default function Projects({ fetchProjects }) {
                                     <h4 className="fw-bold">{isEng ? fetchProjects[0].title : fetchProjects[0].titleAr}</h4>
                                 </div>
                                 <div className="img-group d-flex flex-column text-center gift wow fadeInUp" data-wow-duration="1.5s" onClick={() => handelFalcon()}>
-                                    <img src={fetchProjects[2].image} className="w-50 mx-auto mb-3"
+                                    <img src={fetchProjects[2].image} className="w-75 mx-auto mb-3"
                                         alt="zari gifts" />
                                     <h4 className="fw-bold">{isEng ? fetchProjects[2].title : fetchProjects[2].titleAr}</h4>
                                 </div>

@@ -136,10 +136,10 @@ export default function Contact({baseURL}) {
                                         <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
                                         <p className="lh-sm mb-0">{isEng ? 'AL-Madina Office: 7865 King Abdullah Bin - Abdulaziz Road - Jasham - AL-Madina - KSA.' : 'مكتب المدينة المنورة: 7865 الملك عبدالله بن عبدالعزيز - جاسم - المدينة المنورة - المملكة العربية السعودية.'}</p>
                                     </div>
-                                    <div className={`d-flex justify-content-start ${isEng ? 'text-start' : 'text-end'}`}>
+                             {/*        <div className={`d-flex justify-content-start ${isEng ? 'text-start' : 'text-end'}`}>
                                         <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
                                         <p className="lh-sm mb-0">{isEng ? 'Cairo Office: 9 Street Saeed Zakaria - Nasr City - Cairo - Egypt.' : 'مكتب القاهرة:9 شارع سعيد زكريا - مدينة نصر - القاهرة - جمهورية مصر العربية.'}</p>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="p-4 form text-center wow fadeInUp" data-wow-duration="1.5s">
                                     <h4 className="main-color fw-bold mb-4">{isEng ? 'Contact' : 'التواصـــل'}</h4>
@@ -147,10 +147,10 @@ export default function Contact({baseURL}) {
                                         <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-phone"></i></span>
                                         <p className="lh-sm mb-0">{isEng ? 'KSA Mobile: (+966) 920024403' : 'رقـم الهـاتــف السعودي: 920024403 (966+) '}</p>
                                     </div>
-                                    <div className={`phone d-flex justify-content-start ${isEng ? 'text-start' : 'text-end'} mb-4`}>
+                             {/*        <div className={`phone d-flex justify-content-start ${isEng ? 'text-start' : 'text-end'} mb-4`}>
                                         <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-phone"></i></span>
                                         <p className="lh-sm mb-0">{isEng ? 'Egypt Mobile: (+20) 1151300867' : 'رقـم الهـاتــف المصري: 1151300867 (20+) '}</p>
-                                    </div>
+                                    </div> */}
                                     <div className={`d-flex justify-content-start ${isEng ? 'text-start' : 'text-end'} mb-4`}>
                                         <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-envelope"></i></span>
                                         <p className="lh-sm mb-0">{isEng ? 'Email: info@zarisolution.com' : 'البريــد الإلكترونــي: info@zarisolution.com'}</p>

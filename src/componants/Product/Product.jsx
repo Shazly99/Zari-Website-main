@@ -124,7 +124,7 @@ export default function Product({ baseURL, showNameEn, showNameAr, showTypeEn, s
                     </section>
 
                     {/* description product */}
-                    <section className="descrip-product pb-5 mb-4" dir={isEng ? 'ltr' : 'rtl'}>
+               {/*      <section className="descrip-product pb-5 mb-4" dir={isEng ? 'ltr' : 'rtl'}>
                         <div className="container">
                             <div className="description py-5 px-4 wow fadeIn" data-wow-duration="1.5s">
                                 <h4 className="fw-bold mb-3 fs-2 main-color wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Description' : 'الوصــــف'}</h4>
@@ -149,7 +149,7 @@ export default function Product({ baseURL, showNameEn, showNameAr, showTypeEn, s
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
                 </> :
                     <div id="ready">
                         <i className="fa fa-spinner fa-5x fa-spin"></i>

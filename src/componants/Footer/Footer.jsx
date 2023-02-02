@@ -145,10 +145,10 @@ export default function Footer() {
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
                                     <a href="https://goo.gl/maps/6wBGzU2dcBN5yAFA7" target="_blank" rel="noopener noreferrer"><p className="lh-sm ksa">{isEng ? 'AL-Madina Office: 7865 King Abdullah Bin - Abdulaziz Road - Jasham - AL-Madina - KSA.' : 'مكتب المدينة المنورة: 7865 الملك عبدالله بن عبدالعزيز - جاسم - المدينة المنورة - المملكة العربية السعودية.'}</p></a>
                                 </div>
-                                <div className="d-flex justify-content-start align-items-center mb-3">
+ {/*                                <div className="d-flex justify-content-start align-items-center mb-3">
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
                                     <a href="https://www.google.com/maps/place/30%C2%B002'14.9%22N+31%C2%B020'40.5%22E/@30.037473,31.3467786,17z/data=!3m1!4b1!4m4!3m3!8m2!3d30.037473!4d31.3445899" target="_blank" rel="noopener noreferrer"><p className="lh-sm egy">{isEng ? 'Cairo Office: 9 Street Saeed Zakaria - Nasr City - Cairo - Egypt.' : 'مكتب القاهرة:9 شارع سعيد زكريا - مدينة نصر - القاهرة - جمهورية مصر العربية.'}</p></a>
-                                </div>
+                                </div> */}
                                 <div className="phone d-flex justify-content-start align-items-center mb-3">
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-phone"></i></span>
                                     <a rel='noreferrer' target="_blank" href="tel:+966920024403">{isEng ? ' +966 92 002 4403' : '4403 002 92 966+ '}</a>
@@ -157,10 +157,10 @@ export default function Footer() {
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-phone"></i></span>
                                     <a rel='noreferrer' target="_blank" href="tel:+966566770235">{isEng ? ' +966 56 677 0235' : '0235 677 56 966+ '}</a>
                                 </div>
-                                <div className="phone d-flex justify-content-start align-items-center mb-3">
+             {/*                    <div className="phone d-flex justify-content-start align-items-center mb-3">
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-phone"></i></span>
                                     <a rel='noreferrer' target="_blank" href="tel:+201151300867">{isEng ? ' 01151300867' : '01151300867 '}</a>
-                                </div>
+                                </div> */}
                                 <div className="d-flex justify-content-start align-items-center">
                                     <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-envelope"></i></span>
                                     <a rel='noreferrer' target="_blank" href="mailto: info@zarisolution.com">info@zarisolution.com</a>

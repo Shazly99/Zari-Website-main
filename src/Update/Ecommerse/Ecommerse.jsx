@@ -4,7 +4,17 @@ import img from '../../componants/images/Update/img';
 import './ecommerse.scss'
 const Ecommerse = () => {
     let { isEng } = useContext(langContext);
-
+    let data = [
+        { icons: img.icon1, textEn: 'Because we have 10 years of experience in website programming and online stores', textAr: 'لأننا نمتلك خبرة 10 سنين فى مجال برمجة المواقع و المتاجر الالكترونيه    ' },
+        { icons: img.icon2, textEn: 'Full Website Security and Security ', textAr: 'توفير الحماية والأمان الكامل للموقع الإلكتروني' },
+        { icons: img.icon3, textEn: 'Provide you with more than one form and form to choose from and also you can suggest an infinite number of modifications you want.', textAr: 'تزويدك بأكثر من شكل و نموذج للاختيار بينهم وأيضا يمكنك اقتراح عدد لانهائى من التعديلات التي تريدها. ' },
+        { icons: img.icon4, textEn: 'Providing you with content specific to your business at the highest level and by experts, through which you can outperform your competitors and also be compatible with search engines.', textAr: 'تزويدك بمحتوى خاص بنشاطك التجاري على اعلى مستوى و على يد خبراء، نمكنك من خلاله بالتفوق على منافسينك وايضاً يكون متوافق مع محركات البحث.' },
+        { icons: img.icon5, textEn: '24/7 technical support', textAr: 'دعم فني علي مدار الساعة 24/7 ' },
+        { icons: img.icon6, textEn: 'Provision of backups to ensure preservation of information ', textAr: 'توفير نسخ احتياطية لضمان الحفاظ على المعلومات' },
+        { icons: img.icon7, textEn: 'Provide a control panel in Arabic or English', textAr: '  توفير لوحة تحكم باللغة العربية او الانجليزية ' },
+        { icons: img.icon8, textEn: 'We configure search engines to improve your visibility and increase visits on your website to reach your customers with ease', textAr: 'نقوم بتهيئة محركات البحث لتحسين ظهورك وزيادة الزيارات على موقعك الإلكتروني لتصل الى عملائك بكل سهوله  ' },
+        { icons: img.icon9, textEn: 'Connect your site with your social media networks', textAr: 'ربط موقعك مع شبكات التواصل الاجتماعي الخاصة بك' },
+    ]
     return (
         <div className='app__ecommerse'>
             {/* header */}{/* style={{backgroundImage:`url(${img.img4})`}} */}
@@ -54,7 +64,7 @@ const Ecommerse = () => {
                 </div>
 
                 <div className=" row py-5  d-flex justify-content-center align-items-center">
-                <div className="app__ecommerse__home-img col-lg-4 ">
+                    <div className="app__ecommerse__home-img col-lg-4 ">
                         <div className="develop-img">
                             <img src={img.icon10} className="w-100" alt="customization" />
                         </div>
@@ -87,7 +97,7 @@ const Ecommerse = () => {
                             }
                         </div>
                     </div>
-      
+
                 </div>
 
                 <div className="row d-flex justify-content-between  align-items-center">
@@ -158,139 +168,39 @@ const Ecommerse = () => {
                 </div>
 
 
-                <section className="pt-4 mt-5 pb-5 benefits">
-                    <div className="container">
-                        <div className="main-title">
-                            <h2 className="fs-1 heading text-center fw-bold mb-5 main-color ">
-                                {
-                                    isEng ? ` Why should you work with Zari Solutions?` : `لماذا  تختار حلول زارى؟`
-                                }
+                <div className='container-fluid '  >
+                    <div className="position-relative flex-column    d-flex justify-content-center mt-5   align-items-center">
+                        <span className=' wow fadeInDownBig header-span text-center py-2 m-0 p-0' data-wow-duration="1s" data-wow-delay="0.5s" >
+                            {
+                                isEng ? ` Why should you work with Zari Solutions?` : `لماذا  تختار حلول زارى؟`
 
-                            </h2>
-                        </div>
-                        <div className="row gx-0">
-                            <div className="col-lg-4 position-relative">
-                                <div className="benefit">
-                                    <span className="step " >
-                                        <img src={img.icon1} width="40" height="40" alt="dollar" />
-                                    </span>
-                                    <p ></p>
-                                    <p className="mb-0 mx-2">
-                                        {
-                                            isEng ? `Because we have 10 years of experience in website programming and online stores                                            ` :
-                                                `لأننا نمتلك خبرة 10 سنين فى مجال برمجة المواقع و المتاجر الالكترونيه`
-                                        }
-                                    </p>
-                                </div>
-                                {/* <img  dir='ltr'style={{transform:' rotate(180deg)'}} src={img.Vector13}className="position-absolute bg-info top-25 start-0 vector" alt="vector"/>   */}
-                            </div>
-                            <div className="col-lg-4 align-self-center position-relative">
-                                <div className="benefit">
-                                    <span className="step " >
-                                        <img src={img.icon2} width="40" height="40" alt="increasing" />
-                                    </span>
-                                    <p className="mb-0 mx-2">
-                                        {
-                                            isEng ? `Full Website Security and Security` : `توفير الحماية والأمان الكامل للموقع الإلكتروني.`
-                                        }
-                                    </p>
-                                </div>
-                                {/* <img src={img.Vector14} className="position-absolute top-25 start-0 vector" alt="vector"/>  */}
-                            </div>
-                            <div className="col-lg-4 align-self-end">
-                                <div className="benefit">
-                                    <span className="step " >
-                                        <img src={img.icon3} width="40" height="40" alt="increase" />
-                                    </span>
-                                    <p className="mb-0 ms-2">
-                                        {
-                                            isEng ? `Provide you with more than one form and form to choose from and also you can suggest an infinite number of modifications you want.` : `تزويدك بأكثر من شكل و نموذج للاختيار بينهم وأيضا يمكنك اقتراح عدد لانهائى من التعديلات التي تريدها.`
-                                        }
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row gx-0">
-                            <div className="col-lg-4 position-relative">
-                                <div className="benefit">
-                                    <span className="step " >
-                                        <img src={img.icon4} width="40" height="40" alt="online-shop" />
-                                    </span>
-                                    <p className="mb-0  ms-2">
-                                        {
-                                            isEng ? `Providing you with content specific to your business at the highest level and by experts, through which you can outperform your competitors and also be compatible with search engines.` : `تزويدك بمحتوى خاص بنشاطك التجاري على اعلى مستوى و على يد خبراء، نمكنك من خلاله بالتفوق على منافسينك وايضاً يكون متوافق مع محركات البحث.`
-                                        }
-                                    </p>
-                                </div>
-                                {/* <img src={img.Vector13} className="position-absolute top-25 start-0 vector" alt="vector"/> */}
-                            </div>
-                            <div className="col-lg-4 align-self-center position-relative">
-                                <div className="benefit">
-                                    <span className="step " >
-                                        <img src={img.icon5} width="40" height="40" alt="store" />
-                                    </span>
-                                    <p className="mb-0  ms-2">      {
-                                        isEng ? `24/7 technical support` : `  دعم فني علي مدار الساعة 24/7`
-                                    }
-                                    </p>
-                                </div>
-                                {/* <img src={img.Vector14}className="position-absolute top-25 start-0 vector" alt="vector"/>  */}
-                            </div>
-                            <div className="col-lg-4 align-self-end">
-                                <div className="benefit">
-                                    <span className="step " >
-                                        <img src={img.icon6} width="40" height="40" alt="hand-shake" />
-                                    </span>
-                                    <p className="mb-0  ms-2">  {
-                                        isEng ? `Provide a control panel in Arabic or English` : `توفير لوحة تحكم باللغة العربية او الانجليزية`
-                                    }
+                            }
+                        </span>
+                        <div className='header-span-overlay '></div>
+                        <div className="row text-main ">
 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row gx-0">
-                            <div className="col-lg-4 position-relative">
-                                <div className="benefit">
-                                    <span className="step " >
-                                        <img src={img.icon7} width="40" height="40" alt="online-shop" />
-                                    </span>
-                                    <p className="mb-0  ms-2">
-                                        {
-                                            isEng ? `Provision of backups to ensure preservation of information` : `توفير نسخ احتياطية لضمان الحفاظ على المعلومات`
-                                        }
-                                    </p>
-                                </div>
-                                {/* <img src={img.Vector13} className="position-absolute top-25 start-0 vector" alt="vector"/> */}
-                            </div>
-                            <div className="col-lg-4 align-self-center position-relative">
-                                <div className="benefit">
-                                    <span className="step " >
-                                        <img src={img.icon8} width="40" height="40" alt="store" />
-                                    </span>
-                                    <p className="mb-0  ms-2">
-                                        {
-                                            isEng ? `Connect your site with your social media networks` : `ربط موقعك مع شبكات التواصل الاجتماعي الخاصة بك`
-                                        }
-                                    </p>
-                                </div>
-                                {/* <img src={img.Vector14} className="position-absolute top-25 start-0 vector" alt="vector"/> */}
-                            </div>
-                            <div className="col-lg-4 align-self-end">
-                                <div className="benefit">
-                                    <span className="step " >
-                                        <img src={img.icon9} width="40" height="40" alt="hand-shake" />
-                                    </span>
-                                    <p className="mb-0  ms-2">
-                                        {
-                                            isEng ? `We configure search engines to improve your visibility and increase visits on your website to reach your customers with ease` : `نقوم بتهيئة محركات البحث لتحسين ظهورك وزيادة الزيارات على موقعك الإلكتروني لتصل الى عملائك بكل سهوله`
-                                        }
-                                    </p>
-                                </div>
-                            </div>
+
+                            {
+                                data?.map((item, index) => {
+                                    return (
+                                        <div key={index} className='mt-5 col-md-6'>
+                                            <div className="text-bg wow fadeInRight" data-wow-duration="1.5s"  >
+                                                <div className="icon " >
+                                                    <img src={item.icons} alt="" srcset="" />
+                                                </div>
+                                                <div className="content  h-100 text-bg2 ">
+                                                    {/* <h4 style={{ fontSize: '24px' }} className='text-dark h2'>{isEng ? item.headerEn : item.headerAr}</h4> */}
+                                                    <p>{isEng ? item.textEn : item.textAr}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
-                </section>
+                </div>
+
             </div>
         </div>
     )
