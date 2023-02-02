@@ -54,6 +54,13 @@ const Ecommerse = () => {
                 </div>
 
                 <div className=" row py-5  d-flex justify-content-center align-items-center">
+                <div className="app__ecommerse__home-img col-lg-4 ">
+                        <div className="develop-img">
+                            <img src={img.icon10} className="w-100" alt="customization" />
+                        </div>
+                    </div>
+                    <div className="col-lg-1"></div>
+
                     <div className="app__ecommerse__home-content col-lg-7  d-flex align-items-center  ">
                         <div className="develop">
                             {
@@ -80,12 +87,7 @@ const Ecommerse = () => {
                             }
                         </div>
                     </div>
-                    <div className="col-lg-1"></div>
-                    <div className="app__ecommerse__home-img col-lg-4 ">
-                        <div className="develop-img">
-                            <img src={img.icon10} className="w-100" alt="customization" />
-                        </div>
-                    </div>
+      
                 </div>
 
                 <div className="row d-flex justify-content-between  align-items-center">
@@ -161,9 +163,9 @@ const Ecommerse = () => {
                         <div className="main-title">
                             <h2 className="fs-1 heading text-center fw-bold mb-5 main-color ">
                                 {
-                                    isEng?` Why should you work with Zari Solutions?`:`لماذا  تختار حلول زارى؟`
+                                    isEng ? ` Why should you work with Zari Solutions?` : `لماذا  تختار حلول زارى؟`
                                 }
-                                
+
                             </h2>
                         </div>
                         <div className="row gx-0">

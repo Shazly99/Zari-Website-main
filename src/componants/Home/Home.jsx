@@ -51,7 +51,7 @@ import imgAbout from '../images/home/Group 174.png';
 export default function Home({ fetchHome, fetchProducts }) {
 
   useEffect(() => {
-    console.log(fetchHome);
+    console.log();
     $('html , body').animate({ scrollTop: 0 }, 200);
   }, []);
 
@@ -614,11 +614,11 @@ export default function Home({ fetchHome, fetchProducts }) {
             <div className="col-lg-7 wow fadeInLeft" data-wow-duration="1.5s">
               <div className="service service-1 ps-4 mb-5">
                 <h3 className="fw-bold mb-4 second-color">{isEng ? fetchHome.services.date[0].title : fetchHome.services.date[0].titleAr}</h3>
-                <p>{isEng ? fetchHome.services.date[0].text : fetchHome.services.date[0].textAr}</p>
+                <p>{isEng ? fetchHome.services.date[0].text.split(" ").splice(0,30).join(" ")+'...'  : fetchHome.services.date[0].textAr.split(" ").splice(0,30).join(" ")+'...'}</p>
               </div>
               <div className="service service-2 ps-4">
                 <h3 className="fw-bold mb-4 second-color">{isEng ? fetchHome.services.date[1].title : fetchHome.services.date[1].titleAr}</h3>
-                <p>{isEng ? fetchHome.services.date[1].text : fetchHome.services.date[1].textAr}</p>
+                <p>{isEng ? fetchHome.services.date[1].text.split(" ").splice(0,30).join(" ")+'...' : fetchHome.services.date[1].textAr.split(" ").splice(0,30).join(" ")+'...'}</p>
               </div>
             </div>
             <div className="col-lg-5">

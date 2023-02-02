@@ -97,10 +97,10 @@ export default function Product({ baseURL, showNameEn, showNameAr, showTypeEn, s
                                         <h3 className="fw-bold mb-3 fs-1 main-color wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchProductData.product.title : fetchProductData.product.titleAr}</h3>
                                         <p className="mb-3 py-1 text-black wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? fetchProductData.product.text : fetchProductData.product.textAr}
                                         </p>
-                                        <h5 className="fw-bold mb-3 wow fadeInLeft" data-wow-duration="1.5s">{isEng ? 'SKU' : 'وحدة حفـــظ'}: {isEng ? fetchProductData.product.sku : fetchProductData.product.skuAr}</h5>
+                                        {/* <h5 className="fw-bold mb-3 wow fadeInLeft" data-wow-duration="1.5s">{isEng ? 'SKU' : 'وحدة حفـــظ'}: {isEng ? fetchProductData.product.sku : fetchProductData.product.skuAr}</h5>
                                         <h5 className="fw-bold mb-3 wow fadeInLeft" data-wow-duration="1.5s">{isEng ? 'Availability' : 'مدي التـوفــر'}: {isEng ? fetchProductData.product.availability : fetchProductData.product.availabilityAr}</h5>
                                         <h5 className="fw-bold mb-3 wow fadeInLeft" data-wow-duration="1.5s">{isEng ? 'Category' : 'الفئــــة'}: {isEng ? fetchProductData.product.category : fetchProductData.product.categoryAr}</h5>
-                                        <h5 className="fw-bold mb-4 wow fadeInLeft" data-wow-duration="1.5s">{isEng ? 'Tag' : 'التعـريـــف'}: {isEng ? fetchProductData.product.tag : fetchProductData.product.tagAr}</h5>
+                                        <h5 className="fw-bold mb-4 wow fadeInLeft" data-wow-duration="1.5s">{isEng ? 'Tag' : 'التعـريـــف'}: {isEng ? fetchProductData.product.tag : fetchProductData.product.tagAr}</h5> */}
                                         {/* <div className="buttons wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
                                     <a href="#" className="btn black-btn py-3 px-5">{isEng ? 'Demo' : 'عـرض تجريبـــي'}</a>
                                 </div> */}

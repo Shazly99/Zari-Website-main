@@ -113,7 +113,7 @@ export default function Services({ fetchServices }) {
                             {fetchServices[0].map((item, i) => (
                                 <div key={i} className="service ps-4 mb-5">
                                     <h3 className="fw-bold mb-2 second-color">{isEng ? item.title : item.titleAr}</h3>
-                                    <p>{isEng ? item.text : item.textAr}</p>
+                                    <p>{isEng ? item.text.split(" ").splice(0,50).join(" ")+'...'  : item.textAr.split(" ").splice(0,10).join(" ")+'...'}</p>
                                     <div className="buttons">
                                         <Link to={`${item.id}`} className="btn black-btn py-3 px-5">{isEng ? 'More Details' : 'تفاصيــل أكثـــر'}</Link>
                                     </div>
@@ -142,7 +142,7 @@ export default function Services({ fetchServices }) {
                             {fetchServices[1].map((item, i) => (
                                 <div key={i} className="service ps-4 mb-5">
                                     <h3 className="fw-bold mb-2 second-color">{isEng ? item.title : item.titleAr}</h3>
-                                    <p>{isEng ? item.text : item.textAr}
+                                    <p>{isEng ? item.text.split(" ").splice(0,50).join(" ")+'...' : item.textAr.split(" ").splice(0,50).join(" ")+'...'}
                                     </p>
                                     <div className="buttons">
                                         <Link to={`${item.id}`} className="btn black-btn py-3 px-5">{isEng ? 'More Details' : 'تفاصيــل أكثـــر'}</Link>
@@ -157,7 +157,7 @@ export default function Services({ fetchServices }) {
                             {fetchServices[2].map((item, i) => (
                                 <div key={i} className="service ps-4 mb-5">
                                     <h3 className="fw-bold mb-2 second-color">{isEng ? item.title : item.titleAr}</h3>
-                                    <p>{isEng ? item.text : item.textAr}
+                                    <p>{isEng ? item.text.split(" ").splice(0,50).join(" ")+'...' : item.textAr.split(" ").splice(0,50).join(" ")+'...'}
                                     </p>
                                     <div className="buttons">
                                         <Link to={`${item.id}`} className="btn black-btn py-3 px-5">{isEng ? 'More Details' : 'تفاصيــل أكثـــر'}</Link>

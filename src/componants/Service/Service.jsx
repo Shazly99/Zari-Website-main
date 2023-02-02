@@ -50,14 +50,14 @@ export default function Service({ baseURL, showNameEn, showNameAr, showTypeEn, s
     let { isEng } = useContext(langContext);
 
     let data = [
-        { headerEn: 'Idea Stage', bodyEn: 'We develop the idea to make it an integrated product', headerAr: 'مرحلة الفكرة', bodyAr: 'نقوم بتطوير الفكرة لجعلها منتج متكامل.' },
-        { headerEn: 'Data Analysis Stage', bodyEn: 'We analyze market data, study competitors and find the best ways to develop the idea', headerAr: 'مرحلة تحليل البيانات', bodyAr: 'نقوم بتحليل بيانات السوق ودراسة المنافسين وايجاد افضل طرق لتطوير الفكرة' },
-        { headerEn: 'Qualifying Stage ', bodyEn: `At this point, we divide your project into agreed points. So that your project is clear before it begins to be implemented at the highest level as we operate the advanced Agile system`, headerAr: 'مرحلة التأهيل', bodyAr: `في هذه المرحلة نقوم بتقسيم مشروعك الى نقاط متفق عليها حتى يكون مشروعك واضح قبل البدء فى تنفيذه على أعلى مستوى حيث اننا نعمل بنظام اجايل المتطور` },
-        { headerEn: 'Design Stage', bodyEn: 'App design is not just a form but a complete study of how users think while using the app.', headerAr: 'مرحلة التصميم', bodyAr: `تصميم التطبيقات ليس مجرد شكل بل هو عبارة عن دراسة كاملة لطريقة تفكير المستخدمين أثناء استخدامهم للتطبيق.` },
-        { headerEn: 'Programming Stage', bodyEn: 'All our apps run with the latest software technology and latest versions to ensure the app works longer.', headerAr: 'مرحلة البرمجة', bodyAr: `جميع التطبيقات لدينا تعمل بأحدث التقنيات البرمجية واخر الاصدارات لضمان عمل التطبيق لفترة أطول.` },
-        { headerEn: 'Experimental Stage', bodyEn: 'The application is checked and tested by specialists in this field in addition to using special servers for inspection.', headerAr: 'مرحلة التجربة', bodyAr: `يتم فحص التطبيق وتجربته من قبل مختصين بهذا المجال بالإضافة إلى استخدام سيرفرات خاصة للفحص.` },
-        { headerEn: 'Application Deployment Stage', bodyEn: 'Our team publishes the app on Google Store', headerAr: 'مرحلة نشر التطبيق', bodyAr: `يقوم فريق العمل لدينا بنشر التطبيق على متجر جوجل` },
-        { headerEn: 'Marketing Stage', bodyEn: 'We have the best team specializing in marketing apps and communicating the idea in a way that suits the work of the app', headerAr: 'مرحلة التسويق', bodyAr: `لدينا أفضل فريق متخصص بتسويق التطبيقات وايصال الفكرة بالطريقة التي تناسب عمل التطبيق` },
+        { img: img.icon14, headerEn: 'Idea Stage', bodyEn: 'We develop the idea to make it an integrated product', headerAr: 'مرحلة الفكرة', bodyAr: 'نقوم بتطوير الفكرة لجعلها منتج متكامل.' },
+        { img: img.icon11, headerEn: 'Data Analysis Stage', bodyEn: 'We analyze market data, study competitors and find the best ways to develop the idea', headerAr: 'مرحلة تحليل البيانات', bodyAr: 'نقوم بتحليل بيانات السوق ودراسة المنافسين وايجاد افضل طرق لتطوير الفكرة' },
+        { img: img.icon17, headerEn: 'Qualifying Stage ', bodyEn: `At this point, we divide your project into agreed points. So that your project is clear before it begins to be implemented at the highest level as we operate the advanced Agile system`, headerAr: 'مرحلة التأهيل', bodyAr: `في هذه المرحلة نقوم بتقسيم مشروعك الى نقاط متفق عليها حتى يكون مشروعك واضح قبل البدء فى تنفيذه على أعلى مستوى حيث اننا نعمل بنظام اجايل المتطور` },
+        { img: img.icon12, headerEn: 'Design Stage', bodyEn: 'App design is not just a form but a complete study of how users think while using the app.', headerAr: 'مرحلة التصميم', bodyAr: `تصميم التطبيقات ليس مجرد شكل بل هو عبارة عن دراسة كاملة لطريقة تفكير المستخدمين أثناء استخدامهم للتطبيق.` },
+        { img: img.icon16, headerEn: 'Programming Stage', bodyEn: 'All our apps run with the latest software technology and latest versions to ensure the app works longer.', headerAr: 'مرحلة البرمجة', bodyAr: `جميع التطبيقات لدينا تعمل بأحدث التقنيات البرمجية واخر الاصدارات لضمان عمل التطبيق لفترة أطول.` },
+        { img: img.icon13, headerEn: 'Experimental Stage', bodyEn: 'The application is checked and tested by specialists in this field in addition to using special servers for inspection.', headerAr: 'مرحلة التجربة', bodyAr: `يتم فحص التطبيق وتجربته من قبل مختصين بهذا المجال بالإضافة إلى استخدام سيرفرات خاصة للفحص.` },
+        { img: img.icon18, headerEn: 'Application Deployment Stage', bodyEn: 'Our team publishes the app on Google Store', headerAr: 'مرحلة نشر التطبيق', bodyAr: `يقوم فريق العمل لدينا بنشر التطبيق على متجر جوجل` },
+        { img: img.icon15, headerEn: 'Marketing Stage', bodyEn: 'We have the best team specializing in marketing apps and communicating the idea in a way that suits the work of the app', headerAr: 'مرحلة التسويق', bodyAr: `لدينا أفضل فريق متخصص بتسويق التطبيقات وايصال الفكرة بالطريقة التي تناسب عمل التطبيق` },
     ]
 
 
@@ -127,7 +127,7 @@ export default function Service({ baseURL, showNameEn, showNameAr, showTypeEn, s
                         </div>
                         <div className='container-fluid '  >
                             <div className="position-relative flex-column    d-flex justify-content-center mt-5   align-items-center">
-                                <span className=' wow fadeInDownBig header-span text-center py-2 m-0 p-0'  data-wow-duration="1s" data-wow-delay="0.5s" >
+                                <span className=' wow fadeInDownBig header-span text-center py-2 m-0 p-0' data-wow-duration="1s" data-wow-delay="0.5s" >
                                     {
                                         isEng ? `The design and development of mobile applications includes several stages` : `يتضمن تصميم وتطوير تطبيقات الهاتف المحمول عدة مراحل`
                                     }
@@ -140,9 +140,9 @@ export default function Service({ baseURL, showNameEn, showNameAr, showTypeEn, s
                                         data?.map((item, index) => {
                                             return (
                                                 <div key={index} className='mt-5 col-md-6'>
-                                                    <div className="text-bg        wow fadeInRight"data-wow-duration="1.5s"  >
+                                                    <div className="text-bg        wow fadeInRight" data-wow-duration="1.5s"  >
                                                         <div className="icon " >
-                                                            <img src={img.test} alt="" srcset="" />
+                                                            <img src={item.img} alt="" srcset="" />
                                                         </div>
                                                         <div className="content">
                                                             <h4 style={{ fontSize: '24px' }} className='text-dark h2'>{isEng ? item.headerEn : item.headerAr}</h4>
