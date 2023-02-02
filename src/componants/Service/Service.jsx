@@ -190,7 +190,7 @@ export default function Service({ baseURL, showNameEn, showNameAr, showTypeEn, s
                                     showNameAr(fetchServiceData.service.headerAr)
                                     showTypeEn('Service')
                                     showTypeAr('خدمـــة')
-                                }} className="btn black-btn px-5" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Order Now' : 'اطلـــب الآن'}</Link>
+                                }} className="btn black-btn px-5" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Contact Us' : 'تواصل معنا'}</Link>
                             </div>
                         </div>
                     </section>
