@@ -62,7 +62,7 @@ export default function Footer() {
                     <div className="row gy-5">
                         <div className="col-lg-4 col-md-6">
                             <div className="logo-footer wow fadeInRight" data-wow-duration="1.5s">
-                                <img src={imgFooter} className="w-50" alt="zari logo"/>
+                                <img width={'100%'} height={'100%'}  src={imgFooter} className="w-50" alt="zari logo"/>
                                 <p>{isEng ? `Zari is a Saudi-Egyptian company among a group of companies operating in more than one field
                                     in Saudi Arabia and the Middle East.` : 'حلول زاري لتقنية المعلومات شركة سعودية تعمل علي تطوير الأعمال وأن نكون شركاء نجاح مع قطاعات الأعمال المختلفة لتطوير أعمالهم من خلال تقديم حلول تقنية ةتسويقية. '}</p>
                                 <h5 className="mb-4">{isEng ? 'Follow us' : 'تابعنــــا'}</h5>
@@ -79,10 +79,10 @@ export default function Footer() {
                                             className="fa-brands fa-linkedin-in"></i></a>
                                 </div>
                                 <div className="icons-footer d-flex align-items-center">
-                                    <a target="_blank" rel='noreferrer' href="https://www.tiktok.com/@zarisolutionksa"><img
+                                    <a target="_blank" rel='noreferrer' href="https://www.tiktok.com/@zarisolutionksa"><img width={'100%'} height={'100%'} 
                                             src={tiktok} alt="tik-tok"/></a>
                                     <a target="_blank" rel='noreferrer'
-                                        href="https://www.snapchat.com/add/zari_solutions?share_id=osFpGeXWnlE&locale=en-US"><img
+                                        href="https://www.snapchat.com/add/zari_solutions?share_id=osFpGeXWnlE&locale=en-US"><img width={'100%'} height={'100%'} 
                                             src={snapchat} alt="snapchat"/></a>
                                 </div>
                             </div>

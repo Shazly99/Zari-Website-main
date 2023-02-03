@@ -160,7 +160,7 @@ export default function About({fetchAbout}) {
                                 <img src={fetchAbout.top.image1} className="w-50 large-scale" alt="Ellipse"/>
                             </div> */}
                             <div className="imgs-about d-flex justify-content-center align-items-center wow fadeInRight" data-wow-duration="1.5s">
-                                <img src={fetchAbout.top.image ? fetchAbout.top.image : imgAbout} className="w-100" alt="about-zari" />
+                                <img src={fetchAbout.top.image ? fetchAbout.top.image : imgAbout} className="w-100" width={'100%'} height={'100%'} alt="about-zari" />
                                 {/* <img src={fetchHome.about.image1} className="w-50 large-scale" alt="Ellipse" />
                                 <div className="gb-img d-flex flex-column">
                                 <img src={fetchHome.about.image2} className="w-60 top-img" alt="Ellipse" />
@@ -202,27 +202,27 @@ export default function About({fetchAbout}) {
 
                         <div
                             className="carousel-indicators position-static d-flex justify-content-between mt-2 mb-0 position-relative">
-                            <img src={vector}
+                            <img src={vector} width={'100%'} height={'100%'}
                                 className="vector position-absolute bottom-0 start-0 end-0 w-100" alt="vector"/>
                             <div className="indicator-item align-self-end indicator-side indicator-side-first position-relative">
-                                <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="life"
+                                <img width={'100%'} height={'100%'} type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="life"
                                     aria-label="Slide 1" src={fetchAbout.carousel[4].image} alt="Alfa Romeo"/>
                             </div>
                             <div className="indicator-item align-self-center indicator-deep indicator-deep-first position-relative">
-                                <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                <img width={'100%'} height={'100%'}type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                                     className="attraction" aria-label="Slide 2" src={fetchAbout.carousel[2].image} alt="Texmar"/>
                             </div>
                             <div className="indicator-item indicator-center position-relative">
-                                <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                <img width={'100%'} height={'100%'}type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                                     className="active spa" aria-label="Slide 3" src={fetchAbout.carousel[0].image} alt="Texmar"/>
                             </div>
                             <div
                                 className="indicator-item align-self-center indicator-deep indicator-deep-second position-relative">
-                                <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                <img width={'100%'} height={'100%'}type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
                                     className="attraction" aria-label="Slide 4" src={fetchAbout.carousel[1].image} alt="Chrysler"/>
                             </div>
                             <div className="indicator-item align-self-end indicator-side indicator-side-second position-relative">
-                                <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" className="life"
+                                <img width={'100%'} height={'100%'}type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" className="life"
                                     aria-label="Slide 5" src={fetchAbout.carousel[3].image} alt="dodge"/>
                             </div>
                         </div>

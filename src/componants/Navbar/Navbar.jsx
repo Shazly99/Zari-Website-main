@@ -287,7 +287,7 @@ export default function Navbar({ fetchNav, fetchProjects, fetchProducts }) {
         <>
             <nav className="navbar navbar-expand-lg bg-nav fixed-top py-2" dir={isEng ? 'ltr' : 'rtl'}>
                 <div className="container-fluid container-xl special-w">
-                    <span className="navbar-brand"><img src={imgLogo} alt="zari logo" /></span>
+                    <span className="navbar-brand"><img src={imgLogo} alt="zari logo"width={'100%'} height={'100%'} /></span>
                     <button className={`navbar-toggler wow fadeInUp ${isActive ? 'convert' : null}`} data-wow-duration="0.75s" onClick={handelClick} type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">

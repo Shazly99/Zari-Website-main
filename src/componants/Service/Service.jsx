@@ -139,10 +139,10 @@ export default function Service({ baseURL, showNameEn, showNameAr, showTypeEn, s
                                     {
                                         data?.map((item, index) => {
                                             return (
-                                                <div key={index} className='mt-5 col-md-6'>
-                                                    <div className="text-bg shadow rounded-3        wow fadeInRight" data-wow-duration="1.5s"  >
+                                                <div key={index} className='mt-5 col-md-6 services__col '>
+                                                    <div className="text-bg shadow rounded-3  wow fadeInRight" data-wow-duration="1.5s"  >
                                                         <div className="icon " >
-                                                            <img src={item.img}   />
+                                                            <img src={item.img} />
                                                         </div>
                                                         <div className="content">
                                                             <h4 style={{ fontSize: '24px' }} className='  text-servies h2'>{isEng ? item.headerEn : item.headerAr}</h4>
@@ -166,7 +166,7 @@ export default function Service({ baseURL, showNameEn, showNameAr, showTypeEn, s
                                 <div className="col-lg-6">
                                     <div className="caption-wd-page wow fadeInRight" data-wow-duration="1s">
                                         <h3 className="fw-bold mb-3 fs-2 wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchServiceData.service.title : fetchServiceData.service.titleAr}</h3>
-                                        <h5 className="mb-3 main-color fw-bold wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchServiceData.service.title === fetchServiceData.service.subtitle ?'':fetchServiceData.service.subtitle : fetchServiceData.service.titleAr === fetchServiceData.service.subtitleAr ? '' : fetchServiceData.service.subtitleAr}</h5>
+                                        <h5 className="mb-3 main-color fw-bold wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchServiceData.service.title === fetchServiceData.service.subtitle ? '' : fetchServiceData.service.subtitle : fetchServiceData.service.titleAr === fetchServiceData.service.subtitleAr ? '' : fetchServiceData.service.subtitleAr}</h5>
                                         <p className="mb-3 py-1 text-black wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? fetchServiceData.service.text : fetchServiceData.service.textAr}
                                         </p>
                                         <div className="headings wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">

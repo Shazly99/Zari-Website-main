@@ -129,7 +129,7 @@ export default function Faq({fetchFaqs}) {
                         </div>
                         <div className="col-lg-4">
                             <div className="img-question wow fadeInRight" data-wow-duration="1.5s">
-                                <img src={fetchFaqs.footer.image} className="w-100 mx-auto" alt="Questions-bro"/>
+                                <img src={fetchFaqs.footer.image} className="w-100 mx-auto" width={'100%'} height={'100%'}  alt="Questions-bro"/>
                             </div>
                         </div>
                     </div>

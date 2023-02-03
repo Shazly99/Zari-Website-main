@@ -566,7 +566,7 @@ export default function Home({ fetchHome, fetchProducts ,fetchProjects}) {
               </div>
               <div className="col-lg-5">
                 <div className="img-header wow fadeInRight" data-wow-duration="1.5s">
-                  <img src={fetchHome.top.image ? fetchHome.top.image : imgHeader} className="w-100"
+                  <img  src={fetchHome.top.image ? fetchHome.top.image : imgHeader} className="w-100"
                     alt="co-workers" />
                 </div>
               </div>
@@ -643,8 +643,8 @@ export default function Home({ fetchHome, fetchProducts ,fetchProjects}) {
         <h2 className="fw-bold fs-1 mb-2">{isEng ? 'Our Products' : 'منتجــاتنـــا'}</h2>
       </div>
       <section className="bg-black py-4">
-        <div className="container">
-          <OwlCarousel className="slider-items owl-carousel wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.5s" {...products}>
+        <div className="container ">
+          <OwlCarousel   className="slider-items  owl-carousel wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.5s" {...products}>
 
             {productsArray[0] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
               <div className="col-lg-6">
@@ -662,7 +662,7 @@ export default function Home({ fetchHome, fetchProducts ,fetchProjects}) {
                 </div>
               </div>
             </div> : ''}
-            {productsArray[1] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
+            {productsArray[1] ? <div className="row gx-0 gy-5 d-flex   justify-content-center align-items-center">
               <div className="col-lg-6">
                 <div className="caption-details-products">
                   <h2 className="fw-bold mb-4 text-white two"></h2>

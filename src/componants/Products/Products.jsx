@@ -123,7 +123,7 @@ export default function Products({fetchProducts}) {
                         <div className="col-lg-5 wow fadeInRight" data-wow-duration="1.5s">
                             <OwlCarousel className="slider-items owl-carousel" {...options}>
                                 {fetchProducts[0].map((item , i) => (
-                                    <img  key={i} src={item.image} className="w-100" alt="web" />
+                                    <img  key={i} src={item.image} className="w-100" width={'100%'} height={'100%'} alt="web" />
                                 ))}
                             </OwlCarousel>
                         </div>
@@ -134,7 +134,7 @@ export default function Products({fetchProducts}) {
                             <OwlCarousel className="slider-items owl-carousel" {...options}>
                                 {fetchProducts[1].map((item , i) => (
                                         
-                                    <img key={i} src={item.image} className="w-100" alt="Technology-Consultation" />
+                                    <img key={i} src={item.image} className="w-100"width={'100%'} height={'100%'} alt="Technology-Consultation" />
                                 ))}
                             </OwlCarousel>
                         </div>
@@ -168,7 +168,7 @@ export default function Products({fetchProducts}) {
                         <div className="col-lg-5 wow fadeInRight" data-wow-duration="1.5s">
                             <OwlCarousel className="slider-items owl-carousel" {...options}>
                                 {fetchProducts[2].map((item , i) => (
-                                    <img  key={i} src={item.image} className="w-100" alt="web" />
+                                    <img  key={i} src={item.image} className="w-100"width={'100%'} height={'100%'} alt="web" />
                                 ))}
                             </OwlCarousel>
                         </div>
@@ -190,7 +190,7 @@ export default function Products({fetchProducts}) {
                         <div className="col-lg-5 wow fadeInRight" data-wow-duration="1.5s">
                             <OwlCarousel className="slider-items owl-carousel" {...options}>
                                 {fetchProducts[3].map((item , i) => (
-                                    <img  key={i} src={item.image} className="w-100" alt="web" />
+                                    <img  key={i} src={item.image} className="w-100"width={'100%'} height={'100%'} alt="web" />
                                 ))}
                             </OwlCarousel>
                         </div>

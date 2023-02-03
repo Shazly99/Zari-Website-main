@@ -81,7 +81,7 @@ const Ecommerse = () => {
                             {
                                 isEng ?
                                     <>
-                                        <h4 className="mb-4 fw-bold main-color "  >Why should you create a website or e-store for your project or store?</h4>
+                                        <h4 className="mb-4  main-color mt-5 "  >Why should you create a website or e-store for your project or store?</h4>
 
                                         <p>
                                             because it's an excellent way to offer your e-commerce business. where you can sell food, tools, design items, digital products, and malls. Zari E-commerce is extremely advanced to provide customers with the best purchasing experience and to assist you in creating a great website for shopping for your valued customers.This gives you a plethora of ready-to-use e-commerce web templates that you can easily incorporate into your website.It has all those modern features that allow you to design a network that truly represents your vision The product you offer, has dozens of different locations, appendices, slider patterns, great banner layouts, login screen and blog variety, and multiple language options. However, the best part is the ease of SEO because it means more work and more sales. We are always eager to add new features and will continue to update them as needed.You can choose and use certain components you find handy on your website, or you can also use the entire package on your e-commerce site.
@@ -187,7 +187,7 @@ const Ecommerse = () => {
                             {
                                 data?.map((item, index) => {
                                     return (
-                                        <div key={index} className='mt-5 col-md-6'>
+                                        <div key={index} className='mt-5 col-md-6 services__col'>
                                             <div className="text-bg rounded-3 shadow wow fadeInRight" data-wow-duration="1.5s"  >
                                                 <div className="icon " >
                                                     <img src={item.icons}  />

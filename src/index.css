@@ -58,7 +58,31 @@ body {
   display: flex;
   align-items: center;
   gap: 15px !important;
-  height: 140px !important;
+  min-height: 150px !important;
+}
+
+@media screen and (max-width:500px) {
+  .text-bg {
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+  .text-bg .content h4 {
+    font-size: 25px !important;
+  }
+
+  .header-span {
+    width: 100%;
+    font-size: 20px !important;
+    line-height: 1.5;
+    font-family: 700;
+  }
+}
+
+@media screen and (max-width:990px) {
+  .services__col {
+    width: 100% !important;
+  }
 }
 
 .text-bg2 {
@@ -2857,6 +2881,32 @@ textarea {
 }
 
 .whatsapp {
-  width: 70px;
-  border-radius: 50%;  
+  width: 60px;
+  border-radius: 50%;
+  animation: scale-down 2s ease-in-out infinite;
+  ;
+
 }
+
+@keyframes scale-down {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .whatsapp {
+    width: 57px !important;
+    border-radius: 50%;
+  }
+}
+
+ 

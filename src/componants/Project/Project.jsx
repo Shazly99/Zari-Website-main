@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import WOW from 'wowjs';
+import WOW from 'wowjs';        
 import { useEffect } from 'react';
 import { langContext } from '../context/store';
 import ReactPlayer from 'react-player';
@@ -98,7 +98,7 @@ export default function Project({ baseURL }) {
                                         <a target='_blank' rel="noreferrer" href='https://zarifalcon.com/' className="btn black-btn py-3 px-5">{isEng ? 'More Details' : 'تفاصيــل أكثـــر'}</a>
                                     </div>
                                 }
-                                <img src={fetchProjectData.project.banner} className="mx-auto mt-5 wow fadeInUp" data-wow-duration="1s" alt="Group" />
+                                <img src={fetchProjectData.project.banner} className="mx-auto mt-5 wow fadeInUp"width={'100%'} height={'100%'} data-wow-duration="1s" alt="Group" />
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@ export default function Project({ baseURL }) {
                                 </div>
                                 <div className="col-lg-4 wow bounceInUp" data-wow-duration="2s"> 
                                     <div className="img-apps text-center">
-                                        <img src={onImg} alt="Group" />
+                                        <img src={onImg} width={'100%'} height={'100%'}alt="Group" />
                                     </div>
                                 </div>
                                 <div className="col-lg-4 wow fadeInRight" data-wow-duration="1.5s">
@@ -200,7 +200,7 @@ export default function Project({ baseURL }) {
                                 </div>
                                 <div className="col-lg-4 wow bounceInUp " data-wow-duration="1.7s">
                                     <div className="img-apps text-center">
-                                        <img src={img.express} alt="Group" />
+                                        <img src={img.express} width={'100%'} height={'100%'}alt="Group" />
                                     </div>
                                 </div>
                                 <div className="col-lg-4 wow fadeInRight" data-wow-duration="1.5s">
@@ -263,7 +263,7 @@ export default function Project({ baseURL }) {
                                 </div>
                                 <div className="col-lg-4 wow bounceInUp " data-wow-duration="1.7s">
                                     <div className="img-apps text-center">
-                                        <img src={img.falcon} alt="Group" />
+                                        <img src={img.falcon}width={'100%'} height={'100%'} alt="Group" />
                                     </div>
                                 </div>
                                 <div className="col-lg-4 wow fadeInRight" data-wow-duration="1.5s">
