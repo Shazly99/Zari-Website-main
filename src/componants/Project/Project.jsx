@@ -206,6 +206,7 @@ export default function Project({ baseURL }) {
                                 <div className="col-lg-4 wow fadeInRight" data-wow-duration="1.5s">
                                     <div className="manager text-center d-flex flex-column">
                                         <h4 className="mb-4 fw-bold">{isEng ? 'Zari Express (Manager App)' : 'Zari Express (تطبيق المدير)'}</h4>
+                                        
                          {/*                <a target="_blank" rel="noreferrer"
                                             className="btn mx-auto rounded-pill main-btn-p1 mb-4 d-flex justify-content-center align-items-center">
                                             <i className={`fa-brands fa-apple ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
