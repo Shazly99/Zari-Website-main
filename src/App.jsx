@@ -270,7 +270,7 @@ function App() {
       <Chat />
       <Routes>
 
-        <Route path='/' element={Object.keys(fetchHome).length && Object.keys(fetchProducts).length > 0 ? <Home fetchHome={fetchHome} fetchProducts={fetchProducts} /> : <div id="ready">
+        <Route path='/' element={Object.keys(fetchHome).length && Object.keys(fetchProducts).length > 0 ? <Home fetchHome={fetchHome} fetchProducts={fetchProducts} fetchProjects={fetchProjects} /> : <div id="ready">
           <i className="fa fa-spinner fa-5x fa-spin"></i>
         </div>} />
 

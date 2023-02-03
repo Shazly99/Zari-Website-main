@@ -36,8 +36,7 @@ export default function Projects({ fetchProjects }) {
         setFalcon(true)
     }
 
-    useEffect(() => {
-        console.log(fetchProjects);
+    useEffect(() => { 
         $('html , body').animate({ scrollTop: 0 }, 200);
 
     }, []);

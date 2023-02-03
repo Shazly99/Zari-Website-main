@@ -48,12 +48,12 @@ import imgAbout from '../images/home/Group 174.png';
 
 
 
-export default function Home({ fetchHome, fetchProducts }) {
+export default function Home({ fetchHome, fetchProducts ,fetchProjects}) {
 
-  useEffect(() => {
-    console.log();
+  useEffect(() => { 
     $('html , body').animate({ scrollTop: 0 }, 200);
-  }, []);
+ 
+  }, [ ]);
 
   let { isEng } = useContext(langContext);
 
@@ -129,9 +129,11 @@ export default function Home({ fetchHome, fetchProducts }) {
     dots: false,
     loop: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 6000,
     mouseDrag: false,
-    touchDrag: false,
+    touchDrag: false, 
+    // stopOnHover : true,
+    autoplayTimeout:10000,
     responsive: {
       0: {
         items: 1,
@@ -480,6 +482,7 @@ export default function Home({ fetchHome, fetchProducts }) {
 
   useEffect(() => {
     changeDir();
+    console.log(fetchHome );
 
     return () => {
       changeDir();
@@ -641,14 +644,15 @@ export default function Home({ fetchHome, fetchProducts }) {
       </div>
       <section className="bg-black py-4">
         <div className="container">
-          <OwlCarousel className="slider-items owl-carousel wow fadeInRight" data-wow-duration="1.5s" {...products}>
+          <OwlCarousel className="slider-items owl-carousel wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.5s" {...products}>
+
             {productsArray[0] ? <div className="row gx-0 gy-5 d-flex justify-content-center align-items-center">
               <div className="col-lg-6">
                 <div className="caption-details-products">
                   <h2 className="fw-bold mb-4 text-white one"></h2>
                   <p className="mb-4 py-1 lh-base text-white one"></p>
                   <div className="buttons">
-                    <Link to={`products/${productsArray[0].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
+                    <Link to={`/products/${productsArray[0].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
                 </div>
               </div>
@@ -664,7 +668,7 @@ export default function Home({ fetchHome, fetchProducts }) {
                   <h2 className="fw-bold mb-4 text-white two"></h2>
                   <p className="mb-4 py-1 lh-base text-white two"></p>
                   <div className="buttons">
-                    <Link to={`products/${productsArray[1].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
+                    <Link to={`/products/${productsArray[1].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
                 </div>
               </div>
@@ -680,7 +684,7 @@ export default function Home({ fetchHome, fetchProducts }) {
                   <h2 className="fw-bold mb-4 text-white three"></h2>
                   <p className="mb-4 py-1 lh-base text-white three"></p>
                   <div className="buttons">
-                    <Link to={`products/${productsArray[2].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
+                    <Link to={`/products/${productsArray[2].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
                 </div>
               </div>
@@ -696,7 +700,7 @@ export default function Home({ fetchHome, fetchProducts }) {
                   <h2 className="fw-bold mb-4 text-white four"></h2>
                   <p className="mb-4 py-1 lh-base text-white four"></p>
                   <div className="buttons">
-                    <Link to={`products/${productsArray[3].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
+                    <Link to={`/products/${productsArray[3].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
                 </div>
               </div>
@@ -712,7 +716,7 @@ export default function Home({ fetchHome, fetchProducts }) {
                   <h2 className="fw-bold mb-4 text-white five"></h2>
                   <p className="mb-4 py-1 lh-base text-white five"></p>
                   <div className="buttons">
-                    <Link to={`products/${productsArray[4].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
+                    <Link to={`/products/${productsArray[4].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
                 </div>
               </div>
@@ -728,7 +732,7 @@ export default function Home({ fetchHome, fetchProducts }) {
                   <h2 className="fw-bold mb-4 text-white six"></h2>
                   <p className="mb-4 py-1 lh-base text-white six"></p>
                   <div className="buttons">
-                    <Link to={`products/${productsArray[5].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
+                    <Link to={`/products/${productsArray[5].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
                 </div>
               </div>
@@ -744,7 +748,7 @@ export default function Home({ fetchHome, fetchProducts }) {
                   <h2 className="fw-bold mb-4 text-white seven"></h2>
                   <p className="mb-4 py-1 lh-base text-white seven"></p>
                   <div className="buttons">
-                    <Link to={`products/${productsArray[6].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
+                    <Link to={`/products/${productsArray[6].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
                 </div>
               </div>
@@ -760,7 +764,7 @@ export default function Home({ fetchHome, fetchProducts }) {
                   <h2 className="fw-bold mb-4 text-white eight"></h2>
                   <p className="mb-4 py-1 lh-base text-white eight"></p>
                   <div className="buttons">
-                    <Link to={`products/${productsArray[7].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
+                    <Link to={`/products/${productsArray[7].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
                 </div>
               </div>
@@ -776,7 +780,7 @@ export default function Home({ fetchHome, fetchProducts }) {
                   <h2 className="fw-bold mb-4 text-white nine"></h2>
                   <p className="mb-4 py-1 lh-base text-white nine"></p>
                   <div className="buttons">
-                    <Link to={`products/${productsArray[8].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
+                    <Link to={`/products/${productsArray[8].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
                 </div>
               </div>
@@ -792,7 +796,7 @@ export default function Home({ fetchHome, fetchProducts }) {
                   <h2 className="fw-bold mb-4 text-white ten"></h2>
                   <p className="mb-4 py-1 lh-base text-white ten"></p>
                   <div className="buttons">
-                    <Link to={`products/${productsArray[9].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
+                    <Link to={`/products/${productsArray[9].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
                 </div>
               </div>
@@ -808,7 +812,7 @@ export default function Home({ fetchHome, fetchProducts }) {
                   <h2 className="fw-bold mb-4 text-white eleven"></h2>
                   <p className="mb-4 py-1 lh-base text-white eleven"></p>
                   <div className="buttons">
-                    <Link to={`products/${productsArray[10].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
+                    <Link to={`/products/${productsArray[10].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
                 </div>
               </div>
@@ -824,7 +828,7 @@ export default function Home({ fetchHome, fetchProducts }) {
                   <h2 className="fw-bold mb-4 text-white twelve"></h2>
                   <p className="mb-4 py-1 lh-base text-white twelve"></p>
                   <div className="buttons">
-                    <Link to={`products/${productsArray[11].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
+                    <Link to={`/products/${productsArray[11].id}`} className="btn btn-light py-3 w-25 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s"></Link>
                   </div>
                 </div>
               </div>
@@ -874,8 +878,10 @@ export default function Home({ fetchHome, fetchProducts }) {
             </div>
           </div>
           <div className="show-details mt-5">
-            <div className="w-85 mx-auto">
-              <div className="row d-flex justify-content-center align-items-center">
+            <OwlCarousel className="slider-items owl-carousel wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.5s" {...products}>
+
+            {fetchHome.projects.date[0] ? <div className="w-85 mx-auto">
+                <div className="row d-flex justify-content-center align-items-center">
                   <div className="col-8">
                     <div className="caption-details wow fadeInLeft" data-wow-duration="1.5s">
                       <h2 className="fw-bold mb-3 text-white wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.projects.date[0].title : fetchHome.projects.date[0].titleAr}</h2>
@@ -887,11 +893,49 @@ export default function Home({ fetchHome, fetchProducts }) {
                   </div>
                   <div className="col-4">
                     <div className="img-details text-center wow fadeInRight" data-wow-duration="1.5s">
-                      <img src={fetchHome.projects.date[0].image ? fetchHome.projects.date[0].image : zariExpress} className="mx-auto" alt="zari Express" />
+                      <img src={fetchHome.projects.date[0].image ? fetchHome.projects.date[0].image : zariExpress} className="mx-auto w-50" alt="zari Express" />
                     </div>
                   </div>
-              </div>
-            </div>
+                </div>
+              </div> : ''}
+              {fetchHome.projects.date[1] ? <div className="w-85 mx-auto">
+                <div className="row d-flex justify-content-center align-items-center">
+                  <div className="col-8">
+                    <div className="caption-details wow fadeInLeft" data-wow-duration="1.5s">
+                      <h2 className="fw-bold mb-3 text-white wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.projects.date[1].title : fetchHome.projects.date[1].titleAr}</h2>
+                      <p className="mb-3 py-1 lh-base text-white wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? fetchHome.projects.date[1].text : fetchHome.projects.date[1].textAr}</p>
+                      <div className="buttons wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <a href={`#/projects/4`} className="btn btn-light py-3 px-5 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Read More' : 'اقـرأ المزيــد'}</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-4">
+                    <div className="img-details text-center wow fadeInRight" data-wow-duration="1.5s">
+                      <img src={fetchHome.projects.date[1].image && fetchHome.projects.date[1].image } className="mx-auto w-50" alt="zari Express" />
+                    </div>
+                  </div>
+                </div>
+              </div> : ''}
+              {fetchHome.projects.date[2] ? <div className="w-85 mx-auto">
+                <div className="row d-flex justify-content-center align-items-center">
+                  <div className="col-8">
+                    <div className="caption-details wow fadeInLeft" data-wow-duration="1.5s">
+                      <h2 className="fw-bold mb-3 text-white wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.projects.date[2].title : fetchHome.projects.date[2].titleAr}</h2>
+                      <p className="mb-3 py-1 lh-base text-white wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? fetchHome.projects.date[2].text : fetchHome.projects.date[2].textAr}</p>
+                      <div className="buttons wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <a href={`#/projects/5`} className="btn btn-light py-3 px-5 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Read More' : 'اقـرأ المزيــد'}</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-4">
+                    <div className="img-details text-center wow fadeInRight" data-wow-duration="1.5s">
+                      <img src={fetchHome.projects.date[2].image ? fetchHome.projects.date[0].image : zariExpress} className="mx-auto w-50" alt="zari Express" />
+                    </div>
+                  </div>
+                </div>
+              </div> : ''}
+            </OwlCarousel>
+
           </div>
         </div>
       </section>

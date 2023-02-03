@@ -136,7 +136,7 @@ export default function Contact({baseURL}) {
                                         <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
                                         <p className="lh-sm mb-0">{isEng ? 'AL-Madina Office: 7865 King Abdullah Bin - Abdulaziz Road - Jasham - AL-Madina - KSA.' : 'مكتب المدينة المنورة: 7865 الملك عبدالله بن عبدالعزيز - جاسم - المدينة المنورة - المملكة العربية السعودية.'}</p>
                                     </div>
-                             {/*        <div className={`d-flex justify-content-start ${isEng ? 'text-start' : 'text-end'}`}>
+                             {/*    <div className={`d-flex justify-content-start ${isEng ? 'text-start' : 'text-end'}`}>
                                         <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-location-dot"></i></span>
                                         <p className="lh-sm mb-0">{isEng ? 'Cairo Office: 9 Street Saeed Zakaria - Nasr City - Cairo - Egypt.' : 'مكتب القاهرة:9 شارع سعيد زكريا - مدينة نصر - القاهرة - جمهورية مصر العربية.'}</p>
                                     </div> */}

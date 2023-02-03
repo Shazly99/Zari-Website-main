@@ -30,9 +30,9 @@ export default function Project({ baseURL }) {
 
 
     useEffect(() => {
-
-        new WOW.WOW().init();
-
+        setTimeout(() => {
+            new WOW.WOW().init();
+        }, 1000);
     }, [])
 
 
@@ -82,19 +82,19 @@ export default function Project({ baseURL }) {
                                 </p>
                                 {
                                     id === '1' &&
-                                    <div className="buttons text-center mb-5">
+                                    <div className="buttons text-center mb-5 wow animated pulse infinite delay-3s" data-wow-duration="1.5s">
                                         <a target='_blank' rel="noreferrer" href='https://zariontime.com/' className="btn black-btn py-3 px-5">{isEng ? 'More Details' : 'تفاصيــل أكثـــر'}</a>
                                     </div>
                                 }
                                 {
                                     id === '4' &&
-                                    <div className="buttons text-center mb-5">
+                                    <div className="buttons text-center mb-5  wow animated pulse infinite delay-3s" data-wow-duration="1.5s">
                                         <a target='_blank' rel="noreferrer" href='https://zariexpress.com/' className="btn black-btn py-3 px-5">{isEng ? 'More Details' : 'تفاصيــل أكثـــر'}</a>
                                     </div>
                                 }
                                 {
                                     id === '5' &&
-                                    <div className="buttons text-center mb-5">
+                                    <div className="buttons text-center mb-5 wow animated pulse infinite delay-3s" data-wow-duration="1.5s">
                                         <a target='_blank' rel="noreferrer" href='https://zarifalcon.com/' className="btn black-btn py-3 px-5">{isEng ? 'More Details' : 'تفاصيــل أكثـــر'}</a>
                                     </div>
                                 }
@@ -115,8 +115,8 @@ export default function Project({ baseURL }) {
                                 <h2 className="fw-bold mb-3">{isEng ? 'Get Our Applications' : 'حمل التطبيق احجز موعدك وريح بالك!'}</h2>
                                 <p className="mx-auto mb-0">{isEng ? 'Our applications are available now on App store & Play store' : 'تطبيقاتنا متاحة الآن علي App store & Play store'}</p>
                             </div>
-                            <div className="row gy-5 gx-0 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1s">
-                                <div className="col-lg-4">
+                            <div className="row gy-5 gx-0 d-flex justify-content-center align-items-center ">
+                                <div className="col-lg-4 wow fadeInLeft" data-wow-duration="1.5s">
                                     <div className="client text-center d-flex flex-column">
                                         <h4 className="mb-4 fw-bold">{isEng ? 'Zari on Time (Client App)' : 'Zari on Time (تطبيق العميل)'}</h4>
                                         <a target="_blank" rel="noreferrer" href="https://apps.apple.com/eg/app/zari-on-time/id1625508325"
@@ -137,12 +137,12 @@ export default function Project({ baseURL }) {
                                         </a>
                                     </div>
                                 </div>
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 wow bounceInUp" data-wow-duration="2s"> 
                                     <div className="img-apps text-center">
                                         <img src={onImg} alt="Group" />
                                     </div>
                                 </div>
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 wow fadeInRight" data-wow-duration="1.5s">
                                     <div className="manager text-center d-flex flex-column">
                                         <h4 className="mb-4 fw-bold">{isEng ? 'Zari on Time (Manager App)' : 'Zari on Time (تطبيق المدير)'}</h4>
                                         <a target="_blank" rel="noreferrer" href="https://apps.apple.com/eg/app/zari-on-time-manager/id1637906978"
@@ -177,17 +177,17 @@ export default function Project({ baseURL }) {
                                 <p className="mx-auto mb-0">{isEng ? 'Our applications are available now on App store & Play store' : 'تطبيقاتنا متاحة الآن علي App store & Play store'}</p>
                             </div>
                             <div className="row gy-5 gx-0 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1s">
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 wow fadeInLeft" data-wow-duration="1.5s">
                                     <div className="client text-center d-flex flex-column">
                                         <h4 className="mb-4 fw-bold">{isEng ? 'Zari Express (Client App)' : 'Zari Express (تطبيق العميل)'}</h4>
-                                        <a target="_blank" rel="noreferrer"
+                         {/*                <a target="_blank" rel="noreferrer"
                                             className="btn mx-auto rounded-pill main-btn-p1 mb-4 d-flex justify-content-center align-items-center">
                                             <i className={`fa-brands fa-apple ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
                                             <div className={`parag ${isEng ? 'text-start' : 'text-end'}`}>
                                                 <p className="mb-0 available">{isEng ? 'Available on' : 'متاح علي'}</p>
                                                 <p className="mb-0 app">App Store</p>
                                             </div>
-                                        </a>
+                                        </a> */}
                                         <a target="_blank" rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.zari.zariexpress"
                                             className="btn mx-auto rounded-pill second-btn-p1 mb-4 d-flex justify-content-center align-items-center">
                                             <i className={`fa-brands fa-google-play ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
@@ -198,22 +198,22 @@ export default function Project({ baseURL }) {
                                         </a>
                                     </div>
                                 </div>
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 wow bounceInUp " data-wow-duration="1.7s">
                                     <div className="img-apps text-center">
                                         <img src={img.express} alt="Group" />
                                     </div>
                                 </div>
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 wow fadeInRight" data-wow-duration="1.5s">
                                     <div className="manager text-center d-flex flex-column">
                                         <h4 className="mb-4 fw-bold">{isEng ? 'Zari Express (Manager App)' : 'Zari Express (تطبيق المدير)'}</h4>
-                                        <a target="_blank" rel="noreferrer"
+                         {/*                <a target="_blank" rel="noreferrer"
                                             className="btn mx-auto rounded-pill main-btn-p1 mb-4 d-flex justify-content-center align-items-center">
                                             <i className={`fa-brands fa-apple ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
                                             <div className={`parag ${isEng ? 'text-start' : 'text-end'}`}>
                                                 <p className="mb-0 available">{isEng ? 'Available on' : 'متاح علي'}</p>
                                                 <p className="mb-0 app">App Store</p>
                                             </div>
-                                        </a>
+                                        </a> */}
                                         <a target="_blank" rel="noreferrer"
                                             className="btn mx-auto rounded-pill second-btn-p1 mb-4 d-flex justify-content-center align-items-center">
                                             <i className={`fa-brands fa-google-play ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
@@ -239,17 +239,17 @@ export default function Project({ baseURL }) {
                                 <p className="mx-auto mb-0">{isEng ? 'Our applications are available now on App store & Play store' : 'تطبيقاتنا متاحة الآن علي App store & Play store'}</p>
                             </div>
                             <div className="row gy-5 gx-0 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1s">
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 wow fadeInLeft" data-wow-duration="1.5s">
                                     <div className="client text-center d-flex flex-column">
                                         <h4 className="mb-4 fw-bold">{isEng ? 'Zari Falcon (Client App)' : 'Zari Falcon (تطبيق العميل)'}</h4>
-                                        <a target="_blank" rel="noreferrer"
+                   {/*                      <a target="_blank" rel="noreferrer"
                                             className="btn mx-auto rounded-pill main-btn-p2 mb-4 d-flex justify-content-center align-items-center">
                                             <i className={`fa-brands fa-apple ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
                                             <div className={`parag ${isEng ? 'text-start' : 'text-end'}`}>
                                                 <p className="mb-0 available">{isEng ? 'Available on' : 'متاح علي'}</p>
                                                 <p className="mb-0 app">App Store</p>
                                             </div>
-                                        </a>
+                                        </a> */}
                                         <a target="_blank" rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.zari.sales.outdoor"
                                             className="btn mx-auto rounded-pill second-btn-p2 mb-4 d-flex justify-content-center align-items-center">
                                             <i className={`fa-brands fa-google-play ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
@@ -260,22 +260,22 @@ export default function Project({ baseURL }) {
                                         </a>
                                     </div>
                                 </div>
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 wow bounceInUp " data-wow-duration="1.7s">
                                     <div className="img-apps text-center">
                                         <img src={img.falcon} alt="Group" />
                                     </div>
                                 </div>
-                                <div className="col-lg-4">
+                                <div className="col-lg-4 wow fadeInRight" data-wow-duration="1.5s">
                                     <div className="manager text-center d-flex flex-column">
                                         <h4 className="mb-4 fw-bold">{isEng ? 'Zari Falcon (Manager App)' : 'Zari Falcon (تطبيق المدير)'}</h4>
-                                        <a target="_blank" rel="noreferrer"
+                             {/*            <a target="_blank" rel="noreferrer"
                                             className="btn mx-auto rounded-pill main-btn-p2 mb-4 d-flex justify-content-center align-items-center">
                                             <i className={`fa-brands fa-apple ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
                                             <div className={`parag ${isEng ? 'text-start' : 'text-end'}`}>
                                                 <p className="mb-0 available">{isEng ? 'Available on' : 'متاح علي'}</p>
                                                 <p className="mb-0 app">App Store</p>
                                             </div>
-                                        </a>
+                                        </a> */}
                                         <a target="_blank" rel="noreferrer" href='https://play.google.com/store/apps/details?id=com.zarisolution.falconmanager'
                                             className="btn mx-auto rounded-pill second-btn-p2 mb-4 d-flex justify-content-center align-items-center">
                                             <i className={`fa-brands fa-google-play ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>

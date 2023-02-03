@@ -27,6 +27,7 @@ import icon14 from "../Update/1 COLOR BLUE/Idea-Stage.png";
 import icon15 from "../Update/1 COLOR BLUE/Marketing-Stage.png";
 import icon16 from "../Update/1 COLOR BLUE/Programming-Stage.png";
 import icon17 from "../Update/1 COLOR BLUE/Qualifying-Stage.png";
+import whatsapp from "../Update/whatsapp.png";
 
 
 import Vector13 from "../Update/Vector 13.png";
@@ -82,5 +83,6 @@ export default {
     falcon,
     mobile, 
     falconBanner,
-    falconLogo
+    falconLogo,
+    whatsapp
 } 
