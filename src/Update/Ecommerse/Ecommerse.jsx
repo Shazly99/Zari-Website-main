@@ -36,7 +36,7 @@ const Ecommerse = () => {
             {/* section 2 */}
             <div className="app__ecommerse__home container " dir={isEng ? 'ltr' : 'rtl'}>
                 <div className=" row py-5  d-flex justify-content-center align-items-center">
-                    <div className="app__ecommerse__home-content col-lg-8 d-flex align-items-center  ">
+                    <div className=" app__ecommerse__home-content col-lg-8 d-flex align-items-center  ">
                         <div className="develop wow fadeInLeft" data-wow-duration="1s">
                             {
                                 isEng ?
@@ -68,7 +68,7 @@ const Ecommerse = () => {
                     </div>
                 </div>
 
-                <div className=" row py-5  d-flex justify-content-center align-items-center">
+                <div className=" serviceSingle_first row py-5  d-flex justify-content-center align-items-center">
                     <div className="app__ecommerse__home-img col-lg-4 ">
                         <div className="develop-img wow fadeInLeft" data-wow-duration="1s">
                             <img src={img.icon10} className="w-100" alt="customization" />

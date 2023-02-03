@@ -68,7 +68,7 @@ export default function Service({ baseURL, showNameEn, showNameAr, showTypeEn, s
             <div className="total-header layer-img d-flex justify-content-center align-items-center">
                 <div className="container">
                     <div className="main-title-page d-flex justify-content-center align-items-center wow fadeIn" data-wow-duration="1s">
-                        <h2 className="fs-1 text-white fw-bold">{isEng ? fetchServiceData.service.header : fetchServiceData.service.headerAr}</h2>
+                        <h2 className="fs-1 text-white fw-bold text-center" >{isEng ? fetchServiceData.service.header : fetchServiceData.service.headerAr}</h2>
                     </div>
                 </div>
             </div>
@@ -80,10 +80,10 @@ export default function Service({ baseURL, showNameEn, showNameAr, showTypeEn, s
                 <>
                     <section className="serviceSingle py-5" dir={isEng ? 'ltr' : 'rtl'}>
                         <div className="container">
-                            <div className="row gx-0 gy-4 d-flex justify-content-center align-items-center">
+                            <div className=" serviceSingle_first row gx-0 gy-4 d-flex justify-content-center align-items-center">
                                 <div className="col-lg-6">
                                     <div className="caption-wd-page wow fadeInRight" data-wow-duration="1s">
-                                        <h3 className=" mb-3   wow fadeInDownBig w-100" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Design And Development Of Phone Applications' : '  تصميم وتطوير تطبيقات الهاتف'}</h3>
+                                        <h3 className="serviceSingle__header mb-3   wow fadeInDownBig w-100" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Design And Development Of Phone Applications' : '  تصميم وتطوير تطبيقات الهاتف'}</h3>
                                         <p>
                                             {
                                                 isEng ? `We design and develop phone applications according to the most important criteria that serve the idea of the application and its development in its entirety, from the idea to the launch and continuous support.` : `نعمل على تصميم وتطوير تطبيقات الهاتف حسب أهم المعايير التي تخدم فكرة التطبيق وتطويره بالكامل، من الفكرة إلى الانطلاق والدعم المستمر.
@@ -113,8 +113,8 @@ export default function Service({ baseURL, showNameEn, showNameAr, showTypeEn, s
                                 </div>
                                 <div className="col-lg-6 ">
                                     <div className="caption-wd-page wow  fadeInRight" data-wow-duration="1s">
-                                        <h3 className=" mb-3 wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Mobile Creation and Development' : 'إنشاء وتطوير الجوال'}</h3>
-                                        <p>
+                                        <h3 className="serviceSingle__header mb-3 wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Mobile Creation and Development' : 'إنشاء وتطوير الجوال'}</h3>
+                                        <p className='serviceSingle__body'>
                                             {
                                                 isEng ? `Creating a mobile app can help businesses interact with clients more effectively, enhance the customer experience, and boost sales and profits. Additionally, a well-made and simple-to-use mobile app can be a useful marketing tool that aids businesses in attracting new clients and keeping hold of current ones.` : `إنشاء تطبيق للجوال يساعد الشركات على التواصل بشكل أفضل مع عملائها، وتحسين تجربة العملاء، وزيادة المبيعات والإيرادات. بالإضافة إلى ذلك، يمكن أن يكون تطبيق الهاتف المحمول المصمم جيدًا وسهل الاستخدام بمثابة أداة تسويق قيمة يمكن أن تساعد الشركات في الوصول إلى عملاء جدد والاحتفاظ بالعملاء الحاليين.                                                `
                                             }

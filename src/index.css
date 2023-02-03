@@ -66,7 +66,7 @@ body {
     flex-direction: column;
     text-align: center;
   }
- 
+
   .text-bg .content h4 {
     font-size: 25px !important;
   }
@@ -2909,4 +2909,25 @@ textarea {
   }
 }
 
- 
+
+@media screen and (max-width:993px) {
+  
+  .serviceSingle_first {
+    flex-direction: row-reverse !important;
+    width: 100%;
+  }
+   .serviceSingle__header{
+    text-align: center;
+    width: 100% !important;
+
+  }
+  .serviceSingle .container{
+    width: 100% !important;  
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+.serviceSingle__header{
+  color: #012C57;
+}
