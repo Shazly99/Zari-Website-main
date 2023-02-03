@@ -30,11 +30,11 @@ import icon17 from "../Update/1 COLOR BLUE/Qualifying-Stage.png";
 import whatsapp from "../Update/whatsapp.png";
 
 
-import Vector13 from "../Update/Vector 13.png";
-import Vector14 from "../Update/Vector 14.png";
-import Vector3 from "../Update/Vector 3.png";
-import Vector4 from "../Update/Vector 4.png";
-import Vector5 from "../Update/Vector 5.png";
+// import Vector13 from "../Update/Vector 13.png";
+// import Vector14 from "../Update/Vector 14.png";
+// import Vector3 from "../Update/Vector 3.png";
+// import Vector4 from "../Update/Vector 4.png";
+// import Vector5 from "../Update/Vector 5.png";
 import express from "../Update/express.png";
 import falcon from "../Update/falcon.png";
 import falconLogo from "../Update/falcon splash.png";
@@ -74,11 +74,11 @@ export default {
     icon7,
     icon8,
     icon9,
-    Vector13,
-    Vector14,
-    Vector3,
-    Vector4,
-    Vector5,
+    // Vector13,
+    // Vector14,
+    // Vector3,
+    // Vector4,
+    // Vector5,
     express,
     falcon,
     mobile, 

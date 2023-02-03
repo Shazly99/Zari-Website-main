@@ -129,11 +129,11 @@ export default function Home({ fetchHome, fetchProducts ,fetchProjects}) {
     dots: false,
     loop: true,
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 4000,
     mouseDrag: false,
     touchDrag: false, 
     // stopOnHover : true,
-    autoplayTimeout:10000,
+    autoplayTimeout:5000,
     responsive: {
       0: {
         items: 1,
@@ -929,7 +929,7 @@ export default function Home({ fetchHome, fetchProducts ,fetchProjects}) {
                   </div>
                   <div className="col-4">
                     <div className="img-details text-center wow fadeInRight" data-wow-duration="1.5s">
-                      <img src={fetchHome.projects.date[2].image ? fetchHome.projects.date[0].image : zariExpress} className="mx-auto w-50" alt="zari Express" />
+                      <img src={fetchHome.projects.date[2].image ? fetchHome.projects.date[2].image : zariExpress} className="mx-auto w-50" alt="zari Express" />
                     </div>
                   </div>
                 </div>
