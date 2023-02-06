@@ -145,7 +145,7 @@ export default function Contact({baseURL}) {
                                     <h4 className="main-color fw-bold mb-4">{isEng ? 'Contact' : 'التواصـــل'}</h4>
                                     <div className={`phone d-flex justify-content-start ${isEng ? 'text-start' : 'text-end'} mb-4`}>
                                         <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-phone"></i></span>
-                                        <p className="lh-sm mb-0">{isEng ? 'KSA Mobile: (+966) 920024403' : 'رقـم الهـاتــف السعودي: 920024403 (966+) '}</p>
+                                        <p className="lh-sm mb-0">{isEng ? '  Mobile: (+966) 920024403' : 'رقـم الهـاتــف  : 920024403 (966+) '}</p>
                                     </div>
                              {/*        <div className={`phone d-flex justify-content-start ${isEng ? 'text-start' : 'text-end'} mb-4`}>
                                         <span className={`${isEng ? 'me-3' : 'ms-3'}`}><i className="fa-solid fa-phone"></i></span>

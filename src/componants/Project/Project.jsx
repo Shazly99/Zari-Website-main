@@ -119,7 +119,7 @@ export default function Project({ baseURL }) {
                                 <div className="col-lg-4 wow fadeInLeft" data-wow-duration="1.5s">
                                     <div className="client text-center d-flex flex-column">
                                         <h4 className="mb-4 fw-bold">{isEng ? 'Zari on Time (Client App)' : 'Zari on Time (تطبيق العميل)'}</h4>
-                                        <a target="_blank" rel="noreferrer" href="https://apps.apple.com/eg/app/zari-on-time/id1625508325"
+                                        <a target="_blank" rel="noreferrer" href="https://apps.apple.com/eg/app/zari-on-time/id1659278448"
                                             className="btn mx-auto rounded-pill main-btn-p mb-4 d-flex justify-content-center align-items-center">
                                             <i className={`fa-brands fa-apple ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
                                             <div className={`parag ${isEng ? 'text-start' : 'text-end'}`}>
@@ -145,7 +145,7 @@ export default function Project({ baseURL }) {
                                 <div className="col-lg-4 wow fadeInRight" data-wow-duration="1.5s">
                                     <div className="manager text-center d-flex flex-column">
                                         <h4 className="mb-4 fw-bold">{isEng ? 'Zari on Time (Manager App)' : 'Zari on Time (تطبيق المدير)'}</h4>
-                                        <a target="_blank" rel="noreferrer" href="https://apps.apple.com/eg/app/zari-on-time-manager/id1637906978"
+                                        <a target="_blank" rel="noreferrer" href="https://apps.apple.com/eg/app/zot-manager/id1659275578"
                                             className="btn mx-auto rounded-pill main-btn-p mb-4 d-flex justify-content-center align-items-center">
                                             <i className={`fa-brands fa-apple ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>
                                             <div className={`parag ${isEng ? 'text-start' : 'text-end'}`}>
@@ -242,7 +242,7 @@ export default function Project({ baseURL }) {
                             <div className="row gy-5 gx-0 d-flex justify-content-center align-items-center wow fadeInUpBig" data-wow-duration="1s">
                                 <div className="col-lg-4 wow fadeInLeft" data-wow-duration="1.5s">
                                     <div className="client text-center d-flex flex-column">
-                                        <h4 className="mb-4 fw-bold">{isEng ? 'Zari Falcon (Client App)' : 'Zari Falcon (تطبيق العميل)'}</h4>
+                                        <h4 className="mb-4 fw-bold">{isEng ? 'Zari Falcon (Employee App)' : 'Zari Falcon (تطبيق الموظف)'}</h4>
                    {/*                      <a target="_blank" rel="noreferrer"
                                             className="btn mx-auto rounded-pill main-btn-p2 mb-4 d-flex justify-content-center align-items-center">
                                             <i className={`fa-brands fa-apple ${isEng ? 'me-3' : 'ms-3'} fa-2x`}></i>

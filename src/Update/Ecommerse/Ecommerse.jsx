@@ -1,24 +1,24 @@
-import React, { useEffect,useContext } from 'react'
+import React, { useEffect, useContext } from 'react'
 import WOW from 'wowjs';
 import { langContext } from '../../componants/context/store';
 import img from '../../componants/images/Update/img';
 import './ecommerse.scss'
 const Ecommerse = () => {
     let { isEng } = useContext(langContext);
-    useEffect(() => { 
-            new WOW.WOW().init();
-       
-    }, [])  
+    useEffect(() => {
+        new WOW.WOW().init();
+
+    }, [])
     let data = [
-        {  icons: img.icon1, textEn: 'Because we have 10 years of experience in website programming and online stores', textAr: 'لأننا نمتلك خبرة 10 سنين فى مجال برمجة المواقع و المتاجر الالكترونيه    ' },
-        {  icons: img.icon2, textEn: 'Full Website Security and Security ', textAr: 'توفير الحماية والأمان الكامل للموقع الإلكتروني' },
-        {  icons: img.icon3, textEn: 'Provide you with more than one form and form to choose from and also you can suggest an infinite number of modifications you want.', textAr: 'تزويدك بأكثر من شكل و نموذج للاختيار بينهم وأيضا يمكنك اقتراح عدد لانهائى من التعديلات التي تريدها. ' },
-        {  icons: img.icon4, textEn: 'Providing you with content specific to your business at the highest level and by experts, through which you can outperform your competitors and also be compatible with search engines.', textAr: 'تزويدك بمحتوى خاص بنشاطك التجاري على اعلى مستوى و على يد خبراء، نمكنك من خلاله بالتفوق على منافسينك وايضاً يكون متوافق مع محركات البحث.' },
-        {  icons: img.icon5, textEn: '24/7 technical support', textAr: 'دعم فني علي مدار الساعة 24/7 ' },
-        {  icons: img.icon6, textEn: 'Provision of backups to ensure preservation of information ', textAr: 'توفير نسخ احتياطية لضمان الحفاظ على المعلومات' },
-        {  icons: img.icon7, textEn: 'Provide a control panel in Arabic or English', textAr: '  توفير لوحة تحكم باللغة العربية او الانجليزية ' },
-        {  icons: img.icon8, textEn: 'We configure search engines to improve your visibility and increase visits on your website to reach your customers with ease', textAr: 'نقوم بتهيئة محركات البحث لتحسين ظهورك وزيادة الزيارات على موقعك الإلكتروني لتصل الى عملائك بكل سهوله  ' },
-        {  icons: img.icon9, textEn: 'Connect your site with your social media networks', textAr: 'ربط موقعك مع شبكات التواصل الاجتماعي الخاصة بك' },
+        { icons: img.icon1, textEn: 'Because we have 10 years of experience in website programming and online stores', textAr: 'لأننا نمتلك خبرة 10 سنين فى مجال برمجة المواقع و المتاجر الالكترونيه    ' },
+        { icons: img.icon2, textEn: 'Full Website Security and Security ', textAr: 'توفير الحماية والأمان الكامل للموقع الإلكتروني' },
+        { icons: img.icon3, textEn: 'Provide you with more than one form and form to choose from and also you can suggest an infinite number of modifications you want.', textAr: 'تزويدك بأكثر من شكل و نموذج للاختيار بينهم وأيضا يمكنك اقتراح عدد لانهائى من التعديلات التي تريدها. ' },
+        { icons: img.icon4, textEn: 'Providing you with content specific to your business at the highest level and by experts, through which you can outperform your competitors and also be compatible with search engines.', textAr: 'تزويدك بمحتوى خاص بنشاطك التجاري على اعلى مستوى و على يد خبراء، نمكنك من خلاله بالتفوق على منافسينك وايضاً يكون متوافق مع محركات البحث.' },
+        { icons: img.icon5, textEn: '24/7 technical support', textAr: 'دعم فني علي مدار الساعة 24/7 ' },
+        { icons: img.icon6, textEn: 'Provision of backups to ensure preservation of information ', textAr: 'توفير نسخ احتياطية لضمان الحفاظ على المعلومات' },
+        { icons: img.icon7, textEn: 'Provide a control panel in Arabic or English', textAr: '  توفير لوحة تحكم باللغة العربية او الانجليزية ' },
+        { icons: img.icon8, textEn: 'We configure search engines to improve your visibility and increase visits on your website to reach your customers with ease', textAr: 'نقوم بتهيئة محركات البحث لتحسين ظهورك وزيادة الزيارات على موقعك الإلكتروني لتصل الى عملائك بكل سهوله  ' },
+        { icons: img.icon9, textEn: 'Connect your site with your social media networks', textAr: 'ربط موقعك مع شبكات التواصل الاجتماعي الخاصة بك' },
     ]
     return (
         <div className='app__ecommerse overflow-hidden'>
@@ -105,69 +105,76 @@ const Ecommerse = () => {
 
                 </div>
 
-                <div className="row d-flex justify-content-between  align-items-center">
-                    <h2 className="text-center fs-1 mb-4 fw-bold main-color wow fadeInTop" data-wow-duration="1s">
-                        {
-                            isEng ?
-                                'Benefits of Creating Your Online Store ' :
-                                ` تصميم و برمجة متجرك الالكترونى`
-                        }
-                    </h2>
+                <div className=" d-flex justify-content-between flex-column  align-items-center">
+                    {/*          <h2 className="text-center fs-1 mb-4 fw-bold main-color wow fadeInTop" data-wow-duration="1s">
+            
+                    </h2> */}
+                    <div className="header-span-overlay mb-4 ">
+                        <span className='header-span  text-center h2 mb-4 fw-bold main-color wow fadeInTop' data-wow-duration="1s" >
+                            {
+                                isEng ?
+                                    'Benefits of Creating Your Online Store ' :
+                                    `فوائد إنشاء متجرك الإلكتروني`
+                            }
+                        </span>
+                    </div>
+                    <div className="row">
 
-                    <div className="col-md-4  d-flex justify-content-center align-items-center  flex-column mt-3 wow fadeInLeft" data-wow-duration="1s">
-                        <img src={img.img3} className='w-75' />
-                        <p className="colorDevelop mt-1 h4   text-center">
-                            {
-                                isEng ? `Access to a new customer base  ` :
-                                    `الوصول إلى قاعدة عملاء جديدة.`
-                            }
-                        </p>
-                    </div>
-                    <div className="col-md-4  d-flex justify-content-center  align-items-center flex-column mt-3 wow bounceInUp" data-wow-duration="1.5s">
-                        <img src={img.img2} className='w-75' />
-                        <p className="colorDevelop mt-1 h4   text-center">
-                            {
-                                isEng ? `Increased sales and profits  ` :
-                                    `زيادة المبيعات والارباح.`
-                            }
-                        </p>
-                    </div>
-                    <div className="col-md-4  d-flex justify-content-center align-items-center flex-column mt-3 wow fadeInRight" data-wow-duration="1s">
-                        <img src={img.img1} className='w-75' />
-                        <p className="colorDevelop my-3 h4   text-center" >
-                            {
-                                isEng ? `Unlimited spread and keeping up with competitors in the market` :
-                                    `انتشار غير محدود و مواكبة المنافسين فى السوق .`
-                            }
-                        </p>
-                    </div>
-                    <div className="col-md-4  d-flex justify-content-center align-items-center flex-column mt-3 wow fadeInLeft" data-wow-duration="1.5s">
-                        <img src={img.img7} className='w-75' />
-                        <p className="colorDevelop my-3 h4   text-center" >
-                            {
-                                isEng ? `Get an online store and application in the name of your project.` :
-                                    `الحصول على متجر إلكتروني وتطبيق باسم مشروعك`
-                            }
-                        </p>
-                    </div>
-                    <div className="col-md-4  d-flex justify-content-center align-items-center flex-column mt-3 wow bounceInUp" data-wow-duration="1.5s">
-                        <img src={img.img8} className='w-75' />
-                        <p className="colorDevelop my-3 h4   text-center" >
-                            {
-                                isEng ? `Lower administrative costs ` :
-                                    `تكاليف إدارية أقل
+                        <div className="col-md-4  d-flex justify-content-center align-items-center  flex-column mt-3 wow fadeInLeft" data-wow-duration="1s">
+                            <img src={img.img3} className='w-75' />
+                            <p className="colorDevelop mt-1 h4   text-center">
+                                {
+                                    isEng ? `Access to a new customer base  ` :
+                                        `الوصول إلى قاعدة عملاء جديدة.`
+                                }
+                            </p>
+                        </div>
+                        <div className="col-md-4  d-flex justify-content-center  align-items-center flex-column mt-3 wow bounceInUp" data-wow-duration="1.5s">
+                            <img src={img.img2} className='w-75' />
+                            <p className="colorDevelop mt-1 h4   text-center">
+                                {
+                                    isEng ? `Increased sales and profits  ` :
+                                        `زيادة المبيعات والارباح.`
+                                }
+                            </p>
+                        </div>
+                        <div className="col-md-4  d-flex justify-content-center align-items-center flex-column mt-3 wow fadeInRight" data-wow-duration="1s">
+                            <img src={img.img1} className='w-75' />
+                            <p className="colorDevelop my-3 h4   text-center" >
+                                {
+                                    isEng ? `Unlimited spread and keeping up with competitors in the market` :
+                                        `انتشار غير محدود و مواكبة المنافسين فى السوق .`
+                                }
+                            </p>
+                        </div>
+                        <div className="col-md-4  d-flex justify-content-center align-items-center flex-column mt-3 wow fadeInLeft" data-wow-duration="1.5s">
+                            <img src={img.img7} className='w-75' />
+                            <p className="colorDevelop my-3 h4   text-center" >
+                                {
+                                    isEng ? `Get an online store and application in the name of your project.` :
+                                        `الحصول على متجر إلكتروني وتطبيق باسم مشروعك`
+                                }
+                            </p>
+                        </div>
+                        <div className="col-md-4  d-flex justify-content-center align-items-center flex-column mt-3 wow bounceInUp" data-wow-duration="1.5s">
+                            <img src={img.img8} className='w-75' />
+                            <p className="colorDevelop my-3 h4   text-center" >
+                                {
+                                    isEng ? `Lower administrative costs ` :
+                                        `تكاليف إدارية أقل
                                     .`
-                            }
-                        </p>
-                    </div>
-                    <div className="col-md-4  d-flex justify-content-center align-items-center flex-column mt-3 fadeInRight" data-wow-duration="1.5s">
-                        <img src={img.img9} className='w-75' />
-                        <p className="colorDevelop my-3 h4   text-center" >
-                            {
-                                isEng ? `You can enter other merchants with you on your website and take a percentage of them` :
-                                    `يمكنك إدخال تجار آخرين معك فى موقعك الإلكترونى و أخذ نسبة منهم.`
-                            }
-                        </p>
+                                }
+                            </p>
+                        </div>
+                        <div className="col-md-4  d-flex justify-content-center align-items-center flex-column mt-3 fadeInRight" data-wow-duration="1.5s">
+                            <img src={img.img9} className='w-75' />
+                            <p className="colorDevelop my-3 h4   text-center" >
+                                {
+                                    isEng ? `You can enter other merchants with you on your website and take a percentage of them` :
+                                        `يمكنك إدخال تجار آخرين معك فى موقعك الإلكترونى و أخذ نسبة منهم.`
+                                }
+                            </p>
+                        </div>
                     </div>
 
                 </div>
@@ -175,13 +182,15 @@ const Ecommerse = () => {
 
                 <div className='container-fluid '  >
                     <div className="position-relative flex-column    d-flex justify-content-center mt-5   align-items-center">
-                        <span className=' wow fadeInDownBig header-span text-center py-2 m-0 p-0 wow slideInTop' data-wow-duration="1s" >
-                            {
-                                isEng ? ` Why should you work with Zari Solutions?` : `لماذا  تختار حلول زارى؟`
+                        <div className="header-span-overlay">
+                            <span className='header-span  text-center h2 mb-4 fw-bold main-color wow fadeInTop' data-wow-duration="1s" >
+                                {
+                                    isEng ? ` Why should you work with Zari Solutions?` : `لماذا  تختار حلول زارى؟`
 
-                            }
-                        </span>
-                        <div className='header-span-overlay '></div>
+                                }
+                            </span>
+                        </div>
+                        {/* <div className='header-span-overlay'></div> */}
                         <div className="row text-main ">
 
                             {
@@ -190,7 +199,7 @@ const Ecommerse = () => {
                                         <div key={index} className='mt-5 col-md-6 services__col'>
                                             <div className="text-bg rounded-3 shadow wow fadeInRight" data-wow-duration="1.5s"  >
                                                 <div className="icon " >
-                                                    <img src={item.icons}  />
+                                                    <img src={item.icons} />
                                                 </div>
                                                 <div className="content  h-100 text-bg2 ">
                                                     {/* <h4 style={{ fontSize: '24px' }} className='text-dark h2'>{isEng ? item.headerEn : item.headerAr}</h4> */}

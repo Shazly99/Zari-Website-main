@@ -20,7 +20,7 @@ import img from '../images/Update/img';
 
 
 
-export default function Products({fetchProducts}) {
+export default function Products({ fetchProducts }) {
 
     useEffect(() => {
         $('html , body').animate({ scrollTop: 0 }, 200);
@@ -30,9 +30,9 @@ export default function Products({fetchProducts}) {
     useEffect(() => {
 
         new WOW.WOW().init();
-    
+
     }, [])
-    
+
     const options = {
         items: 1,
         animateIn: ' flipOutX',
@@ -50,10 +50,10 @@ export default function Products({fetchProducts}) {
     function changeDir() {
         if (isEng === false) {
             $('.products .product').attr('dir', 'rtl');
-            $('.products .product:nth-child(1)').css({ 'borderLeft': 'none', 'borderRight': '3px solid', 'animationName': 'serviceOneBorderArabic'});
-            $('.products .product:nth-child(2)').css({ 'borderLeft': 'none', 'borderRight': '3px solid', 'animationName': 'serviceTwoBorderArabic'});
-            $('.products .product:nth-child(3)').css({ 'borderLeft': 'none', 'borderRight': '3px solid', 'animationName': 'serviceThreeBorderArabic'});
-            $('.products .product:nth-child(4)').css({ 'borderLeft': 'none', 'borderRight': '3px solid', 'animationName': 'serviceOneBorderArabic'});
+            $('.products .product:nth-child(1)').css({ 'borderLeft': 'none', 'borderRight': '3px solid', 'animationName': 'serviceOneBorderArabic' });
+            $('.products .product:nth-child(2)').css({ 'borderLeft': 'none', 'borderRight': '3px solid', 'animationName': 'serviceTwoBorderArabic' });
+            $('.products .product:nth-child(3)').css({ 'borderLeft': 'none', 'borderRight': '3px solid', 'animationName': 'serviceThreeBorderArabic' });
+            $('.products .product:nth-child(4)').css({ 'borderLeft': 'none', 'borderRight': '3px solid', 'animationName': 'serviceOneBorderArabic' });
             $('.products .product').removeClass('ps-4');
             $('.products .product').addClass('pe-4');
 
@@ -66,10 +66,10 @@ export default function Products({fetchProducts}) {
 
         else {
             $('.products .product').attr('dir', 'ltr');
-            $('.products .product:nth-child(1)').css({ 'borderRight': 'none', 'borderLeft': '3px solid', 'animationName': 'serviceOneBorder'});
-            $('.products .product:nth-child(2)').css({ 'borderRight': 'none', 'borderLeft': '3px solid', 'animationName': 'serviceTwoBorder'});
-            $('.products .product:nth-child(3)').css({ 'borderRight': 'none', 'borderLeft': '3px solid', 'animationName': 'serviceThreeBorder'});
-            $('.products .product:nth-child(4)').css({ 'borderRight': 'none', 'borderLeft': '3px solid', 'animationName': 'serviceOneBorder'});
+            $('.products .product:nth-child(1)').css({ 'borderRight': 'none', 'borderLeft': '3px solid', 'animationName': 'serviceOneBorder' });
+            $('.products .product:nth-child(2)').css({ 'borderRight': 'none', 'borderLeft': '3px solid', 'animationName': 'serviceTwoBorder' });
+            $('.products .product:nth-child(3)').css({ 'borderRight': 'none', 'borderLeft': '3px solid', 'animationName': 'serviceThreeBorder' });
+            $('.products .product:nth-child(4)').css({ 'borderRight': 'none', 'borderLeft': '3px solid', 'animationName': 'serviceOneBorder' });
             $('.products .product').removeClass('pe-4');
             $('.products .product').addClass('ps-4');
 
@@ -83,7 +83,7 @@ export default function Products({fetchProducts}) {
 
     useEffect(() => {
         changeDir();
-    
+
         return () => {
             changeDir();
         }
@@ -109,11 +109,13 @@ export default function Products({fetchProducts}) {
                 <div className="container">
                     {fetchProducts[0] ? <div className="row gy-4 d-flex justify-content-center align-items-center">
                         <div className="col-lg-7 wow fadeInLeft" data-wow-duration="1.5s">
-                            {fetchProducts[0].map((item , i) => (
-                                <div key={i}  className="product ps-4 mb-5">
+                            {fetchProducts[0].map((item, i) => (
+                                <div key={i} className="product ps-4 mb-5">
                                     <h3 className="fw-bold mb-2 second-color">{isEng ? item.title : item.titleAr}</h3>
-                                    <p>{isEng ? item.text : item.textAr}
+                                    <p>{isEng ? item.text.split(" ").splice(0, 30).join(" ")  + '...': item.textAr.split(" ").splice(0, 30).join(" ") + '...'}
                                     </p>
+                                    {/* <p>{isEng ? item.text.split(" ").splice(0, 30).join(" ") + '...' : item.textAr.split(" ").splice(0, 30).join(" ") + '...'}</p> */}
+
                                     <div className="buttons">
                                         <Link to={`${item.id}`} className="btn black-btn py-3 px-5">{isEng ? 'More Details' : 'تفاصيــل أكثـــر'}</Link>
                                     </div>
@@ -122,27 +124,26 @@ export default function Products({fetchProducts}) {
                         </div>
                         <div className="col-lg-5 wow fadeInRight" data-wow-duration="1.5s">
                             <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                {fetchProducts[0].map((item , i) => (
-                                    <img  key={i} src={item.image} className="w-100" width={'100%'} height={'100%'} alt="web" />
+                                {fetchProducts[0].map((item, i) => (
+                                    <img key={i} src={item.image} className="w-100" width={'100%'} height={'100%'} alt="web" />
                                 ))}
                             </OwlCarousel>
                         </div>
                     </div> : ''}
-                    
+
                     {fetchProducts[1] ? <div className="row gy-4 d-flex justify-content-center align-items-center">
                         <div className="col-lg-5 wow fadeInLeft" data-wow-duration="1.5s">
                             <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                {fetchProducts[1].map((item , i) => (
-                                        
-                                    <img key={i} src={item.image} className="w-100"width={'100%'} height={'100%'} alt="Technology-Consultation" />
+                                {fetchProducts[1].map((item, i) => (
+                                    <img key={i} src={item.image} className="w-100" width={'100%'} height={'100%'} alt="Technology-Consultation" />
                                 ))}
                             </OwlCarousel>
                         </div>
                         <div className="col-lg-7 wow fadeInRight" data-wow-duration="1.5s">
-                            {fetchProducts[1].map((item , i) => (
+                            {fetchProducts[1].map((item, i) => (
                                 <div key={i} className="product ps-4 mb-5">
                                     <h3 className="fw-bold mb-2 second-color">{isEng ? item.title : item.titleAr}</h3>
-                                    <p>{isEng ? item.text : item.textAr}
+                                    <p>{isEng ? item.text.split(" ").splice(0, 30).join(" ")  + '...' : item.textAr.split(" ").splice(0, 30).join(" ")  + '...'}
                                     </p>
                                     <div className="buttons">
                                         <Link to={`${item.id}`} className="btn black-btn py-3 px-5">{isEng ? 'More Details' : 'تفاصيــل أكثـــر'}</Link>
@@ -154,10 +155,10 @@ export default function Products({fetchProducts}) {
 
                     {fetchProducts[2] ? <div className="row gy-4 d-flex justify-content-center align-items-center">
                         <div className="col-lg-7 wow fadeInLeft" data-wow-duration="1.5s">
-                            {fetchProducts[2].map((item , i) => (
-                                <div key={i}  className="product ps-4 mb-5">
+                            {fetchProducts[2].map((item, i) => (
+                                <div key={i} className="product ps-4 mb-5">
                                     <h3 className="fw-bold mb-2 second-color">{isEng ? item.title : item.titleAr}</h3>
-                                    <p>{isEng ? item.text : item.textAr}
+                                    <p>{isEng ? item.text.split(" ").splice(0, 30).join(" ")  + '...' : item.textAr.split(" ").splice(0, 30).join(" ")  + '...'}
                                     </p>
                                     <div className="buttons">
                                         <Link to={`${item.id}`} className="btn black-btn py-3 px-5">{isEng ? 'More Details' : 'تفاصيــل أكثـــر'}</Link>
@@ -167,8 +168,8 @@ export default function Products({fetchProducts}) {
                         </div>
                         <div className="col-lg-5 wow fadeInRight" data-wow-duration="1.5s">
                             <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                {fetchProducts[2].map((item , i) => (
-                                    <img  key={i} src={item.image} className="w-100"width={'100%'} height={'100%'} alt="web" />
+                                {fetchProducts[2].map((item, i) => (
+                                    <img key={i} src={item.image} className="w-100" width={'100%'} height={'100%'} alt="web" />
                                 ))}
                             </OwlCarousel>
                         </div>
@@ -176,10 +177,10 @@ export default function Products({fetchProducts}) {
 
                     {fetchProducts[3] ? <div className="row gy-4 d-flex justify-content-center align-items-center">
                         <div className="col-lg-7 wow fadeInLeft" data-wow-duration="1.5s">
-                            {fetchProducts[3].map((item , i) => (
-                                <div key={i}  className="product ps-4 mb-5">
+                            {fetchProducts[3].map((item, i) => (
+                                <div key={i} className="product ps-4 mb-5">
                                     <h3 className="fw-bold mb-2 second-color">{isEng ? item.title : item.titleAr}</h3>
-                                    <p>{isEng ? item.text : item.textAr}
+                                    <p>{isEng ? item.text.split(" ").splice(0, 30).join(" ")  + '...' : item.textAr.split(" ").splice(0, 30).join(" ")  + '...'}
                                     </p>
                                     <div className="buttons">
                                         <Link to={`${item.id}`} className="btn black-btn py-3 px-5">{isEng ? 'More Details' : 'تفاصيــل أكثـــر'}</Link>
@@ -189,8 +190,8 @@ export default function Products({fetchProducts}) {
                         </div>
                         <div className="col-lg-5 wow fadeInRight" data-wow-duration="1.5s">
                             <OwlCarousel className="slider-items owl-carousel" {...options}>
-                                {fetchProducts[3].map((item , i) => (
-                                    <img  key={i} src={item.image} className="w-100"width={'100%'} height={'100%'} alt="web" />
+                                {fetchProducts[3].map((item, i) => (
+                                    <img key={i} src={item.image} className="w-100" width={'100%'} height={'100%'} alt="web" />
                                 ))}
                             </OwlCarousel>
                         </div>

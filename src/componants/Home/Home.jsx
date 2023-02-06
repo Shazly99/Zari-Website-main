@@ -556,7 +556,7 @@ export default function Home({ fetchHome, fetchProducts ,fetchProjects}) {
             <div className="row gx-0 gy-4 d-flex justify-content-center align-items-center">
               <div className="col-lg-7">
                 <div className="caption wow fadeInLeft" data-wow-duration="1.5s">
-                  <h5 className="mb-4 main-color fw-bold wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.top.header : fetchHome.top.headerAr}</h5>
+                  <h2 className="mb-4 main-color fw-bold wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.top.header : fetchHome.top.headerAr}</h2>
                   <h1 className="fw-bold text-black mb-4 wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.top.title : fetchHome.top.titleAr}</h1>
                   <p className="mb-4 py-1 wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? fetchHome.top.text : fetchHome.top.textAr}</p>
                   <div className="buttons wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">

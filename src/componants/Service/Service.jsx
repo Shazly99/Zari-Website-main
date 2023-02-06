@@ -83,7 +83,7 @@ export default function Service({ baseURL, showNameEn, showNameAr, showTypeEn, s
                             <div className=" serviceSingle_first row gx-0 gy-4 d-flex justify-content-center align-items-center">
                                 <div className="col-lg-6">
                                     <div className="caption-wd-page wow fadeInRight" data-wow-duration="1s">
-                                        <h3 className="serviceSingle__header mb-3   wow fadeInDownBig w-100" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Design And Development Of Phone Applications' : '  تصميم وتطوير تطبيقات الهاتف'}</h3>
+                                        <h3 className="serviceSingle__header  mb-3   wow fadeInDownBig w-100" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Design And Development Of Phone Applications' : '  تصميم وتطوير تطبيقات الهاتف'}</h3>
                                         <p>
                                             {
                                                 isEng ? `We design and develop phone applications according to the most important criteria that serve the idea of the application and its development in its entirety, from the idea to the launch and continuous support.` : `نعمل على تصميم وتطوير تطبيقات الهاتف حسب أهم المعايير التي تخدم فكرة التطبيق وتطويره بالكامل، من الفكرة إلى الانطلاق والدعم المستمر.
@@ -113,7 +113,7 @@ export default function Service({ baseURL, showNameEn, showNameAr, showTypeEn, s
                                 </div>
                                 <div className="col-lg-6 ">
                                     <div className="caption-wd-page wow  fadeInRight" data-wow-duration="1s">
-                                        <h3 className="serviceSingle__header mb-3 wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Mobile Creation and Development' : 'إنشاء وتطوير الجوال'}</h3>
+                                        <h3 className="serviceSingle__header mb-3 wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Mobile application Creation and Development' : 'إنشاء وتطوير تطبيقات الجوال'}</h3>
                                         <p className='serviceSingle__body'>
                                             {
                                                 isEng ? `Creating a mobile app can help businesses interact with clients more effectively, enhance the customer experience, and boost sales and profits. Additionally, a well-made and simple-to-use mobile app can be a useful marketing tool that aids businesses in attracting new clients and keeping hold of current ones.` : `إنشاء تطبيق للجوال يساعد الشركات على التواصل بشكل أفضل مع عملائها، وتحسين تجربة العملاء، وزيادة المبيعات والإيرادات. بالإضافة إلى ذلك، يمكن أن يكون تطبيق الهاتف المحمول المصمم جيدًا وسهل الاستخدام بمثابة أداة تسويق قيمة يمكن أن تساعد الشركات في الوصول إلى عملاء جدد والاحتفاظ بالعملاء الحاليين.                                                `
@@ -127,11 +127,17 @@ export default function Service({ baseURL, showNameEn, showNameAr, showTypeEn, s
                         </div>
                         <div className='container-fluid '  >
                             <div className="position-relative flex-column    d-flex justify-content-center mt-5   align-items-center">
-                                <span className=' wow fadeInDownBig header-span text-center py-2 m-0 p-0' data-wow-duration="1s" data-wow-delay="0.5s" >
-                                    {
-                                        isEng ? `The design and development of mobile applications includes several stages` : `يتضمن تصميم وتطوير تطبيقات الهاتف المحمول عدة مراحل`
-                                    }
-                                </span>
+                         {/*        <span className=' wow fadeInDownBig header-span text-center py-2 m-0 p-0' data-wow-duration="1s" data-wow-delay="0.5s" >
+                                </span> */}
+
+                                <div className="header-span-overlay mb-4 ">
+                                    <span className='header-span text-center h2 mb-4 fw-bold main-color wow fadeInTop' data-wow-duration="1s" >
+                                        {
+                                            isEng ? `The design and development of mobile applications includes several stages` : `يتضمن تصميم وتطوير تطبيقات الهاتف المحمول عدة مراحل`
+                                        }
+                              
+                                    </span>
+                                </div>
                                 <div className='header-span-overlay '></div>
                                 <div className="row ">
 
@@ -184,14 +190,14 @@ export default function Service({ baseURL, showNameEn, showNameAr, showTypeEn, s
                                     </div>
                                 </div>
                             </div>
-                            <div className="buttons text-center mt-4 wow fadeInUpBig">
+       {/*                      <div className="buttons text-center mt-4 wow fadeInUpBig">
                                 <Link to="../order" onClick={() => {
                                     showNameEn(fetchServiceData.service.header)
                                     showNameAr(fetchServiceData.service.headerAr)
                                     showTypeEn('Service')
                                     showTypeAr('خدمـــة')
                                 }} className="btn black-btn px-5" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Contact Us' : 'تواصل معنا'}</Link>
-                            </div>
+                            </div> */}
                         </div>
                     </section>
 
@@ -210,7 +216,7 @@ export default function Service({ baseURL, showNameEn, showNameAr, showTypeEn, s
                                         <h4 className="fw-bold mb-3 fs-2 main-color wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchServiceData.footer.header : fetchServiceData.footer.headerAr}</h4>
                                         <p className="mb-4 py-1 lh-base text-black-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? fetchServiceData.footer.text : fetchServiceData.footer.textAr}</p>
                                         <div className="buttons wow fadeInUpBig" data-wow-duration="1s">
-                                            <Link to="../Contact" className="btn black-btn py-3 px-5">{isEng ? 'Send Message' : 'إرســـال رسـالـــة'}</Link>
+                                            <Link to="../Contact" className="btn black-btn py-3 px-5">{isEng ? 'Contact Us' : 'تواصل معنا'}</Link>
                                         </div>
                                     </div>
                                 </div>
