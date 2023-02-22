@@ -897,10 +897,14 @@ video {
 }
 
 @media screen and (max-width: 500px) {
-  .caption-details .buttons   {
-    padding: 10px 15px !important;
+  .caption-details h2{
     font-size: 18px !important;
-    background-color: red !important;
+  }
+  .caption-details .buttons  {
+    padding:   0 !important; 
+  }
+  .caption-details .buttons  a { 
+    font-size: 14px !important; 
   }
 }
 
