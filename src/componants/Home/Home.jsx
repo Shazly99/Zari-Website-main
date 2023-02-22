@@ -877,12 +877,12 @@ export default function Home({ fetchHome, fetchProducts ,fetchProjects}) {
               </div>
             </div>
           </div>
-          <div className="show-details mt-5">
+          <div className="show-details mt-5 ">
             <OwlCarousel className="slider-items owl-carousel wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.5s" {...products}> 
 
-            {fetchHome.projects.date[0] ? <div className="w-100 mx-auto ">
-                <div className="row d-flex justify-content-center align-items-center "  >
-                  <div className="col-8">
+            {fetchHome.projects.date[0] ? <div className="w-85 mx-auto ">
+                <div className="row d-flex  justify-content-center align-items-center "  >
+                  <div className="col-8 ">
                     <div className="caption-details wow fadeInLeft" data-wow-duration="1.5s">
                       <h2 className="fw-bold mb-3 text-white wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.projects.date[0].title : fetchHome.projects.date[0].titleAr}</h2>
                       <p className="mb-3 py-1 lh-base text-white wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? fetchHome.projects.date[0].text.split(" ").splice(0,30).join(" ")+'...': fetchHome.projects.date[0].textAr.split(" ").splice(0,30).join(" ")+'...'}</p>
@@ -898,8 +898,28 @@ export default function Home({ fetchHome, fetchProducts ,fetchProjects}) {
                   </div>
                 </div>
               </div> : ''}
-              {fetchHome.projects.date[1] ? <div className="w-100 mx-auto">
+       
+              {fetchHome.projects.date[2] ? <div className="w-85 mx-auto">
                 <div className="row d-flex justify-content-center align-items-center">
+                  <div className="col-8">
+                    <div className="caption-details wow fadeInLeft" data-wow-duration="1.5s">
+                      <h2 className="project__h2 fw-bold mb-3 text-white wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.projects.date[2].title : fetchHome.projects.date[2].titleAr}</h2>
+                      <p className="mb-3 py-1 lh-base text-white wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? fetchHome.projects.date[2].text.split(" ").splice(0,30).join(" ")+'...' : fetchHome.projects.date[2].textAr.split(" ").splice(0,30).join(" ")+'...'}</p>
+                      <div className="buttons wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <a href={`#/projects/5`} className="btn btn-light py-3 px-5 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Read More' : 'اقـرأ المزيــد'}</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-4">
+                    <div className="img-details text-center wow fadeInRight" data-wow-duration="1.5s">
+                      <img src={fetchHome.projects.date[2].image ? fetchHome.projects.date[2].image : zariExpress} className="mx-auto w-50" alt="zari Express" />
+                    </div>
+                  </div>
+                </div>
+              </div> : ''}
+
+              {fetchHome.projects.date[1] ? <div className="  w-85 mx-auto">
+                <div className=" row d-flex justify-content-center align-items-center">
                   <div className="col-8">
                     <div className="caption-details wow fadeInLeft" data-wow-duration="1.5s">
                       <h2 className="fw-bold mb-3 text-white wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.projects.date[1].title : fetchHome.projects.date[1].titleAr}</h2>
@@ -912,24 +932,6 @@ export default function Home({ fetchHome, fetchProducts ,fetchProjects}) {
                   <div className="col-4">
                     <div className="img-details text-center wow fadeInRight" data-wow-duration="1.5s">
                       <img src={fetchHome.projects.date[1].image && fetchHome.projects.date[1].image } className="mx-auto w-50" alt="zari Express" />
-                    </div>
-                  </div>
-                </div>
-              </div> : ''}
-              {fetchHome.projects.date[2] ? <div className="w-100 mx-auto">
-                <div className="row d-flex justify-content-center align-items-center">
-                  <div className="col-8">
-                    <div className="caption-details wow fadeInLeft" data-wow-duration="1.5s">
-                      <h2 className="fw-bold mb-3 text-white wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? fetchHome.projects.date[2].title : fetchHome.projects.date[2].titleAr}</h2>
-                      <p className="mb-3 py-1 lh-base text-white wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">{isEng ? fetchHome.projects.date[2].text.split(" ").splice(0,30).join(" ")+'...' : fetchHome.projects.date[2].textAr.split(" ").splice(0,30).join(" ")+'...'}</p>
-                      <div className="buttons wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <a href={`#/projects/5`} className="btn btn-light py-3 px-5 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">{isEng ? 'Read More' : 'اقـرأ المزيــد'}</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-4">
-                    <div className="img-details text-center wow fadeInRight" data-wow-duration="1.5s">
-                      <img src={fetchHome.projects.date[2].image ? fetchHome.projects.date[2].image : zariExpress} className="mx-auto w-50" alt="zari Express" />
                     </div>
                   </div>
                 </div>
